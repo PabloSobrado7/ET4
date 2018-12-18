@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-12-2018 a las 09:43:05
+-- Tiempo de generación: 18-12-2018 a las 19:13:21
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.9
 
@@ -32,6 +32,13 @@ CREATE TABLE `admin` (
   `login_admin` varchar(15) NOT NULL,
   `pass_admin` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `admin`
+--
+
+INSERT INTO `admin` (`login_admin`, `pass_admin`) VALUES
+('admin', 'admin');
 
 -- --------------------------------------------------------
 
@@ -80,7 +87,6 @@ CREATE TABLE `juego` (
   `nombre_juego` varchar(20) NOT NULL,
   `plataforma` varchar(20) NOT NULL,
   `genero` varchar(20) NOT NULL,
-  `tipo` varchar(20) NOT NULL,
   `precio_compra` decimal(5,0) NOT NULL,
   `categoria` varchar(10) NOT NULL,
   `novedad` tinyint(1) NOT NULL,
@@ -129,13 +135,21 @@ CREATE TABLE `vendedor` (
   `login_vendedor` varchar(15) NOT NULL,
   `pass_vendedor` varchar(20) NOT NULL,
   `dni_vendedor` varchar(9) NOT NULL,
-  `nss_vendedor` varchar(11) NOT NULL,
   `nombre_vendedor` varchar(25) NOT NULL,
   `apellidos_vendedor` varchar(50) NOT NULL,
   `email_vendedor` varchar(60) NOT NULL,
-  `telefono_vendedor` varchar(12) NOT NULL,
-  `login_admin` varchar(15) NOT NULL
+  `telefono_vendedor` varchar(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `vendedor`
+--
+
+INSERT INTO `vendedor` (`login_vendedor`, `pass_vendedor`, `dni_vendedor`, `nombre_vendedor`, `apellidos_vendedor`, `email_vendedor`, `telefono_vendedor`) VALUES
+('juan', '', '', '', '', '', ''),
+('manuel', 'manuel', '34927848W', 'Manuel', 'Boo Martinez', 'manuelboo@gmail.com', '555443322'),
+('mario', 'mario', '55533299E', 'Mario', 'Gayoso Perez', 'mariogayoso@gmail.com', '666776655'),
+('pablo', 'pablo', '44498928T', 'Pablo', 'Sobrado Pinto', 'pablosobrado.realmadrid@gmail.com', '663588615');
 
 --
 -- Índices para tablas volcadas
@@ -164,6 +178,12 @@ ALTER TABLE `asociado`
 --
 ALTER TABLE `compra`
   ADD PRIMARY KEY (`login_socio`,`id_juego`,`fecha_compra`);
+
+--
+-- Indices de la tabla `juego`
+--
+ALTER TABLE `juego`
+  ADD PRIMARY KEY (`id_juego`);
 
 --
 -- Indices de la tabla `socio`
