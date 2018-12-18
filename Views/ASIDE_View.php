@@ -51,11 +51,8 @@
                     </li>
                 </a>
 				
-                <ul>EJEMPLO
-					<a href="../Controllers/LOTERIAIU_Controller.php" ><li><?php echo $strings['Ver loteria']; ?></li></a>
-                    </ul>
                 <ul>Admin
-					<a href="../Controllers/LOTERIAIU_Controller.php" ><li>Administrar vendedores</li></a>
+					<a href="../Controllers/VENDEDOR_Controller.php" ><li>Administrar vendedores</li></a>
                      </ul>
 				<ul>Vendedor
 					<a href="../Controllers/LOTERIAIU_Controller.php" ><li>Gestionar juegos</li></a>

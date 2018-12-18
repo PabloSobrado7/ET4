@@ -14,7 +14,7 @@
         function ConnectDB(){
 
             //Definimos la configuracion para establecer la BD
-            $mysqli = new mysqli("localhost", "root", "","iu2018");
+            $mysqli = new mysqli("localhost", "root", "","gamerenting");
 
 
             //Si existe algun error manda un mensaje de error
