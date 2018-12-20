@@ -33,8 +33,8 @@ else{
 	$usuario; //crea un objecto del modelo
 	$respuesta; //guarda el valor del login
 
-	include '../Models/USUARIOS_Model.php';
-	$usuario = new USUARIOS_Model($_REQUEST['login'],$_REQUEST['password'],'','','','','','','','');
+	include '../Models/ADMIN_Model.php';
+	$usuario = new ADMIN_Model($_REQUEST['login'],$_REQUEST['password']);
 	$respuesta = $usuario->login();
 	
 	//Comprueba si el usuario existe y coincide con la contraseña

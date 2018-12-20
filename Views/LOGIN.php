@@ -46,22 +46,19 @@
                 
                 
                 <div class="form">
-                    <form class="form-basic" method="" action="../Controllers/Login_Controller.php" onsubmit="return comprobarlogin()">
+                    <form class="form-basic" method="" action="../Controllers/Login_Controller.php">
                         <div class="form-group">
                             <label class="form-label" for="login"><?php echo $strings['Login']; ?></label>
-                            <input type="text" class="form-control" maxlength="15" size="15" onblur="messagedel(this); comprobarVacio(this); comprobarEspacio(this); comprobarTexto(this,15)" id="login" name="login" tabindex="1">
+                            <input type="text" class="form-control" maxlength="15" size="15" id="login" name="login" tabindex="1">
                         </div>    
                         <div class="form-group">
                             <label class="form-label" for="password1"><?php echo $strings['Password']; ?></label>
-                            <input type="password" class="form-control" maxlength="20" size="20" onblur="messagedel(this); comprobarVacio(this); comprobarEspacio(this); comprobarTexto(this,20)" id="password1" name="password" maxlength="5" tabindex="1" >
+                            <input type="password" class="form-control" maxlength="20" size="20" id="password1" name="password" maxlength="5" tabindex="1" >
                         </div>
                         <button name="action" value="" type="submit" class="boton-env">
                             <img src="../Views/imgs/send.png" alt="">
                         </button>
                     </form> 
-                    <form action="../Controllers/Registro_Controller.php" class="form-basic">
-                       <input type="image" id="register" src="../Views/imgs/register.png">
-                    </form>     
                 </div>
                 
             <footer>
