@@ -66,16 +66,6 @@ if (!IsAuthenticated()){
                 }
                 break;
 
-				
-				 $login_vendedor = $_REQUEST['login_vendedor'];
-		$pass_vendedor = $_REQUEST['pass_vendedor'];
-		$dni_vendedor = $_REQUEST['dni_vendedor'];
-		$nombre_vendedor = $_REQUEST['nombre_vendedor'];
-		$apellidos_vendedor = $_REQUEST['apellidos_vendedor'];
-		$email_vendedor = $_REQUEST['email_vendedor'];
-		$telefono_vendedor = $_REQUEST['telefono_vendedor'];
-
-		
 		
 		case 'EDIT':
 
