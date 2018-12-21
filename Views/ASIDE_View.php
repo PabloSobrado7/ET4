@@ -55,7 +55,7 @@
 					<a href="../Controllers/VENDEDOR_Controller.php" ><li>Administrar vendedores</li></a>
                      </ul>
 				<ul>Vendedor
-					<a href="../Controllers/LOTERIAIU_Controller.php" ><li>Gestionar juegos</li></a>
+					<a href="../Controllers/JUEGO_Controller.php" ><li>Gestionar juegos</li></a>
                     <a href="../Controllers/LOTERIAIU_Controller.php" ><li>Gestionar socios</li></a>
                     <a href="../Controllers/LOTERIAIU_Controller.php" ><li>Gestión venta/alquiler</li></a>
 					<a href="../Controllers/LOTERIAIU_Controller.php" ><li>Datos sobre usuarios</li></a>
