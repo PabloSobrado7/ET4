@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-12-2018 a las 19:13:21
+-- Tiempo de generación: 21-12-2018 a las 12:00:31
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.9
 
@@ -108,8 +108,7 @@ CREATE TABLE `socio` (
   `apellidos_socio` varchar(50) NOT NULL,
   `email_vendedor` varchar(60) NOT NULL,
   `telefono_vendedor` varchar(12) NOT NULL,
-  `socio_bloqueado` tinyint(1) NOT NULL,
-  `login_vendedor` varchar(15) NOT NULL
+  `socio_bloqueado` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
