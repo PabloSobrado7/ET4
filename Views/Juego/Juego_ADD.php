@@ -37,11 +37,11 @@ class Juego_ADD {
                 <?php
 
                 ?>
-                <h3><?php echo $strings['AnhadirJuego']; ?></h3>
+                <h3>Añadir juego</h3>
                 <?php
 
                 ?>
-                <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/LOTERIAIU_Controller.php">
+                <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/JUEGO_Controller.php">
                     <div class="form-group">
                         <label class="form-label" for="id_juego">#Juego</label>
                         <input type="text" class="form-control" maxlength="15" size="15" id="id_juego" name="id_juego">
@@ -63,11 +63,11 @@ class Juego_ADD {
                         <input type="text" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra">
                     </div>
 					<div class="form-group">
-                        <label class="form-label" for="categoria_vendedor">Categoria</label>
+                        <label class="form-label" for="categoria_juego">Categoria</label>
                         <input type="text" class="form-control" maxlength="15" size="15" id="categoria_vendedor" name="categoria_vendedor">
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="login">Novedad</label>
+                        <label class="form-label" for="novedad">Novedad</label>
                         <input type="text" class="form-control" maxlength="15" size="15" id="novedad" name="novedad">
                     </div>
                     <div class="form-group">

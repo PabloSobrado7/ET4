@@ -2,8 +2,7 @@
 /**
  * Funcion: Archivo php donde se controlan las acciones del juego
  * Autor: Mario
- */
-	
+ */	
 session_start();
 include '../Functions/Authentication.php';
 include '../Views/MESSAGE.php';
@@ -28,7 +27,7 @@ if (!IsAuthenticated()){
 		$plataforma = $_REQUEST['plataforma'];
         $genero = $_REQUEST['genero'];
 		$precio_compra = $_REQUEST['precio_compra'];
-		$categoria_vendedor = $_REQUEST['categoria_vendedor'];
+		$categoria_juego = $_REQUEST['categoria_juego'];
 		$novedad = $_REQUEST['novedad'];
 		$compra_juego = $_REQUEST['compra_juego'];
         $venta_juego = $_REQUEST['venta_juego'];
@@ -66,36 +65,26 @@ if (!IsAuthenticated()){
                     $respuesta = $JUEGO->ADD();
                     new MESSAGE($respuesta, '../Controllers/JUEGO_Controller.php');
                 }
-                break;
-
-        		$id_juego = $_REQUEST['id_juego'];
-                $nombre_juego = $_REQUEST['nombre_juego'];
-                $plataforma = $_REQUEST['plataforma'];
-                $genero = $_REQUEST['genero'];
-                $precio_compra = $_REQUEST['precio_compra'];
-                $categoria_vendedor = $_REQUEST['categoria_vendedor'];
-                $novedad = $_REQUEST['novedad'];
-                $compra_juego = $_REQUEST['compra_juego'];
-                $venta_juego = $_REQUEST['venta_juego'];
-
-		
+        break;
 		
 		case 'EDIT':
 
             $JUEGO; //coge los valores y los mete en la variable
             $respuesta; //almacena la respuesta que muestra el mensaje
 
+            echo $_GET['id_juego'];
+            die();
+
                 if (!$_POST){ //si entra por get envia un formulario
                     new Juego_EDIT($_GET['id_juego'],$_GET['nombre_juego'],$_GET['plataforma'],
-					$_GET['genero'],$_GET['precio_compra'],
-					$_GET['categoria_vendedor'],$_GET['novedad'], $_GET['compra_juego'],$_GET['venta_juego']);
+					$_GET['genero'],$_GET['precio_compra'],$_GET['categoria_vendedor'],$_GET['novedad'],$_GET['compra_juego'],$_GET['venta_juego']);
 				}
                 else{//Si entra por post recoge los datos y los envia a la BD y manda mensaje
                     $JUEGO = get_data_form();
                     $respuesta = $JUEGO->EDIT();
                     new MESSAGE($respuesta, '../Controllers/JUEGO_Controller.php');
 				}
-                break;
+        break;
 				
 		case 'SEARCH':
 
@@ -111,7 +100,7 @@ if (!IsAuthenticated()){
                     $respuesta = $JUEGO->SEARCH();
 					 new Juego_SHOWALL($respuesta, '../Controllers/JUEGO_Controller.php');
 				}
-                break;
+        break;
 
         case 'DELETE':
 
@@ -130,7 +119,7 @@ if (!IsAuthenticated()){
 
                     new MESSAGE($respuesta, '../Controllers/JUEGO_Controller.php');
                 }
-                break;
+        break;
            
             
 

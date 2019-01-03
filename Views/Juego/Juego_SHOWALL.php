@@ -73,13 +73,13 @@ class Juego_SHOWALL {
                         ?>
 
                         <tr>
-                            <form action="../Controllers/VENDEDOR_Controller.php" method="" >                                
+                            <form action="../Controllers/JUEGO_Controller.php" method="" >                                
 								<td><?php echo $row['id_juego']; ?></td>
 								<td><?php echo $row['nombre_juego']; ?></td>
 								<td><?php echo $row['plataforma']; ?></td>
 								<td><?php echo $row['genero']; ?></td>
 								<td><?php echo $row['precio_compra']; ?></td>
-								<td><?php echo $row['categoria_vendedor']; ?></td>
+								<td><?php echo $row['categoria_juego']; ?></td>
 								<td><?php echo $row['novedad']; ?></td>
                                 <td><?php echo $row['compra_juego']; ?></td>
                                 <td><?php echo $row['venta_juego']; ?></td>

@@ -5,20 +5,20 @@
  * Autor: Mario Gayoso Perez 
 
  */
- class Loteria_EDIT {
+ class Juego_EDIT {
 
-    function __construct($lotemail,$lotnombre,$lotapellidos,
-	$lotparticipacion,$lotresguardo,$lotingresado,$lotpremiopersonal,$lotpagado){
+    function __construct($id_juego,$nombre_juego,$plataforma,
+	$genero,$precio_compra,$categoria_vendedor,$novedad,$compra_juego,$venta_juego){
 
-        $this->pinta($lotemail,$lotnombre,$lotapellidos,
-	$lotparticipacion,$lotresguardo,$lotingresado,$lotpremiopersonal,$lotpagado);
+        $this->pinta($id_juego,$nombre_juego,$plataforma,
+	$genero,$precio_compra,$categoria_vendedor,$novedad,$compra_juego,$venta_juego);
 
     }
 
 
     //función que contiene la vista
-    function pinta($lotemail,$lotnombre,$lotapellidos,
-	$lotparticipacion,$lotresguardo,$lotingresado,$lotpremiopersonal,$lotpagado){
+    function pinta($id_juego,$nombre_juego,$plataforma,
+    $genero,$precio_compra,$categoria_vendedor,$novedad,$compra_juego,$venta_juego){
         //comprueba si hay un idioma en $_SESSION
         //si no, inserta el idioma español
         if(!isset($_SESSION['idioma'])){
@@ -43,14 +43,10 @@
         ?>
         <section>
             <div class="form">
-                <?php
-
-                ?>
+              
                 <h3><?php echo $strings['Editarpart']; ?></h3>
-                <?php
-
-                ?>
-<form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/LOTERIAIU_Controller.php" onsubmit="return editarLoteria()">
+               
+        <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/JUEGO_Controller.php">
                    <div class="form-group">
                         <label class="form-label" for="id_juego">#Juego</label>
                         <input type="text" class="form-control" maxlength="15" size="15" id="id_juego" name="id_juego">
@@ -87,21 +83,8 @@
                         <label class="form-label" for="venta_juego">Venta</label>
                         <input type="text" class="form-control" maxlength="15" size="15" id="venta_juego" name="venta_juego">
                     </div>
-						<input type="radio" name="lotingresado" value="SI"> <?php echo $strings['SI']; ?>
-						<input type="radio" name="lotingresado" value="NO"> <?php echo $strings['NO']; ?>  
-
-
-                    
-											 <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Premiopersonal']; ?></label>
-						<input type="text" class="form-control" maxlength="6" size="6" id="lotpremiopersonal" name="lotpremiopersonal" value="<?php echo $lotpremiopersonal; ?>">
-                    
-											 <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Pagado']; ?></label>
-						(Actual: <input type="hidden" name="lotpagado" value="<?php echo $lotpagado; ?>"><?php echo $lotpagado; ?>)
-                        
-	<input type="radio" name="lotpagado" value="SI"> <?php echo $strings['SI']; ?>
-    <input type="radio" name="lotpagado" value="NO"> <?php echo $strings['NO']; ?> 
+						                
+					   
                     
                     <button name="action" value="EDIT" type="submit" class="boton-env">
                         <img src="../Views/imgs/send.png" alt="">
@@ -122,8 +105,11 @@
         </html>
 		<script src="../js/validaciones.js"></script> 
 
+        
         <?php
-
     }
+   
+
+    
 }
 ?>
