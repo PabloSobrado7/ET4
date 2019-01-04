@@ -57,7 +57,8 @@
 				<ul>Vendedor
 					<a href="../Controllers/JUEGO_Controller.php" ><li>Gestionar juegos</li></a>
                     <a href="../Controllers/LOTERIAIU_Controller.php" ><li>Gestionar socios</li></a>
-                    <a href="../Controllers/LOTERIAIU_Controller.php" ><li>Gestión venta/alquiler</li></a>
+                    <a href="../Controllers/COMPRA_Controller.php" ><li>Gestión venta</li></a>
+					<a href="../Controllers/ALQUILA_Controller.php" ><li>Gestión alquiler</li></a>
 					<a href="../Controllers/LOTERIAIU_Controller.php" ><li>Datos sobre usuarios</li></a>
                     <a href="../Controllers/LOTERIAIU_Controller.php" ><li>Datos sobre juegos</li></a>
 					</ul>
