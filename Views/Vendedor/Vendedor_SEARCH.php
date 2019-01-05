@@ -4,7 +4,7 @@
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
-class Loteria_SEARCH {
+class vendedor_SEARCH {
 
     function __construct(){
 
@@ -49,8 +49,8 @@ class Loteria_SEARCH {
  
 				<form  action="<?php echo $message; ?>" method="post">	
 					<div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Email']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="lotemail" name="lotemail" >
+                        <label class="form-label" for="login_vendedor"><?php echo $strings['Usuario']; ?></label>
+                        <input type="text" class="form-control" maxlength="60" size="60" id="login_vendedor" name="login_vendedor" >
                     </div>
 					
 				<div class="showall">
@@ -60,8 +60,8 @@ class Loteria_SEARCH {
 
 				<form  action="<?php echo $message; ?>" method="post">
 					<div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Name']; ?></label>
-                        <input type="text" class="form-control" maxlength="30" size="30" id="lotnombre" name="lotnombre">
+                        <label class="form-label" for="pass_vendedor"><?php echo $strings['Contraseña']; ?></label>
+                        <input type="text" class="form-control" maxlength="30" size="30" id="pass_vendedor" name="pass_vendedor">
                     </div>
 					
 				<div class="showall">
@@ -69,81 +69,89 @@ class Loteria_SEARCH {
                 </div>
 				</form>
 					
-					<form  action="<?php echo $message; ?>" method="post">
-					 <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Surname']; ?></label>
-                        <input type="text" class="form-control" maxlength="40" size="40" id="lotapellidos" name="lotapellidos">
+				<form  action="<?php echo $message; ?>" method="post">
+                    <div class="form-group">
+                        <label class="form-label" for="dni_vendedor"><?php echo $strings['DNI']; ?></label>
+                        <input type="text" class="form-control" maxlength="30" size="30" id="dni_vendedor" name="dni_vendedor">
                     </div>
-					
-				<div class="showall">
                     
-						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-					
-                </div>							
-					</form>
-					
-					 <form  action="<?php echo $message; ?>" method="post">
-					 <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Participacion']; ?></label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="lotparticipacion" name="lotparticipacion" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
-                    </div>
-				
-				<div class="showall">
-                    
-						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-					
+                <div class="showall">
+                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
-				</form>
-				
-				 <form  action="<?php echo $message; ?>" method="post">
-						 <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Ingresado']; ?></label>
-						<input type="hidden" name="id_pista" >
-						</div>					
-						
-						<input type="radio" name="lotingresado" value="SI"> <?php echo $strings['SI']; ?>
-						<input type="radio" name="lotingresado" value="NO"> <?php echo $strings['NO']; ?> 
+                </form>
 
-				<div class="showall">
-                    
-						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-					
-                </div>
-                   </form> 
-				   
-				   <form  action="<?php echo $message; ?>" method="post">
-											 <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Premiopersonal']; ?></label>
-						<input type="text" class="form-control" maxlength="3" size="3" id="lotpremiopersonal" name="lotpremiopersonal" >
+				<form  action="<?php echo $message; ?>" method="post">
+                    <div class="form-group">
+                        <label class="form-label" for="nss_vendedor"><?php echo $strings['NSS']; ?></label>
+                        <input type="text" class="form-control" maxlength="30" size="30" id="nss_vendedor" name="nss_vendedor">
                     </div>
-				<div class="showall">
                     
-						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-					
-                </div>					
-					</form>
-					
-					<form  action="<?php echo $message; ?>" method="post">
-						<div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Pagado']; ?></label>
-						<input type="hidden" name="id_pista" >
-			
-	<input type="radio" name="lotpagado" value="SI"> <?php echo $strings['SI']; ?>
-    <input type="radio" name="lotpagado" value="NO"> <?php echo $strings['NO']; ?> 
+                <div class="showall">
+                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
+                </div>
+                </form>
+				
+				<form  action="<?php echo $message; ?>" method="post">
+                    <div class="form-group">
+                        <label class="form-label" for="nombre_vendedor"><?php echo $strings['Nombre']; ?></label>
+                        <input type="text" class="form-control" maxlength="30" size="30" id="nombre_vendedor" name="nombre_vendedor">
+                    </div>
                     
-				<div class="showall">
-                  
-						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
+                <div class="showall">
+                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
+                </div>
+                </form> 
+				   
+				<form  action="<?php echo $message; ?>" method="post">
+                    <div class="form-group">
+                        <label class="form-label" for="apellidos_vendedor"><?php echo $strings['Apellidos']; ?></label>
+                        <input type="text" class="form-control" maxlength="30" size="30" id="apellidos_vendedor" name="apellidos_vendedor">
+                    </div>
+                    
+                <div class="showall">
+                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
+                </div>
+                </form>
 					
-                </div>					
-				</form>
+				<form  action="<?php echo $message; ?>" method="post">
+                    <div class="form-group">
+                        <label class="form-label" for="email_vendedor"><?php echo $strings['Correo']; ?></label>
+                        <input type="text" class="form-control" maxlength="30" size="30" id="email_vendedor" name="email_vendedor">
+                    </div>
+                    
+                <div class="showall">
+                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
+                </div>
+                </form>
+
+                <form  action="<?php echo $message; ?>" method="post">
+                    <div class="form-group">
+                        <label class="form-label" for="telefono_vendedor"><?php echo $strings['Telefono']; ?></label>
+                        <input type="text" class="form-control" maxlength="30" size="30" id="telefono_vendedor" name="telefono_vendedor">
+                    </div>
+                    
+                <div class="showall">
+                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
+                </div>
+                </form>
+
+                <form  action="<?php echo $message; ?>" method="post">
+                    <div class="form-group">
+                        <label class="form-label" for="login_admin"><?php echo $strings['Administrador']; ?></label>
+                        <input type="text" class="form-control" maxlength="30" size="30" id="login_admin" name="login_admin">
+                    </div>
+                    
+                <div class="showall">
+                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
+                </div>
+                </form>
 
             </div>
 
             </div>
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Loteria ESEI</h6>
+				<h6>Gamerenting</h6>
             </footer>
         </section>
         <!--<script src="../Views/js/md5.js"></script>

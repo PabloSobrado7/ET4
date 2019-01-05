@@ -68,7 +68,7 @@ if (!IsAuthenticated()){
                 }
                 break;
 		
-		 $login_socio = $_REQUEST['login_socio'];
+		$login_socio = $_REQUEST['login_socio'];
 		$pass_socio = $_REQUEST['pass_socio'];
 		$dni_socio = $_REQUEST['dni_socio'];
 		$nombre_socio = $_REQUEST['nombre_socio'];

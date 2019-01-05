@@ -25,6 +25,11 @@ array(
 	'Sexo' => 'Sex',
 	'Hombre' => 'Boy',
 	'Mujer' => 'Girl',
+	'Bloqueado' => 'locked'
+	'Loginvendedor' => 'Seller login'
+	'Eliminarsocio' => 'Remove partner'
+	'Editarsocio' => 'Edit socio'
+	'Eliminarvendedor' => 'Remove seller'
 	
 	'Name' => 'Name',
 	'Surname' => 'Surname',

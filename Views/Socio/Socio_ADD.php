@@ -5,7 +5,7 @@
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
- class Vendedor_ADD {
+ class Socio_ADD {
 
     function __construct(){
 
@@ -43,45 +43,47 @@
                 <?php
 
                 ?>
-                <h3>Añadir vendedor</h3>
+                <h3>Añadir socio</h3>
                 <?php
 
                 ?>
-                <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/VENDEDOR_Controller.php">
+                <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/SOCIO_Controller.php">
                     <div class="form-group">
-                        <label class="form-label" for="login_vendedor">Login</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="login_vendedor" name="login_vendedor">
+                        <label class="form-label" for="login_socio"><?php echo $strings['Usuario'];?></label>
+                        <input type="text" class="form-control" maxlength="25" size="25" id="login_socio" name="login_socio">
                     </div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="pass_vendedor">Password</label>
-                        <input type="text" class="form-control" maxlength="20" size="20" id="pass_vendedor" name="pass_vendedor">
+                        <label class="form-label" for="pass_socio"><?php echo $strings['Contraseña'];?></label>
+                        <input type="text" class="form-control" maxlength="20" size="20" id="pass_socio" name="pass_socio">
                     </div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="dni_vendedor">DNI</label>
-                        <input type="text" class="form-control" maxlength="9" size="9" id="dni_vendedor" name="dni_vendedor">
+                        <label class="form-label" for="dni_socio"><?php echo $strings['DNI'];?></label>
+                        <input type="text" class="form-control" maxlength="9" size="9" id="dni_socio" name="dni_socio">
                     </div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="nombre_vendedor">Nombre</label>
-                        <input type="text" class="form-control" maxlength="25" size="25" id="nombre_vendedor" name="nombre_vendedor">
+                        <label class="form-label" for="nombre_socio"><?php echo $strings['Nombre'];?></label>
+                        <input type="text" class="form-control" maxlength="25" size="25" id="nombre_socio" name="nombre_socio">
                     </div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="apellidos_vendedor">Apellidos</label>
-                        <input type="text" class="form-control" maxlength="50" size="50" id="apellidos_vendedor" name="apellidos_vendedor">
+                        <label class="form-label" for="apellidos_socio"><?php echo $strings['Apellidos'];?></label>
+                        <input type="text" class="form-control" maxlength="50" size="50" id="apellidos_socio" name="apellidos_socio">
                     </div>
 					
-					 <div class="form-group">
-                        <label class="form-label" for="email_vendedor">Email</label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="email_vendedor" name="email_vendedor">
+					<div class="form-group">
+                        <label class="form-label" for="email_socio"><?php echo $strings['Correo'];?></label>
+                        <input type="text" class="form-control" maxlength="50" size="50" id="email_socio" name="email_socio">
                     </div>
 					
-					 <div class="form-group">
-                        <label class="form-label" for="telefono_vendedor">Teléfono</label>
-                        <input type="text" class="form-control" maxlength="12" size="12" id="telefono_vendedor" name="telefono_vendedor">
+					<div class="form-group">
+                        <label class="form-label" for="telefono"><?php echo $strings['Telefono'];?></label>
+                        <input type="text" class="form-control" maxlength="12" size="12" id="telefono_socio" name="telefono_socio">
                     </div>
+ 
+                        <input type="hidden" class="form-control" maxlength="1" size="1" id="bloqueado_socio" name="bloqueado_socio" value="NO">
 					
                     <button name="action" value="ADD" type="submit" class="boton-env">
                         <img src="../Views/imgs/send.png" alt="">

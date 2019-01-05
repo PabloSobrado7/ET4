@@ -9,9 +9,12 @@ $strings =
 array(
 
 	'Usuario no autenticado' => 'User not logged',
-	'Login' => 'Usuario', 
-	'Password' => 'Contraseña',
-	'Language' => 'Language',
+	'Usuario' => 'Usuario', 
+	'Contraseña' => 'Contraseña',
+	'Lenguaje' => 'Lenguaje',
+	'Vendedor'=> 'Vendedor',
+	'NSS' => 'Número Seguridad Social',
+	'Administrador' => 'Administrador',
 
 	'ENGLISH' => 'ENGLISH',
 	'SPANISH' => 'SPANISH',
@@ -23,8 +26,13 @@ array(
 	'Telefono' => 'Telefono',
 	'Fecha' => 'Fecha',
 	'Fotopersonal' => 'Foto personal',
-	'Name' => 'Nombre',
-	'Surname' => 'Apellidos',
+	'Nombre' => 'Nombre',
+	'Apellidos' => 'Apellidos',
+	'Bloqueado' => 'Bloqueado',
+	'Loginvendedor' => 'Usuario vendedor',
+	'Eliminarsocio' => 'Eliminar socio',
+	'Editarsocio' => 'Editar socio',
+	'Eliminarvendedor' =>' Eliminar vendedor',
 
 	'Sexo' => 'Sexo',
 	'Hombre' => 'Hombre',
@@ -35,7 +43,7 @@ array(
 	'¿Have not you account? Sign up' => '¿No tienes cuenta? Registrate',
 	'Add' => 'Añadir',
 	'Sign up' => 'Registrarse',
-	'Email' => 'Correo',
+	'Correo' => 'Correo',
 
 	'Delete' => 'Borrar',
 	'Edit' => 'Editar',
@@ -124,15 +132,6 @@ array(
 
 
 
-	'Participacion' => 'Participacion (€)',
-'Resguardo' => 'Resguardo',
-'Ingresado' => '¿Ingresado?',
-'Premiopersonal' => 'Premio personal (€)',
-'Pagado' => '¿Pagado?',
-'Anadirparticipante' => 'Nuevo participante',
-'Eliminarpart' => 'Esta a punto de eliminar esta participacion',
-'Editarpart' => 'Editar participacion',
-
 'SI' => 'SI',
 'NO' => 'NO',
 
@@ -141,6 +140,8 @@ array(
 	'Bienvenido' => 'Bienvenido',
 	'Ver loteria' => 'Ver la loteria',
 	'Busqueda' => 'Búsqueda por parámetros'
+
+
 
 
 )

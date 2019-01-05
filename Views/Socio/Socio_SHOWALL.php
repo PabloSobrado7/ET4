@@ -7,7 +7,7 @@
  */
 include_once '../Functions/Authentication.php';
 
-class Vendedor_SHOWALL {
+class Socio_SHOWALL {
 
     function __construct($users,$message){
 
@@ -44,23 +44,20 @@ class Vendedor_SHOWALL {
                 <div >
                     <form  action="<?php echo $message; ?>" method="">
 						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-						<button class="showall-action" name="action" value="ADD" type="submit"><img src="../Views/imgs/add.png" alt="" srcset="">
-                        </button>
+						<button class="showall-action" name="action" value="ADD" type="submit"><img src="../Views/imgs/add.png" alt="" srcset=""></button>
                     </form>
 
                 </div>
 				
                 <table class="showall-tab">
                     <tr>
-                        <th>Login</th>
-						<th>Password</th>
-						<th>DNI</th>
-                        <th>Número Seguridad Social</th>
-						<th>Nombre</th>
-						<th>Apellidos</th>
-						<th>Email</th>
-						<th>Teléfono</th>
-                        <th>Administrador</th>
+                        <th><?php echo $strings['Usuario']; ?></th>
+						<th><?php echo $strings['Contraseña']; ?></th>
+						<th><?php echo $strings['DNI']; ?></th>
+						<th><?php echo $strings['Nombre']; ?></th>
+						<th><?php echo $strings['Apellidos']; ?></th>
+						<th><?php echo $strings['Correo']; ?></th>
+						<th><?php echo $strings['Telefono']; ?></th>
                         <th>
                         </th>
                     </tr>
@@ -73,17 +70,15 @@ class Vendedor_SHOWALL {
                         ?>
 
                         <tr>
-                            <form action="../Controllers/VENDEDOR_Controller.php" method="" >
+                            <form action="../Controllers/SOCIO_Controller.php" method="" >
                                
-								<td><?php echo $row['login_vendedor']; ?></td>
-								<td><?php echo $row['pass_vendedor']; ?></td>
-								<td><?php echo $row['dni_vendedor']; ?></td>
-                                <td><?php echo $row['nss_vendedor']; ?></td>
-								<td><?php echo $row['nombre_vendedor']; ?></td>
-								<td><?php echo $row['apellidos_vendedor']; ?></td>
-								<td><?php echo $row['email_vendedor']; ?></td>
-								<td><?php echo $row['telefono_vendedor']; ?></td>
-                                <td><?php echo $row['login_admin']; ?></td>
+								<td><?php echo $row['login_socio']; ?></td>
+								<td><?php echo $row['pass_socio']; ?></td>
+								<td><?php echo $row['dni_socio']; ?></td>
+								<td><?php echo $row['nombre_socio']; ?></td>
+								<td><?php echo $row['apellidos_socio']; ?></td>
+								<td><?php echo $row['email_socio']; ?></td>
+								<td><?php echo $row['telefono_socio']; ?></td>
                                 <td>
 									<button class="showall-action" name="action" value="EDIT" type="submit"><img src="../Views/imgs/edit.png" alt="" srcset=""></button>
                                     <button class="showall-action" name="action" value="DELETE" type="submit"><img src="../Views/imgs/delete.png" alt="" srcset=""></button>
@@ -99,7 +94,7 @@ class Vendedor_SHOWALL {
 			
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Gemerenting</h6>
+				<h6>Gamerenting</h6>
             </footer>
         </section>
 

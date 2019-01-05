@@ -26,6 +26,11 @@ array(
 	'Bienvenido' => 'Benvido',
 	'Ver loteria' => 'Ver a loteria',
 	'Delete' => 'Borrar',
+	'Bloqueado' => 'Bloqueado'
+	'Loginvendedor' => 'Usuario vendedor'
+	'Eliminarsocio' => 'Eliminar socio'
+	'Editarsocio' => 'Editar socio'
+	'Eliminarvendedor' =>' Eliminar vendedor'
 	
 	'Sexo' => 'Sexo',
 	'Hombre' => 'Home',

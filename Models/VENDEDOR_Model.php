@@ -33,7 +33,6 @@ class VENDEDOR_Model
 
         // conectamos con la bd y guardamos el manejador en un atributo de la clase
         $this->mysqli = ConnectDB();
-
     }
 
     function ADD()

@@ -6,16 +6,16 @@
  * Fecha: 28/11/2018
  */
 
-class Vendedor_DELETE {
+class Socio_DELETE {
 
-    function __construct($login_vendedor,$pass_vendedor,$dni_vendedor,$nss_vendedor,$nombre_vendedor,$apellidos_vendedor,$email_vendedor,$telefono_vendedor,$login_admin){
+    function __construct($login_socio,$pass_socio,$dni_socio,$nombre_socio,$apellidos_socio,$email_socio,$telefono_socio,$login_vendedor){
 
-        $this->pinta($login_vendedor,$pass_vendedor,$dni_vendedor,$nss_vendedor,$nombre_vendedor,$apellidos_vendedor,$email_vendedor,$telefono_vendedor,$login_admin);
+        $this->pinta($emailuser,$nombreuser,$apellidosuser,$participacionuser,$resguardouser,$ingresadouser,$premiopersonaluser,$pagadouser);
 
     }
 
 
-    function pinta($login_vendedor,$pass_vendedor,$dni_vendedor,$nss_vendedor,$nombre_vendedor,$apellidos_vendedor,$email_vendedor,$telefono_vendedor,$login_admin){
+    function pinta($login_socio,$pass_socio,$dni_socio,$nombre_socio,$apellidos_socio,$email_socio,$telefono_socio,$login_vendedor){
         if(!isset($_SESSION['idioma'])){
             $_SESSION['idioma'] = 'SPANISH';
         }
@@ -41,45 +41,44 @@ class Vendedor_DELETE {
 
             <div class="form2">
                 <h4><?php echo $strings['Delete']; ?></h4>
-                <h4><?php echo $strings['Eliminarvendedor']; ?></h4>
-                <form enctype="multipart/form-data" action="../Controllers/VENDEDOR_Controller.php" method="post">
+                <h4><?php echo $strings['Eliminarsocio']; ?></h4>
+                <form enctype="multipart/form-data" action="../Controllers/SOCIO_Controller.php" method="post">
                     <ul>
                         <li>
                             <h5><?php echo $strings['Login']; ?></h5>
-                            <span><input type="hidden" name="login_vendedor" value="<?php echo $login_vendedor; ?>"><?php echo $login_vendedor; ?></span>
-                        </li>
-						
-						<li>
-                            <h5><?php echo $strings['Password']; ?></h5>
-                            <span><?php echo $pass_vendedor; ?></span>
-                        </li>
-
-                        <li>
-                            <h5><?php echo $strings['DNI']; ?></h5>
-                            <span><?php echo $dni_vendedor; ?></span>
+                            <span><input type="hidden" name="login_socio" value="<?php echo $login_socio; ?>"><?php echo $login_socio; ?></span>
                         </li>
 
                          <li>
+                            <h5><?php echo $strings['Password']; ?></h5>
+                            <span><input type="hidden" name="pass_socio" value="<?php echo $pass_socio; ?>"><?php echo $pass_socio; ?></span>
+                        </li>
+
+                         <li>
+                            <h5><?php echo $strings['DNI']; ?></h5>
+                            <span><input type="hidden" name="dni_socio" value="<?php echo $dni_socio; ?>"><?php echo $dni_socio; ?></span>
+                        </li>
+						
+						<li>
                             <h5><?php echo $strings['Name']; ?></h5>
-                            <span><?php echo $nombre_vendedor; ?></span>
+                            <span><?php echo $nombre_socio; ?></span>
                         </li>
 						
 					    <li>
                             <h5><?php echo $strings['Surname']; ?></h5>
-                            <span><?php echo $apellidos_vendedor; ?></span>
+                            <span><?php echo $apellidos_socio; ?></span>
                         </li>
-						
-						<li>
-                            <h5><?php echo $strings['Email']; ?></h5>
-                            <span><?php echo $email_vendedor; ?></span>
-                        </li>
-						
-						<li>
-                            <h5><?php echo $strings['Telefono']; ?></h5>
-                            <span><?php echo $telefono_vendedor; ?></span>
-                        </li>
-						
 
+                         <li>
+                            <h5><?php echo $strings['Email']; ?></h5>
+                            <span><input type="hidden" name="email_socio" value="<?php echo $email_socio; ?>"><?php echo $email_socio; ?></span>
+                        </li>
+						
+						 <li>
+                            <h5><?php echo $strings['Telefono']; ?></h5>
+                            <span><input type="hidden" name="telefono_socio" value="<?php echo $telefono_socio; ?>"><?php echo $telefono_socio; ?></span>
+                        </li>						
+												
                     </ul>
                     <div class="boton-grup">
 

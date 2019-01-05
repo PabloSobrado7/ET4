@@ -27,17 +27,19 @@ if (!IsAuthenticated()){
         $login_vendedor = $_REQUEST['login_vendedor'];
 		$pass_vendedor = $_REQUEST['pass_vendedor'];
 		$dni_vendedor = $_REQUEST['dni_vendedor'];
+        $nss_vendedor = $_REQUEST['nss_vendedor'];
 		$nombre_vendedor = $_REQUEST['nombre_vendedor'];
 		$apellidos_vendedor = $_REQUEST['apellidos_vendedor'];
 		$email_vendedor = $_REQUEST['email_vendedor'];
 		$telefono_vendedor = $_REQUEST['telefono_vendedor'];
+        $login_admin = $_REQUEST['login_admin'];
 
         $action = $_REQUEST['action']; //Variable action para la accion a realizar
 
         //Se crea una entidad USUARIO
         $VENDEDOR = new VENDEDOR_Model(
-            $login_vendedor,$pass_vendedor,$dni_vendedor,$nombre_vendedor,$apellidos_vendedor,
-			$email_vendedor,$telefono_vendedor);
+            $login_vendedor,$pass_vendedor,$dni_vendedor,$nss_vendedor,$nombre_vendedor,$apellidos_vendedor,
+			$email_vendedor,$telefono_vendedor,$login_admin);
 
         return $VENDEDOR;
     }
@@ -73,9 +75,9 @@ if (!IsAuthenticated()){
             $respuesta; //almacena la respuesta que muestra el mensaje
 
                 if (!$_POST){ //si entra por get envia un formulario
-                    new Vendedor_EDIT($_GET['login_vendedor'],$_GET['pass_vendedor'],$_GET['dni_vendedor'],
+                    new Vendedor_EDIT($_GET['login_vendedor'],$_GET['pass_vendedor'],$_GET['dni_vendedor'],$_GET['nss_vendedor'],
 					$_GET['nombre_vendedor'],$_GET['apellidos_vendedor'],
-					$_GET['email_vendedor'],$_GET['telefono_vendedor']);
+					$_GET['email_vendedor'],$_GET['telefono_vendedor'],$_GET['login_admin']);
 				}
                 else{//Si entra por post recoge los datos y los envia a la BD y manda mensaje
                     $VENDEDOR = get_data_form();
@@ -107,9 +109,9 @@ if (!IsAuthenticated()){
 			
                 if (!$_POST){ //Si entra por get envia un formulario para el eliminado
 
-					new Vendedor_DELETE($_GET['login_vendedor'],$_GET['pass_vendedor'],$_GET['dni_vendedor'],
-					$_GET['nombre_vendedor'],$_GET['apellidos_vendedor'],
-					$_GET['email_vendedor'],$_GET['telefono_vendedor']);
+					new Vendedor_DELETE($_GET['login_vendedor'],$_GET['pass_vendedor'],$_GET['dni_vendedor'],$_GET['nss_vendedor'],
+					$_GET['nombre_vendedor'],$_GET['apellidos_vendedor'],$_GET['email_vendedor'],$_GET['telefono_vendedor'],
+                    $_GET['login_admin']);
                 }
                 else{//Si entra por post recoge los datos y los envia a la BD y manda mensaje
                     $VENDEDOR = new VENDEDOR_Model($_REQUEST['login_vendedor'],'','','','','','','');
@@ -123,7 +125,6 @@ if (!IsAuthenticated()){
 
         default:
 
-            
             $datos; //almacena los datos
 
             
@@ -133,7 +134,8 @@ if (!IsAuthenticated()){
                 }
                 else{//Si entra por post recoge el valor de un usuario y muestro la tabal con todos los usuarios
 
-                    $VENDEDOR = new VENDEDOR_Model($_REQUEST['login_vendedor'],'','','','','','','');                }
+
+                    $VENDEDOR = new VENDEDOR_Model($_REQUEST['login_vendedor'],'','','','','','','','');                }
 
                 //lo hace de todas formas
                 $datos = $VENDEDOR->AllData();
