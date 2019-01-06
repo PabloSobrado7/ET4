@@ -55,12 +55,10 @@ class Vendedor_SHOWALL {
                         <th>Login</th>
 						<th>Password</th>
 						<th>DNI</th>
-                        <th>Número Seguridad Social</th>
-						<th>Nombre</th>
+                        <th>Nombre</th>
 						<th>Apellidos</th>
 						<th>Email</th>
 						<th>Teléfono</th>
-                        <th>Administrador</th>
                         <th>
                         </th>
                     </tr>
@@ -75,15 +73,22 @@ class Vendedor_SHOWALL {
                         <tr>
                             <form action="../Controllers/VENDEDOR_Controller.php" method="" >
                                
+							<input type="hidden" name="login_vendedor" value="<?php echo $row['login_vendedor']; ?>">
+							<input type="hidden" name="pass_vendedor" value="<?php echo $row['pass_vendedor']; ?>">
+							<input type="hidden" name="dni_vendedor" value="<?php echo $row['dni_vendedor']; ?>">
+							<input type="hidden" name="nombre_vendedor" value="<?php echo $row['nombre_vendedor']; ?>">
+							<input type="hidden" name="apellidos_vendedor" value="<?php echo $row['apellidos_vendedor']; ?>">
+							<input type="hidden" name="email_vendedor" value="<?php echo $row['email_vendedor']; ?>">
+							<input type="hidden" name="telefono_vendedor" value="<?php echo $row['telefono_vendedor']; ?>">
+							
 								<td><?php echo $row['login_vendedor']; ?></td>
 								<td><?php echo $row['pass_vendedor']; ?></td>
 								<td><?php echo $row['dni_vendedor']; ?></td>
-                                <td><?php echo $row['nss_vendedor']; ?></td>
 								<td><?php echo $row['nombre_vendedor']; ?></td>
 								<td><?php echo $row['apellidos_vendedor']; ?></td>
 								<td><?php echo $row['email_vendedor']; ?></td>
 								<td><?php echo $row['telefono_vendedor']; ?></td>
-                                <td><?php echo $row['login_admin']; ?></td>
+								
                                 <td>
 									<button class="showall-action" name="action" value="EDIT" type="submit"><img src="../Views/imgs/edit.png" alt="" srcset=""></button>
                                     <button class="showall-action" name="action" value="DELETE" type="submit"><img src="../Views/imgs/delete.png" alt="" srcset=""></button>
@@ -99,7 +104,7 @@ class Vendedor_SHOWALL {
 			
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Gemerenting</h6>
+				<h6>Gamerenting</h6>
             </footer>
         </section>
 

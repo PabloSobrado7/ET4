@@ -83,7 +83,7 @@
                         <input type="text" class="form-control" maxlength="12" size="12" id="telefono_socio" name="telefono_socio">
                     </div>
  
-                        <input type="hidden" class="form-control" maxlength="1" size="1" id="bloqueado_socio" name="bloqueado_socio" value="NO">
+                        <input type="hidden" class="form-control" maxlength="1" size="1" id="socio_bloqueado" name="socio_bloqueado" value="NO">
 					
                     <button name="action" value="ADD" type="submit" class="boton-env">
                         <img src="../Views/imgs/send.png" alt="">

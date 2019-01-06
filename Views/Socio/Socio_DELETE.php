@@ -8,14 +8,14 @@
 
 class Socio_DELETE {
 
-    function __construct($login_socio,$pass_socio,$dni_socio,$nombre_socio,$apellidos_socio,$email_socio,$telefono_socio,$login_vendedor){
+    function __construct($login_socio,$pass_socio,$dni_socio,$nombre_socio,$apellidos_socio,$email_socio,$telefono_socio,$socio_bloqueado){
 
-        $this->pinta($emailuser,$nombreuser,$apellidosuser,$participacionuser,$resguardouser,$ingresadouser,$premiopersonaluser,$pagadouser);
+        $this->pinta($login_socio,$pass_socio,$dni_socio,$nombre_socio,$apellidos_socio,$email_socio,$telefono_socio,$socio_bloqueado);
 
     }
 
 
-    function pinta($login_socio,$pass_socio,$dni_socio,$nombre_socio,$apellidos_socio,$email_socio,$telefono_socio,$login_vendedor){
+    function pinta($login_socio,$pass_socio,$dni_socio,$nombre_socio,$apellidos_socio,$email_socio,$telefono_socio,$socio_bloqueado){
         if(!isset($_SESSION['idioma'])){
             $_SESSION['idioma'] = 'SPANISH';
         }
@@ -78,7 +78,12 @@ class Socio_DELETE {
                             <h5><?php echo $strings['Telefono']; ?></h5>
                             <span><input type="hidden" name="telefono_socio" value="<?php echo $telefono_socio; ?>"><?php echo $telefono_socio; ?></span>
                         </li>						
-												
+						
+						 <li>
+                            <h5><?php echo $strings['Telefono']; ?></h5>
+                            <span><input type="hidden" name="socio_bloqueado" value="<?php echo $socio_bloqueado; ?>"><?php echo $socio_bloqueado; ?></span>
+                        </li>
+						
                     </ul>
                     <div class="boton-grup">
 

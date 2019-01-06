@@ -58,6 +58,7 @@ class Socio_SHOWALL {
 						<th><?php echo $strings['Apellidos']; ?></th>
 						<th><?php echo $strings['Correo']; ?></th>
 						<th><?php echo $strings['Telefono']; ?></th>
+						<th>Socio bloqueado</th>
                         <th>
                         </th>
                     </tr>
@@ -72,6 +73,16 @@ class Socio_SHOWALL {
                         <tr>
                             <form action="../Controllers/SOCIO_Controller.php" method="" >
                                
+							<input type="hidden" name="login_socio" value="<?php echo $row['login_socio']; ?>">
+							<input type="hidden" name="pass_socio" value="<?php echo $row['pass_socio']; ?>">
+							<input type="hidden" name="dni_socio" value="<?php echo $row['dni_socio']; ?>">
+							<input type="hidden" name="nombre_socio" value="<?php echo $row['nombre_socio']; ?>">
+							<input type="hidden" name="apellidos_socio" value="<?php echo $row['apellidos_socio']; ?>">
+							<input type="hidden" name="email_socio" value="<?php echo $row['email_socio']; ?>">
+							<input type="hidden" name="telefono_socio" value="<?php echo $row['telefono_socio']; ?>">
+							<input type="hidden" name="socio_bloqueado" value="<?php echo $row['socio_bloqueado']; ?>">
+							
+							
 								<td><?php echo $row['login_socio']; ?></td>
 								<td><?php echo $row['pass_socio']; ?></td>
 								<td><?php echo $row['dni_socio']; ?></td>
@@ -79,6 +90,7 @@ class Socio_SHOWALL {
 								<td><?php echo $row['apellidos_socio']; ?></td>
 								<td><?php echo $row['email_socio']; ?></td>
 								<td><?php echo $row['telefono_socio']; ?></td>
+								<td><?php echo $row['socio_bloqueado']; ?></td>
                                 <td>
 									<button class="showall-action" name="action" value="EDIT" type="submit"><img src="../Views/imgs/edit.png" alt="" srcset=""></button>
                                     <button class="showall-action" name="action" value="DELETE" type="submit"><img src="../Views/imgs/delete.png" alt="" srcset=""></button>

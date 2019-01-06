@@ -4,7 +4,7 @@
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
-class vendedor_SEARCH {
+class Vendedor_SEARCH {
 
     function __construct(){
 
@@ -79,17 +79,6 @@ class vendedor_SEARCH {
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
                 </form>
-
-				<form  action="<?php echo $message; ?>" method="post">
-                    <div class="form-group">
-                        <label class="form-label" for="nss_vendedor"><?php echo $strings['NSS']; ?></label>
-                        <input type="text" class="form-control" maxlength="30" size="30" id="nss_vendedor" name="nss_vendedor">
-                    </div>
-                    
-                <div class="showall">
-                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-                </div>
-                </form>
 				
 				<form  action="<?php echo $message; ?>" method="post">
                     <div class="form-group">
@@ -128,17 +117,6 @@ class vendedor_SEARCH {
                     <div class="form-group">
                         <label class="form-label" for="telefono_vendedor"><?php echo $strings['Telefono']; ?></label>
                         <input type="text" class="form-control" maxlength="30" size="30" id="telefono_vendedor" name="telefono_vendedor">
-                    </div>
-                    
-                <div class="showall">
-                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-                </div>
-                </form>
-
-                <form  action="<?php echo $message; ?>" method="post">
-                    <div class="form-group">
-                        <label class="form-label" for="login_admin"><?php echo $strings['Administrador']; ?></label>
-                        <input type="text" class="form-control" maxlength="30" size="30" id="login_admin" name="login_admin">
                     </div>
                     
                 <div class="showall">

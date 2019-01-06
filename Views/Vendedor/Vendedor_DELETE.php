@@ -15,7 +15,7 @@ class Vendedor_DELETE {
     }
 
 
-    function pinta($login_vendedor,$pass_vendedor,$dni_vendedor,$nss_vendedor,$nombre_vendedor,$apellidos_vendedor,$email_vendedor,$telefono_vendedor,$login_admin){
+    function pinta($login_vendedor,$pass_vendedor,$dni_vendedor,$nombre_vendedor,$apellidos_vendedor,$email_vendedor,$telefono_vendedor){
         if(!isset($_SESSION['idioma'])){
             $_SESSION['idioma'] = 'SPANISH';
         }

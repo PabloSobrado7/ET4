@@ -4,7 +4,7 @@
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
-class Loteria_SEARCH {
+class Socio_SEARCH {
 
     function __construct(){
 
@@ -126,7 +126,18 @@ class Loteria_SEARCH {
                 <div class="showall">                    
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>                    
                 </div>
-                </form>		
+                </form>	
+
+                 <form  action="<?php echo $message; ?>" method="post">
+                     <div class="form-group">
+                        <label class="form-label" for="socio_bloqueado">Socio bloqueado</label>
+                        <input type="text" class="form-control" maxlength="12" size="12" id="socio_bloqueado" name="socio_bloqueado">
+                    </div>
+                
+                <div class="showall">                    
+                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>                    
+                </div>
+                </form>					
 				
 				
             </div>

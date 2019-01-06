@@ -82,8 +82,13 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="telefono"><?php echo $strings['Telefono']; ?></label>
+                        <label class="form-label" for="telefono_socio"><?php echo $strings['Telefono']; ?></label>
                         <input type="text" class="form-control" maxlength="12" size="12" id="telefono_socio" name="telefono_socio" value="<?php echo $telefono_socio; ?>">
+                    </div>
+					
+					<div class="form-group">
+                        <label class="form-label" for="socio_bloqueado">Socio bloqueado</label>
+                        <input type="text" class="form-control" maxlength="12" size="12" id="socio_bloqueado" name="socio_bloqueado" value="<?php echo $socio_bloqueado; ?>">
                     </div>
 
                     <button name="" value="" type="submit"><?php echo $strings['Desbloquear usuario']; ?></button>

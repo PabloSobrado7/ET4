@@ -13,9 +13,10 @@ class JUEGO_Model
 	var $plataforma;
 	var $genero;
 	var $precio_compra;
+	var $categoria;
 	var $novedad;
-	var $compra_juego;
-    var $venta_juego;
+	var $compra;
+    var $venta;
     var $mysqli; // declaración del atributo manejador de la bd
 
     function __construct($id_juego,$nombre_juego,
@@ -28,9 +29,10 @@ class JUEGO_Model
 		$this->plataforma = $plataforma;
 		$this->genero = $genero;
 		$this->precio_compra = $precio_compra;
+		$this->categoria = $categoria;		
 		$this->novedad = $novedad;
-        $this->compra_juego = $compra_juego;
-		$this->venta_juego = $venta_juego;
+        $this->compra = $venta;
+		$this->venta = $venta;
         include '../Models/DB/BdAdmin.php';
 
         // conectamos con la bd y guardamos el manejador en un atributo de la clase
@@ -55,9 +57,10 @@ class JUEGO_Model
             } else { // si la ejecución de la query no da error
                 if ($result->num_rows == 0) { // miramos si el resultado de la consulta es vacio (no existe el login)
             //construimos la sentencia sql de inserción en la bd
-                    $sql = "INSERT INTO `JUEGO` (`id_juego`,`nombre_juego`,`plataforma`,`genero`,`precio_compra`,`novedad`,`compra_juego`,`venta_juego`) 
-			     	VALUES ('$this->id_juego','$this->nombre_juego','$this->plataforma','$this->genero','$this->precio_compra',
-				    '$this->novedad','$this->compra_juego', '$this->venta_juego')";
+                    $sql = "INSERT INTO `JUEGO` (`id_juego`,`nombre_juego`,`plataforma`,`genero`,`precio_compra`,`categoria`,
+					`novedad`,`compra`,`venta`) 
+			     	VALUES ('$this->id_juego','$this->nombre_juego','$this->plataforma','$this->genero','$this->precio_compra','$this->categoria',
+				    '$this->novedad','$this->compra', '$this->venta')";
 
                     if (!$this->mysqli->query($sql)) { // si da error en la ejecución del insert devolvemos mensaje
                         return 'Unknowed Error';

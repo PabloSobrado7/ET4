@@ -64,7 +64,7 @@ class Juego_ADD {
                     </div>
 					<div class="form-group">
                         <label class="form-label" for="categoria_juego">Categoria</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="categoria_vendedor" name="categoria_vendedor">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="categoria_juego" name="categoria_juego">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="novedad">Novedad</label>
