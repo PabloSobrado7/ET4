@@ -5,16 +5,16 @@
  * Autor: Mario Gayoso Pérez
  */
 
-class Loteria_DELETE {
+class Juego_DELETE {
 
-    function __construct($emailuser,$nombreuser,$apellidosuser,$participacionuser,$resguardouser,$ingresadouser,$premiopersonaluser,$pagadouser){
+    function __construct($id_juego,$nombre_juego,$plataforma,$genero,$precio_compra,$categoria,$novedad,$compra,$venta){
 
-        $this->pinta($emailuser,$nombreuser,$apellidosuser,$participacionuser,$resguardouser,$ingresadouser,$premiopersonaluser,$pagadouser);
+        $this->pinta($id_juego,$nombre_juego,$plataforma,$genero,$precio_compra,$categoria,$novedad,$compra,$venta);
 
     }
 
 
-    function pinta($emailuser,$nombreuser,$apellidosuser,$participacionuser,$resguardouser,$ingresadouser,$premiopersonaluser,$pagadouser){
+    function pinta($id_juego,$nombre_juego,$plataforma,$genero,$precio_compra,$categoria,$novedad,$compra,$venta){
         if(!isset($_SESSION['idioma'])){
             $_SESSION['idioma'] = 'SPANISH';
         }
@@ -39,52 +39,51 @@ class Loteria_DELETE {
         <section>
 
             <div class="form2">
-                <h4><?php echo $strings['Delete']; ?></h4>
-                <h4><?php echo $strings['Eliminarpart']; ?></h4>
-                <form enctype="multipart/form-data" action="../Controllers/LOTERIAIU_Controller.php" method="post">
+                <h4>Delete</h4>
+                <form enctype="multipart/form-data" action="../Controllers/JUEGO_Controller.php" method="post">
                     <ul>
                         <li>
-                            <h5><?php echo $strings['#Juego']; ?></h5>
-                            <span><?php echo $id_juego; ?></span>
+                            <h5>Juego</h5>
+                            <span><input type="hidden" name="id_juego" value="<?php echo $id_juego; ?>"><?php echo $id_juego; ?></span>
                         </li>
 						
 						<li>
-                            <h5><?php echo $strings['Nombre']; ?></h5>
+                            <h5>Nombre</h5>
                             <span><?php echo $nombre_juego; ?></span>
                         </li>
 						
 					    <li>
-                            <h5><?php echo $strings['Plataforma']; ?></h5>
+                            <h5>Plataforma</h5>
                             <span><?php echo $plataforma; ?></span>
                         </li>
 						
 						<li>
-                            <h5><?php echo $strings['Genero']; ?></h5>
+                            <h5>Genero</h5>
                             <span><?php echo $genero; ?></span>
                         </li>
 						
 						<li>
-                            <h5><?php echo $strings['Precio']; ?></h5>
+                            <h5>Precio</h5>
                             <span><?php echo $precio_compra; ?></span>
                         </li>
 						
 						<li>
-                            <h5><?php echo $strings['Categoria']; ?></h5>
-                            <span><?php echo $categoria_vendedor; ?></span>
+                            <h5>Categoria</h5>
+                            <span><?php echo $categoria; ?></span>
                         </li>
 						
 						<li>
-                            <h5><?php echo $strings['Novedad']; ?></h5>
+                            <h5>Novedad</h5>
                             <span><?php echo $novedad; ?></span>
                         </li>
 						
 						<li>
-                            <h5><?php echo $strings['Compra']; ?></h5>
-                            <span><?php echo $compra_juego; ?></span>
+                            <h5>Compra</h5>
+                            <span><?php echo $compra; ?></span>
                         </li>
                         <li>
-                            <h5><?php echo $strings['Venta']; ?></h5>
-                            <span><?php echo $alquiler_juego; ?></span>
+                            <h5>Venta</h5>
+                            <span><?php echo $venta; ?></span>
                         </li>
                         
 

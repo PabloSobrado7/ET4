@@ -27,10 +27,10 @@ if (!IsAuthenticated()){
 		$plataforma = $_REQUEST['plataforma'];
         $genero = $_REQUEST['genero'];
 		$precio_compra = $_REQUEST['precio_compra'];
-		$categoria_juego = $_REQUEST['categoria_juego'];
+		$categoria = $_REQUEST['categoria'];
 		$novedad = $_REQUEST['novedad'];
-		$compra_juego = $_REQUEST['compra_juego'];
-        $venta_juego = $_REQUEST['venta_juego'];
+		$compra = $_REQUEST['compra'];
+        $venta = $_REQUEST['venta'];
 
 
         $action = $_REQUEST['action']; //Variable action para la accion a realizar
@@ -38,7 +38,7 @@ if (!IsAuthenticated()){
         //Se crea una entidad USUARIO
         $JUEGO = new JUEGO_Model(
             $id_juego,$nombre_juego,$plataforma,$genero,$precio_compra,
-			$categoria_juego,$novedad,$compra_juego,$venta_juego);
+			$categoria,$novedad,$compra,$venta);
 
         return $JUEGO;
     }
@@ -72,12 +72,9 @@ if (!IsAuthenticated()){
             $JUEGO; //coge los valores y los mete en la variable
             $respuesta; //almacena la respuesta que muestra el mensaje
 
-            echo $_GET['id_juego'];
-            die();
-
                 if (!$_POST){ //si entra por get envia un formulario
                     new Juego_EDIT($_GET['id_juego'],$_GET['nombre_juego'],$_GET['plataforma'],
-					$_GET['genero'],$_GET['precio_compra'],$_GET['categoria_juego'],$_GET['novedad'],$_GET['compra_juego'],$_GET['venta_juego']);
+					$_GET['genero'],$_GET['precio_compra'],$_GET['categoria'],$_GET['novedad'],$_GET['compra'],$_GET['venta']);
 				}
                 else{//Si entra por post recoge los datos y los envia a la BD y manda mensaje
                     $JUEGO = get_data_form();
@@ -109,12 +106,12 @@ if (!IsAuthenticated()){
 			
                 if (!$_POST){ //Si entra por get envia un formulario para el eliminado
 
-					 new Juego_DELETE($_GET['id_juego'],$_GET['nombre_juego'],$_GET['plataforma'],
+					new Juego_DELETE($_GET['id_juego'],$_GET['nombre_juego'],$_GET['plataforma'],
                     $_GET['genero'],$_GET['precio_compra'],
-                    $_GET['categoria_juego'],$_GET['novedad'], $_GET['compra_juego'],$_GET['venta_juego']);
+                    $_GET['categoria'],$_GET['novedad'], $_GET['compra'],$_GET['venta']);
                 }
                 else{//Si entra por post recoge los datos y los envia a la BD y manda mensaje
-                    $JUEGO = new JUEGO_Model($_REQUEST['id_juego'],'','','','','','','');
+                    $JUEGO = new JUEGO_Model($_REQUEST['id_juego'],'','','','','','','','');
                     $respuesta =  $JUEGO->DELETE();
 
                     new MESSAGE($respuesta, '../Controllers/JUEGO_Controller.php');
@@ -140,7 +137,7 @@ if (!IsAuthenticated()){
 
                 //lo hace de todas formas
                 $datos = $JUEGO->AllData();
-                new Juego_SHOWALL($datos, '../Controllers/Juego_Controller.php');
+                new Juego_SHOWALL($datos, '../Controllers/JUEGO_Controller.php');
            
     }
 

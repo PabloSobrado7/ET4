@@ -20,8 +20,8 @@ class JUEGO_Model
     var $mysqli; // declaración del atributo manejador de la bd
 
     function __construct($id_juego,$nombre_juego,
-	$plataforma,$genero,$precio_compra,
-	$novedad,$compra_juego,$venta_juego)
+	$plataforma,$genero,$precio_compra,$categoria,
+	$novedad,$compra,$venta)
     {
         //asignación de valores de parámetro a los atributos de la clase
         $this->id_juego = $id_juego;
@@ -31,7 +31,7 @@ class JUEGO_Model
 		$this->precio_compra = $precio_compra;
 		$this->categoria = $categoria;		
 		$this->novedad = $novedad;
-        $this->compra = $venta;
+        $this->compra = $compra;
 		$this->venta = $venta;
         include '../Models/DB/BdAdmin.php';
 
@@ -96,9 +96,11 @@ class JUEGO_Model
 			`nombre_juego`='$this->nombre_juego',
 			`plataforma`='$this->plataforma',
 			`genero`='$this->genero',
+            `precio_compra`='$this->precio_compra',
+            `categoria`='$this->categoria',
 			`novedad`='$this->novedad',
-			`compra_juego`='$this->compra_juego',
-			`venta_juego`='$this->venta_juego',
+			`compra`='$this->compra',
+			`venta`='$this->venta',
             WHERE (`id_juego` = '$this->id_juego')";
 			
 	        if (!($resultado = $this->mysqli->query($sql))){ // si hay un problema con la query se envia un mensaje de error en la modificacion
@@ -118,7 +120,7 @@ class JUEGO_Model
     {
     }
 	
-	    function SEARCH()
+	function SEARCH()
     {
 
         $sql; //variable que alberga la sentencia sql

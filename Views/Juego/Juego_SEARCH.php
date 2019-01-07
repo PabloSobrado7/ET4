@@ -3,7 +3,7 @@
  * Funcion: Vista que nos permite buscar por juegos
  * Autor: Mario Gayoso Pérez
   */
-class Loteria_SEARCH {
+class Juego_SEARCH {
 
     function __construct(){
 
@@ -48,7 +48,7 @@ class Loteria_SEARCH {
  
 				<form  action="<?php echo $message; ?>" method="post">	
 					<div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['#Juego']; ?></label>
+                        <label class="form-label" for="id_juego">#Juego</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="id_juego" name="id_juego" >
                     </div>
 					
@@ -58,7 +58,7 @@ class Loteria_SEARCH {
 				
                 <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Nombre']; ?></label>
+                        <label class="form-label" for="nombre_juego">Nombre</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="nombre_juego" name="nombre_juego" >
                     </div>
                     
@@ -67,7 +67,7 @@ class Loteria_SEARCH {
                 </div>
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Plataforma']; ?></label>
+                        <label class="form-label" for="plataforma">Plataforma</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="plataforma" name="plataforma" >
                     </div>
                     
@@ -76,7 +76,7 @@ class Loteria_SEARCH {
                 </div>
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Genero']; ?></label>
+                        <label class="form-label" for="genero">Genero</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="genero" name="genero" >
                     </div>
                     
@@ -85,7 +85,7 @@ class Loteria_SEARCH {
                 </div>
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Precio Compra']; ?></label>
+                        <label class="form-label" for="precio_compra">Precio Compra</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="precio_compra" name="precio_compra" >
                     </div>
                     
@@ -94,8 +94,8 @@ class Loteria_SEARCH {
                 </div>
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Categoria']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="categoria_vendedor" name="categoria_vendedor" >
+                        <label class="form-label" for="categoria">Categoria</label>
+                        <input type="text" class="form-control" maxlength="60" size="60" id="categoria" name="categoria" >
                     </div>
                     
                 <div class="showall">
@@ -103,7 +103,7 @@ class Loteria_SEARCH {
                 </div>
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Novedad']; ?></label>
+                        <label class="form-label" for="novedad">¿Novedad?</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="novedad" name="novedad" >
                     </div>
                     
@@ -112,53 +112,27 @@ class Loteria_SEARCH {
                 </div>
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Compra']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="novedad" name="novedad" >
+                        <label class="form-label" for="compra">¿Compra?</label>
+                        <input type="text" class="form-control" maxlength="60" size="60" id="compra" name="compra" >
                     </div>
                     
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-                </div>
-                 <form  action="<?php echo $message; ?>" method="post">  
+                      
+				 </div>
+				  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Novedad']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="compra_juego" name="compra_juego" >
+                        <label class="form-label" for="venta">¿Alquiler?</label>
+                        <input type="text" class="form-control" maxlength="60" size="60" id="venta" name="venta" >
                     </div>
                     
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-                </div>
-                 <form  action="<?php echo $message; ?>" method="post">  
-                    <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Venta']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="compra_juego" name="compra_juego" >
-                    </div>
-                    
-                <div class="showall">
-                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-                </div>
-
-
-					</form>
-					
-					<form  action="<?php echo $message; ?>" method="post">
-						<div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Pagado']; ?></label>
-						<input type="hidden" name="id_pista" >
-			
-	<input type="radio" name="lotpagado" value="SI"> <?php echo $strings['SI']; ?>
-    <input type="radio" name="lotpagado" value="NO"> <?php echo $strings['NO']; ?> 
-                    
-				<div class="showall">
-                  
-						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-					
-                </div>					
-				</form>
-
+                      
+				 </div>
+               
             </div>
 
-            </div>
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
 				<h6>Formulario de prueba SEARCH juego</h6>

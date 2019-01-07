@@ -73,16 +73,26 @@ class Juego_SHOWALL {
                         ?>
 
                         <tr>
-                            <form action="../Controllers/JUEGO_Controller.php" method="" >                                
+                            <form action="../Controllers/JUEGO_Controller.php" method="" >    
+                              <input type="hidden" name="id_juego" value="<?php echo $row['id_juego']; ?>">      
+                              <input type="hidden" name="nombre_juego" value="<?php echo $row['nombre_juego']; ?>">
+                              <input type="hidden" name="plataforma" value="<?php echo $row['plataforma']; ?>">
+                              <input type="hidden" name="genero" value="<?php echo $row['genero']; ?>">
+                              <input type="hidden" name="precio_compra" value="<?php echo $row['precio_compra']; ?>">
+                              <input type="hidden" name="categoria" value="<?php echo $row['categoria']; ?>">                      
+                              <input type="hidden" name="novedad" value="<?php echo $row['novedad']; ?>">
+                              <input type="hidden" name="compra" value="<?php echo $row['compra']; ?>">
+                              <input type="hidden" name="venta" value="<?php echo $row['venta']; ?>">
+
 								<td><?php echo $row['id_juego']; ?></td>
 								<td><?php echo $row['nombre_juego']; ?></td>
 								<td><?php echo $row['plataforma']; ?></td>
 								<td><?php echo $row['genero']; ?></td>
 								<td><?php echo $row['precio_compra']; ?></td>
-								<td><?php echo $row['categoria_juego']; ?></td>
+								<td><?php echo $row['categoria']; ?></td>
 								<td><?php echo $row['novedad']; ?></td>
-                                <td><?php echo $row['compra_juego']; ?></td>
-                                <td><?php echo $row['venta_juego']; ?></td>
+                                <td><?php echo $row['compra']; ?></td>
+                                <td><?php echo $row['venta']; ?></td>
                                 <td>
 									<button class="showall-action" name="action" value="EDIT" type="submit"><img src="../Views/imgs/edit.png" alt="" srcset=""></button>
                                     <button class="showall-action" name="action" value="DELETE" type="submit"><img src="../Views/imgs/delete.png" alt="" srcset=""></button>
@@ -98,7 +108,7 @@ class Juego_SHOWALL {
 			
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Loteria ESEI</h6>
+				<h6>Juego Showall</h6>
             </footer>
         </section>
 

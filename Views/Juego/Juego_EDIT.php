@@ -8,17 +8,17 @@
  class Juego_EDIT {
 
     function __construct($id_juego,$nombre_juego,$plataforma,
-	$genero,$precio_compra,$categoria_vendedor,$novedad,$compra_juego,$venta_juego){
+	$genero,$precio_compra,$categoria,$novedad,$compra,$venta){
 
         $this->pinta($id_juego,$nombre_juego,$plataforma,
-	$genero,$precio_compra,$categoria_vendedor,$novedad,$compra_juego,$venta_juego);
+	$genero,$precio_compra,$categoria,$novedad,$compra,$venta);
 
     }
 
 
     //función que contiene la vista
     function pinta($id_juego,$nombre_juego,$plataforma,
-    $genero,$precio_compra,$categoria_vendedor,$novedad,$compra_juego,$venta_juego){
+    $genero,$precio_compra,$categoria,$novedad,$compra,$venta){
         //comprueba si hay un idioma en $_SESSION
         //si no, inserta el idioma español
         if(!isset($_SESSION['idioma'])){
@@ -44,44 +44,44 @@
         <section>
             <div class="form">
               
-                <h3><?php echo $strings['Editarpart']; ?></h3>
+                <h3>Editar</h3>
                
         <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/JUEGO_Controller.php">
                    <div class="form-group">
                         <label class="form-label" for="id_juego">#Juego</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="id_juego" name="id_juego">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="id_juego" name="id_juego" value="<?php echo $id_juego; ?>" readonly>
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="nombre_juego">Nombre</label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="nombre_juego" name="nombre_juego">
+                        <input type="text" class="form-control" maxlength="20" size="15" id="nombre_juego" name="nombre_juego" value="<?php echo $nombre_juego; ?>">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="plataforma">Plataforma</label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="plataforma" name="plataforma">
+                        <input type="text" class="form-control" maxlength="20" size="15" id="plataforma" name="plataforma" value="<?php echo $plataforma; ?>">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="genero">Genero</label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="genero" name="genero">
+                        <input type="text" class="form-control" maxlength="20" size="15" id="genero" name="genero" value="<?php echo $genero; ?>">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="precio_compra">Precio Compra</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra" value="<?php echo $precio_compra; ?>">
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="categoria_vendedor">Categoria</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="categoria_vendedor" name="categoria_vendedor">
+                        <label class="form-label" for="categoria">Categoria</label>
+                        <input type="text" class="form-control" maxlength="15" size="15" id="categoria" name="categoria" value="<?php echo $categoria; ?>">
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="login">Novedad</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="novedad" name="novedad">
+                        <label class="form-label" for="novedad">Novedad</label>
+                        <input type="text" class="form-control" maxlength="15" size="15" id="novedad" name="novedad" value="<?php echo $novedad; ?>">
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="compra_juego">Compra</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="compra_juego" name="compra_juego">
+                        <label class="form-label" for="compra">Compra</label>
+                        <input type="text" class="form-control" maxlength="15" size="15" id="compra" name="compra" value="<?php echo $compra; ?>">
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="venta_juego">Venta</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="venta_juego" name="venta_juego">
+                        <label class="form-label" for="venta">Venta</label>
+                        <input type="text" class="form-control" maxlength="15" size="15" id="venta" name="venta" value="<?php echo $venta; ?>">
                     </div>
 						                
 					   
@@ -95,7 +95,7 @@
             </div>
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Loteria ESEI</h6>
+				<h6>Prueba de Formulario EDIT</h6>
             </footer>
         </section>
         <!--<script src="../Views/js/md5.js"></script>

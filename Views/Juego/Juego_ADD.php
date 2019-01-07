@@ -63,20 +63,20 @@ class Juego_ADD {
                         <input type="text" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra">
                     </div>
 					<div class="form-group">
-                        <label class="form-label" for="categoria_juego">Categoria</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="categoria_juego" name="categoria_juego">
+                        <label class="form-label" for="categoria">Categoria</label>
+                        <input type="text" class="form-control" maxlength="15" size="15" id="categoria" name="categoria">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="novedad">Novedad</label>
                         <input type="text" class="form-control" maxlength="15" size="15" id="novedad" name="novedad">
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="compra_juego">Compra</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="compra_juego" name="compra_juego">
+                        <label class="form-label" for="compra">Compra</label>
+                        <input type="text" class="form-control" maxlength="15" size="15" id="compra" name="compra">
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="venta_juego">Venta</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="venta_juego" name="venta_juego">
+                        <label class="form-label" for="venta">Venta</label>
+                        <input type="text" class="form-control" maxlength="15" size="15" id="venta" name="venta">
                     </div>
                     <button name="action" value="ADD" type="submit" class="boton-env">
                         <img src="../Views/imgs/send.png" alt="">
