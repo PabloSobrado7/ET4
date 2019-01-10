@@ -55,71 +55,78 @@ class Juego_SEARCH {
 				<div class="showall">
 					<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
 				</div>
-				
+				</form>
                 <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="nombre_juego">Nombre</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="nombre_juego" name="nombre_juego" >
                     </div>
-                    
+               
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
+				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="plataforma">Plataforma</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="plataforma" name="plataforma" >
                     </div>
-                    
+      
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
+				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="genero">Genero</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="genero" name="genero" >
                     </div>
-                    
+                   
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
+				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="precio_compra">Precio Compra</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="precio_compra" name="precio_compra" >
                     </div>
-                    
+                   
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
+				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="categoria">Categoria</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="categoria" name="categoria" >
                     </div>
-                    
+                 
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
+				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="novedad">¿Novedad?</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="novedad" name="novedad" >
                     </div>
-                    
+                   
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
+				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="compra">¿Compra?</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="compra" name="compra" >
                     </div>
-                    
+                   
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                       
 				 </div>
+				 </form> 
 				  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="venta">¿Alquiler?</label>
@@ -130,6 +137,7 @@ class Juego_SEARCH {
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                       
 				 </div>
+				 </form>
                
             </div>
 

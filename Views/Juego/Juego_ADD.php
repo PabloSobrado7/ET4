@@ -60,7 +60,7 @@ class Juego_ADD {
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="precio_compra">Precio Compra</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
                     </div>
 					<div class="form-group">
                         <label class="form-label" for="categoria">Categoria</label>
