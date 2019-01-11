@@ -130,15 +130,15 @@ class JUEGO_Model
 
         // construimos el sql para buscar esa clave en la tabla
         $sql = "SELECT * FROM `JUEGO` WHERE 
-		(`id_juego` = '$this->id_juego'
-		OR `nombre_juego` = '$this->nombre_juego'
-		OR `plataforma` = '$this->plataforma'
-		OR `genero` = '$this->genero'
-		OR `precio_compra` = '$this->precio_compra'
-		OR `categoria` = '$this->categoria'
-		OR `novedad` = '$this->novedad'
-		OR `compra` = '$this->compra'
-		OR `venta` = '$this->venta'
+		(`id_juego`LIKE '%$this->id_juego%'
+		OR `nombre_juego` LIKE '%$this->nombre_juego%'
+		OR `plataforma`LIKE '%$this->plataforma%'
+		OR `genero`LIKE '%$this->genero%'
+		OR `precio_compra` LIKE'%$this->precio_compra%'
+		OR `categoria`LIKE '%$this->categoria%'
+		OR `novedad` LIKE'%$this->novedad%'
+		OR `compra` LIKE'%$this->compra%'
+		OR `venta`LIKE '%$this->venta%'
 		)";
 
 		
