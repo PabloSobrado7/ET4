@@ -15,6 +15,9 @@ if (!IsAuthenticated()){
 
 }else{
 
+	require_once('../Models/JUEGO_Model.php');
+	require_once('../Models/SOCIO_Model.php');
+	require_once('../Models/TARIFA_Model.php');
     require_once('../Models/ALQUILA_Model.php');
     include '../Views/Alquila/Alquila_SHOWALL.php';
     include '../Views/Alquila/Alquila_ADD.php';
@@ -47,10 +50,23 @@ if (!IsAuthenticated()){
         case 'ADD':
 		
             $ALQUILA; //coge los valores y los mete en la variable
+			$JUEGO;
+			$SOCIO;
+			$TARIFA;
             $respuesta; //almacena la respuesta que muestra el mensaje
 
                 if (!$_POST){ //si entra por get envia un formulario
-				   new Alquila_ADD();
+				
+				$JUEGO = new JUEGO_Model('','','','','','','','','');
+				$datosjuego = $JUEGO->AllData();
+				
+				$SOCIO = new SOCIO_Model('','','','','','','','');
+				$datossocio = $SOCIO->AllData();
+				
+				$TARIFA = new TARIFA_Model('','','','');
+				$datostarifa = $TARIFA->AllData();
+				
+				   new Alquila_ADD($datosjuego,$datossocio,$datostarifa);
                 }
                 else{//Si entra por post recoge los datos y los envia a la BD y manda mensaje
 

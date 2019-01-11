@@ -7,15 +7,15 @@
  */
  class Compra_ADD {
 
-    function __construct(){
+    function __construct($datosjuego,$datossocio){
 
-        $this->pinta();
+        $this->pinta($datosjuego,$datossocio);
 
     }
 
 
     //función que contiene la vista
-    function pinta(){
+    function pinta($datosjuego,$datossocio){
         //comprueba si hay un idioma en $_SESSION
         //si no, inserta el idioma español
         if(!isset($_SESSION['idioma'])){
@@ -38,6 +38,8 @@
 
         new HEADER();
         ?>
+		
+
         <section>
             <div class="form">
                 <?php
@@ -48,19 +50,41 @@
 
                 ?>
                 <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/COMPRA_Controller.php">
-                    <div class="form-group">
-                        <label class="form-label" for="login_socio">Login socio</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="login_socio" name="login_socio">
-                    </div>
+					 <div class="form-group">
+                        <label class="form-label" for="login_socio">Socio</label>
+                        
+					<td>
+								<select name="login_socio">
+
+								<?php
+								while ($row = $datossocio->fetch_array()){
+									?>
+								<option value="<?php echo $row['login_socio']; ?>"><?php echo $row['login_socio']; ?></option>
+		                        <?php
+								}
+								?>
+
+								</select></td>
+					</div>
 	
 					 <div class="form-group">
-                        <label class="form-label" for="id_juego">Id Juego</label>
-                        <input type="text" class="form-control" id="id_juego" name="id_juego">
-                    </div>
-					
+                        <label class="form-label" for="id_juego">Juego</label>
+                        
+					<td>
+								<select name="id_juego">
+
+								<?php
+								while ($row = $datosjuego->fetch_array()){
+									?>
+								<option value="<?php echo $row['id_juego']; ?>"><?php echo $row['nombre_juego']; ?> | <?php echo $row['plataforma']; ?> | <?php echo $row['precio_compra']; ?> €</option>
+		                        <?php
+								}
+								?>
+
+								</select></td>
+					</div>
 					 <div class="form-group">
-                        <label class="form-label" for="fecha_compra">Fecha compra</label>
-                        <input type="date" class="form-control" id="fecha_compra" name="fecha_compra">
+                       <input type="hidden" class="form-control" id="fecha_compra" name="fecha_compra" value="<?php echo date("Y-m-d\TH-i");?>">
                     </div>
 					
                     <button name="action" value="ADD" type="submit" class="boton-env">

@@ -63,7 +63,7 @@
                     <a href="../Controllers/LOTERIAIU_Controller.php" ><li>Datos sobre juegos</li></a>
 					</ul>
 				<ul>Socio
-					<a href="../Controllers/LOTERIAIU_Controller.php" ><li>Consultar novedades</li></a>
+					<a href="../Controllers/NOVEDADES_Controller.php" ><li>Consultar novedades</li></a>
 					<a href="../Controllers/LOTERIAIU_Controller.php" ><li>Productos mas vendidos</li></a>
                     <a href="../Controllers/LOTERIAIU_Controller.php" ><li>Mis compras/alquileres</li></a>
                     </ul>

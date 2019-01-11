@@ -58,7 +58,6 @@ class Compra_SHOWALL {
                         </th>
                     </tr>
                     <?php
-
                     $row;//almacena usuarios
 
                     //mientras existan usuarios
@@ -73,7 +72,7 @@ class Compra_SHOWALL {
 							<input type="hidden" name="fecha_compra" value="<?php echo $row['fecha_compra']; ?>">
 								<td><?php echo $row['login_socio']; ?></td>
 								<td><?php echo $row['id_juego']; ?></td>
-								<td><?php echo $row['fecha_compra']; ?></td>
+								<td><?php echo $row['fecha_compra'];?></td>
 
                                 <td>
 									<button class="showall-action" name="action" value="DELETE" type="submit"><img src="../Views/imgs/delete.png" alt="" srcset=""></button>
