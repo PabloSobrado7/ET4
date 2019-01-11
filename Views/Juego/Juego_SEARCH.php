@@ -53,8 +53,8 @@ class Juego_SEARCH {
                     </div>
 					
 				<div class="showall">
-					<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-				</div>
+                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
+                </div>
 				</form>
                 <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
@@ -62,7 +62,7 @@ class Juego_SEARCH {
                         <input type="text" class="form-control" maxlength="60" size="60" id="nombre_juego" name="nombre_juego" >
                     </div>
                
-                <div class="showall">
+               <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
 				</form> 
@@ -72,7 +72,7 @@ class Juego_SEARCH {
                         <input type="text" class="form-control" maxlength="60" size="60" id="plataforma" name="plataforma" >
                     </div>
       
-                <div class="showall">
+               <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
 				</form> 
@@ -92,7 +92,7 @@ class Juego_SEARCH {
                         <input type="text" class="form-control" maxlength="60" size="60" id="precio_compra" name="precio_compra" >
                     </div>
                    
-                <div class="showall">
+               <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
 				</form> 
@@ -102,7 +102,7 @@ class Juego_SEARCH {
                         <input type="text" class="form-control" maxlength="60" size="60" id="categoria" name="categoria" >
                     </div>
                  
-                <div class="showall">
+               <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
 				</form> 
@@ -111,8 +111,7 @@ class Juego_SEARCH {
                         <label class="form-label" for="novedad">¿Novedad?</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="novedad" name="novedad" >
                     </div>
-                   
-                <div class="showall">
+               <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
 				</form> 
@@ -121,23 +120,19 @@ class Juego_SEARCH {
                         <label class="form-label" for="compra">¿Compra?</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="compra" name="compra" >
                     </div>
-                   
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-                      
-				 </div>
+                </div>
 				 </form> 
-				  <form  action="<?php echo $message; ?>" method="post">  
+				<form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="venta">¿Alquiler?</label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="venta" name="venta" >
                     </div>
-                    
-                <div class="showall">
+               <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-                      
-				 </div>
-				 </form>
+                </div>
+			 </form>
                
             </div>
 
