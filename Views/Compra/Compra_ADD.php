@@ -76,9 +76,12 @@
 								<?php
 								while ($row = $datosjuego->fetch_array()){
 									?>
+																	<?php
+								if($row['compra']=='1'){ ?>
+								
 								<option value="<?php echo $row['id_juego']; ?>"><?php echo $row['nombre_juego']; ?> | <?php echo $row['plataforma']; ?> | <?php echo $row['precio_compra']; ?> €</option>
 		                        <?php
-								}
+								} }
 								?>
 
 								</select></td>

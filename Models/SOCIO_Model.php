@@ -155,6 +155,28 @@ class SOCIO_Model
             return $result; //devuelve result
         }
     }
+	
+			    function MASACTIVOS()
+    {
+
+        $sql; //variable que alberga la sentencia sql
+        $resultado; //almacena la consulta sql
+        $result; //variable que albergara el valor de resultado
+
+        // construimos el sql para buscar esa clave en la tabla
+				$sql = "SELECT *
+				FROM `SOCIO`
+				ORDER BY 'login_socio'";
+
+        if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
+
+			return 'It does not exist in DB';
+        } else { // si existe
+			$result = $resultado;//guarda el valor deresultado en result
+            return $result; //devuelve result
+        }
+    }
+
 
 
     function DELETE()

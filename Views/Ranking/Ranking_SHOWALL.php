@@ -1,21 +1,21 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite ver todas las loteria
+ * Funcion: Vista que nos permite ver el catalogo para los users
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
 include_once '../Functions/Authentication.php';
 
-class Novedades_SHOWALL {
+class Ranking_SHOWALL {
 
-    function __construct($users,$message){
+    function __construct($users,$datos,$message){
 
-        $this->pinta($users,$message);
+        $this->pinta($users,$datos,$message);
 
     }
     //función que contiene la vista
-    function pinta($users,$message){
+    function pinta($users,$datos,$message){
         if(!isset($_SESSION['idioma'])){
             $_SESSION['idioma'] = 'SPANISH';
         }
@@ -49,9 +49,9 @@ $(document).ready(function() {
         <section class="form-basic-start">
 
             <div class="showall">
-
+MAS COMPRADOS
                 <div >
-                    <form  action="<?php echo $message; ?>" method="">
+                    <form  action="../Controllers/CATALOGO_Controller.php" method="">
 						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
 						 </form>
 
@@ -59,15 +59,13 @@ $(document).ready(function() {
 				
                 <table id="juegos" class="showall-tab">
                     <tr>
-                        <th>#Juego</th>
 						<th>Nombre</th>
 						<th>Plataforma</th>
 						<th>Genero</th>
 						<th>Precio Compra</th>
-						<th>Categoria</th>
 						<th>Novedad</th>
-                        <th>Compra</th>
                         <th>Venta</th>
+						<th>Alquiler</th>
 
                         <th>
                         </th>
@@ -81,7 +79,6 @@ $(document).ready(function() {
                         ?>
 
                         <tr>
-                            <form action="../Controllers/JUEGO_Controller.php" method="" >    
                               <input type="hidden" name="id_juego" value="<?php echo $row['id_juego']; ?>">      
                               <input type="hidden" name="nombre_juego" value="<?php echo $row['nombre_juego']; ?>">
                               <input type="hidden" name="plataforma" value="<?php echo $row['plataforma']; ?>">
@@ -92,18 +89,77 @@ $(document).ready(function() {
                               <input type="hidden" name="compra" value="<?php echo $row['compra']; ?>">
                               <input type="hidden" name="venta" value="<?php echo $row['venta']; ?>">
 
-								<td><?php echo $row['id_juego']; ?></td>
 								<td><?php echo $row['nombre_juego']; ?></td>
 								<td><?php echo $row['plataforma']; ?></td>
 								<td><?php echo $row['genero']; ?></td>
-								<td><?php echo $row['precio_compra']; ?></td>
-								<td><?php echo $row['categoria']; ?></td>
-								<td><?php echo $row['novedad']; ?></td>
-                                <td><?php echo $row['compra']; ?></td>
-                                <td><?php echo $row['venta']; ?></td>
-                                <td>
+								<td><?php echo $row['precio_compra']; ?>€</td>
+					<?php if ($row['novedad']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
+					<?php if ($row['compra']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
+                    <?php if ($row['venta']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
+                     
+					           <td>
 									</td>
-                            </form>
+                            
+                        </tr>
+
+                        <?php
+                    }
+                    ?>
+                </table>
+            </div>
+			
+			            <div class="showall">
+MAS ALQUILADOS
+                <div >
+                    <form  action="../Controllers/CATALOGO_Controller.php" method="">
+						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
+						 </form>
+
+                </div>
+				
+                <table id="juegos" class="showall-tab">
+                    <tr>
+						<th>Nombre</th>
+						<th>Plataforma</th>
+						<th>Genero</th>
+						<th>Precio Compra</th>
+						<th>Novedad</th>
+                        <th>Venta</th>
+						<th>Alquiler</th>
+
+                        <th>
+                        </th>
+                    </tr>
+                    <?php
+
+                    $row;//almacena usuarios
+
+                    //mientras existan usuarios
+                    while ($row = $datos->fetch_array()){
+                        ?>
+
+                        <tr>
+                              <input type="hidden" name="id_juego" value="<?php echo $row['id_juego']; ?>">      
+                              <input type="hidden" name="nombre_juego" value="<?php echo $row['nombre_juego']; ?>">
+                              <input type="hidden" name="plataforma" value="<?php echo $row['plataforma']; ?>">
+                              <input type="hidden" name="genero" value="<?php echo $row['genero']; ?>">
+                              <input type="hidden" name="precio_compra" value="<?php echo $row['precio_compra']; ?>">
+                              <input type="hidden" name="categoria" value="<?php echo $row['categoria']; ?>">                      
+                              <input type="hidden" name="novedad" value="<?php echo $row['novedad']; ?>">
+                              <input type="hidden" name="compra" value="<?php echo $row['compra']; ?>">
+                              <input type="hidden" name="venta" value="<?php echo $row['venta']; ?>">
+
+								<td><?php echo $row['nombre_juego']; ?></td>
+								<td><?php echo $row['plataforma']; ?></td>
+								<td><?php echo $row['genero']; ?></td>
+								<td><?php echo $row['precio_compra']; ?>€</td>
+					<?php if ($row['novedad']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
+					<?php if ($row['compra']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
+                    <?php if ($row['venta']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
+                     
+					           <td>
+									</td>
+                            
                         </tr>
 
                         <?php

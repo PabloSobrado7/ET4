@@ -50,24 +50,29 @@
                         <?php echo $strings['Inicio']; ?>
                     </li>
                 </a>
-				
+				<?php if($_SESSION['login']=='admin'){ ?>
                 <ul>Admin
 					<a href="../Controllers/VENDEDOR_Controller.php" ><li>Administrar vendedores</li></a>
                      </ul>
+				<?php } ?>
+				<?php if($_SESSION['login']=='pablo'){ ?>
 				<ul>Vendedor
 					<a href="../Controllers/JUEGO_Controller.php" ><li>Gestionar juegos</li></a>
                     <a href="../Controllers/SOCIO_Controller.php" ><li>Gestionar socios</li></a>
                     <a href="../Controllers/COMPRA_Controller.php" ><li>Gestión venta</li></a>
 					<a href="../Controllers/ALQUILA_Controller.php" ><li>Gestión alquiler</li></a>
-					<a href="../Controllers/LOTERIAIU_Controller.php" ><li>Datos sobre usuarios</li></a>
-                    <a href="../Controllers/LOTERIAIU_Controller.php" ><li>Datos sobre juegos</li></a>
+					<a href="../Controllers/RANKING_Controller.php" ><li>Productos mas vendidos/alquilados</li></a>
+					<a href="../Controllers/ACTIVOS_Controller.php" ><li>Socios más activos</li></a>
 					</ul>
+					<?php } ?>
+					<?php if($_SESSION['login']=='juan'){ ?>
 				<ul>Socio
+				<a href="../Controllers/CATALOGO_Controller.php" ><li>Consultar catálogo</li></a>
 					<a href="../Controllers/NOVEDADES_Controller.php" ><li>Consultar novedades</li></a>
-					<a href="../Controllers/LOTERIAIU_Controller.php" ><li>Productos mas vendidos</li></a>
-                    <a href="../Controllers/LOTERIAIU_Controller.php" ><li>Mis compras/alquileres</li></a>
+					<a href="../Controllers/RANKING_Controller.php" ><li>Productos mas vendidos/alquilados</li></a>
+					<a href="../Controllers/SOCIOP_Controller.php" ><li>Mis compras/alquileres</li></a>
                     </ul>
-
+					<?php } ?>
 
                 
             </ul>

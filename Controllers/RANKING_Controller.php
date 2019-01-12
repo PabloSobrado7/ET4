@@ -14,15 +14,14 @@ if (!IsAuthenticated()){
 }else{
 
     require_once('../Models/JUEGO_Model.php');
-    include '../Views/Novedades/Novedades_SHOWALL.php';
+    include '../Views/Ranking/Ranking_SHOWALL.php';
 
     if (!isset($_REQUEST['action'])){ //comprube si existe una accion sino la pone vacia
         $_REQUEST['action'] = '';
     }
 
     //Se hace un switch de la accion a realizar
-    Switch ($_REQUEST['action']){
-		
+    Switch ($_REQUEST['action']){	
 
         default:
 
@@ -32,8 +31,9 @@ if (!IsAuthenticated()){
 			
 			$JUEGO = new JUEGO_Model('','','','','','','','','');
                 //lo hace de todas formas
-                $datos = $JUEGO->NOVEDAD();
-                new Novedades_SHOWALL($datos, '../Controllers/JUEGO_Controller.php');
+                $datos = $JUEGO->MASVENDIDOS();
+				$datos2 = $JUEGO->MASALQUILADOS();
+                new Ranking_SHOWALL($datos,$datos2, '../Controllers/JUEGO_Controller.php');
            
     }
 

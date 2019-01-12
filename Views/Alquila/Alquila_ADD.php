@@ -43,7 +43,7 @@
                 <?php
 
                 ?>
-                <h3>Realizar alquilar</h3>
+                <h3>Realizar alquiler</h3>
                 <?php
 
                 ?>
@@ -74,6 +74,7 @@
 								<?php
 								while ($row = $datostarifa->fetch_array()){
 									?>
+								
 								<option value="<?php echo $row['id_tarifa']; ?>"><?php echo $row['tiempo_tarifa']; ?> días</option>
 		                        <?php
 								}
@@ -92,9 +93,13 @@
 								<?php
 								while ($row = $datosjuego->fetch_array()){
 									?>
+									
+																		
+									<?php
+								if($row['venta']=='1'){ ?>
 								<option value="<?php echo $row['id_juego']; ?>"><?php echo $row['nombre_juego']; ?> | <?php echo $row['plataforma']; ?> </option>
 		                        <?php
-								}
+								}}
 								?>
 
 								</select></td>

@@ -80,14 +80,36 @@ function login(){
 			WHERE (
 				(login_admin = '$this->login_admin') 
 			)";
+	$resultado = $this->mysqli->query($sql);
+	
+if ($resultado->num_rows == 0){
+
+	$sql = "SELECT *
+			FROM `VENDEDOR`
+			WHERE (
+				(login_vendedor = '$this->login_admin') 
+			)";
 
 	$resultado = $this->mysqli->query($sql);
+	
+}	
+if ($resultado->num_rows == 0){
+	
+	$sql = "SELECT *
+			FROM `SOCIO`
+			WHERE (
+				(login_socio = '$this->login_admin') 
+			)";
+	$resultado = $this->mysqli->query($sql);		
+}			
 	if ($resultado->num_rows == 0){
 		return 'El login no existe';
 	}
 	else{
 		$tupla = $resultado->fetch_array();
-		if ($tupla['pass_admin'] == $this->pass_admin){
+		if (($tupla['pass_admin'] == $this->pass_admin)
+		OR ($tupla['pass_vendedor'] == $this->pass_admin)
+OR ($tupla['pass_socio'] == $this->pass_admin))	{
 			return true;
 		}
 		else{

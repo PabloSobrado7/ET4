@@ -158,7 +158,8 @@ class JUEGO_Model
         $result; //variable que albergara el valor de resultado
 
         // construimos el sql para buscar esa clave en la tabla
-        $sql = "SELECT * FROM `JUEGO`";
+        $sql = "SELECT * FROM `JUEGO`
+		ORDER BY nombre_juego, plataforma, genero, precio_compra";
 
         if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
             return 'It does not exist in DB';
@@ -184,8 +185,91 @@ class JUEGO_Model
             return $result; //devuelve result
         }
     }
+	
+		    function MASVENDIDOS()
+    {
 
+        $sql; //variable que alberga la sentencia sql
+        $resultado; //almacena la consulta sql
+        $result; //variable que albergara el valor de resultado
 
+        // construimos el sql para buscar esa clave en la tabla
+		$sql = "SELECT * FROM `JUEGO` where `plataforma` = 'PS4'";
+
+        if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
+
+			return 'It does not exist in DB';
+        } else { // si existe
+			$result = $resultado;//guarda el valor deresultado en result
+            return $result; //devuelve result
+        }
+    }
+	
+			    function MASALQUILADOS()
+    {
+
+        $sql; //variable que alberga la sentencia sql
+        $resultado; //almacena la consulta sql
+        $result; //variable que albergara el valor de resultado
+
+        // construimos el sql para buscar esa clave en la tabla
+                $sql = "SELECT * FROM `JUEGO` where `genero` = 'Plataformas'";
+
+        if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
+            return 'It does not exist in DB';
+        } else { // si existe
+            $result = $resultado;//guarda el valor deresultado en result
+            return $result; //devuelve result
+        }
+    }
+
+		    function MISCOMPRAS($login)
+    {
+
+        $sql; //variable que alberga la sentencia sql
+        $resultado; //almacena la consulta sql
+        $result; //variable que albergara el valor de resultado
+
+        // construimos el sql para buscar esa clave en la tabla
+		$juego = "SELECT id_juego FROM `COMPRA` where `login_socio` = '$login'";
+
+		$sql = "SELECT *
+				FROM `JUEGO`
+				INNER JOIN `COMPRA`
+				ON juego.id_juego=compra.id_juego AND compra.login_socio = '$login'";
+
+        if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
+
+			return 'It does not exist in DB';
+        } else { // si existe
+			$result = $resultado;//guarda el valor deresultado en result
+            return $result; //devuelve result
+        }
+    }
+	
+			    function MISALQUILERES($login)
+    {
+
+        $sql; //variable que alberga la sentencia sql
+        $resultado; //almacena la consulta sql
+        $result; //variable que albergara el valor de resultado
+
+        // construimos el sql para buscar esa clave en la tabla
+
+				$sql = "SELECT *
+				FROM `JUEGO`
+				INNER JOIN `ALQUILA`
+				ON juego.id_juego=alquila.id_juego AND alquila.login_socio = '$login'";
+				
+        if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
+            return 'It does not exist in DB';
+        } else { // si existe
+            $result = $resultado;//guarda el valor deresultado en result
+            return $result; //devuelve result
+        }
+    }
+	
+	
     function DELETE()
     {
         $sql; //variable que alberga la sentencia sql
