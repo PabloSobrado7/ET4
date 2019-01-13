@@ -49,11 +49,8 @@ $(document).ready(function() {
         <section class="form-basic-start">
 
             <div class="showall">
-MAS COMPRADOS
+TOP MAS COMPRADOS
                 <div >
-                    <form  action="../Controllers/CATALOGO_Controller.php" method="">
-						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-						 </form>
 
                 </div>
 				
@@ -64,8 +61,7 @@ MAS COMPRADOS
 						<th>Genero</th>
 						<th>Precio Compra</th>
 						<th>Novedad</th>
-                        <th>Venta</th>
-						<th>Alquiler</th>
+
 
                         <th>
                         </th>
@@ -79,24 +75,13 @@ MAS COMPRADOS
                         ?>
 
                         <tr>
-                              <input type="hidden" name="id_juego" value="<?php echo $row['id_juego']; ?>">      
-                              <input type="hidden" name="nombre_juego" value="<?php echo $row['nombre_juego']; ?>">
-                              <input type="hidden" name="plataforma" value="<?php echo $row['plataforma']; ?>">
-                              <input type="hidden" name="genero" value="<?php echo $row['genero']; ?>">
-                              <input type="hidden" name="precio_compra" value="<?php echo $row['precio_compra']; ?>">
-                              <input type="hidden" name="categoria" value="<?php echo $row['categoria']; ?>">                      
-                              <input type="hidden" name="novedad" value="<?php echo $row['novedad']; ?>">
-                              <input type="hidden" name="compra" value="<?php echo $row['compra']; ?>">
-                              <input type="hidden" name="venta" value="<?php echo $row['venta']; ?>">
 
 								<td><?php echo $row['nombre_juego']; ?></td>
 								<td><?php echo $row['plataforma']; ?></td>
 								<td><?php echo $row['genero']; ?></td>
 								<td><?php echo $row['precio_compra']; ?>€</td>
 					<?php if ($row['novedad']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
-					<?php if ($row['compra']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
-                    <?php if ($row['venta']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
-                     
+
 					           <td>
 									</td>
                             
@@ -109,11 +94,8 @@ MAS COMPRADOS
             </div>
 			
 			            <div class="showall">
-MAS ALQUILADOS
+TOP MAS ALQUILADOS
                 <div >
-                    <form  action="../Controllers/CATALOGO_Controller.php" method="">
-						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-						 </form>
 
                 </div>
 				
@@ -124,8 +106,6 @@ MAS ALQUILADOS
 						<th>Genero</th>
 						<th>Precio Compra</th>
 						<th>Novedad</th>
-                        <th>Venta</th>
-						<th>Alquiler</th>
 
                         <th>
                         </th>
@@ -139,24 +119,13 @@ MAS ALQUILADOS
                         ?>
 
                         <tr>
-                              <input type="hidden" name="id_juego" value="<?php echo $row['id_juego']; ?>">      
-                              <input type="hidden" name="nombre_juego" value="<?php echo $row['nombre_juego']; ?>">
-                              <input type="hidden" name="plataforma" value="<?php echo $row['plataforma']; ?>">
-                              <input type="hidden" name="genero" value="<?php echo $row['genero']; ?>">
-                              <input type="hidden" name="precio_compra" value="<?php echo $row['precio_compra']; ?>">
-                              <input type="hidden" name="categoria" value="<?php echo $row['categoria']; ?>">                      
-                              <input type="hidden" name="novedad" value="<?php echo $row['novedad']; ?>">
-                              <input type="hidden" name="compra" value="<?php echo $row['compra']; ?>">
-                              <input type="hidden" name="venta" value="<?php echo $row['venta']; ?>">
 
 								<td><?php echo $row['nombre_juego']; ?></td>
 								<td><?php echo $row['plataforma']; ?></td>
 								<td><?php echo $row['genero']; ?></td>
 								<td><?php echo $row['precio_compra']; ?>€</td>
 					<?php if ($row['novedad']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
-					<?php if ($row['compra']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
-                    <?php if ($row['venta']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
-                     
+
 					           <td>
 									</td>
                             

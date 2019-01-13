@@ -127,7 +127,7 @@ class SOCIO_Model
         // construimos el sql para buscar esa clave en la tabla
         $sql = "SELECT * FROM `SOCIO` WHERE (`login_socio` = '$this->login_socio' OR `dni_socio` LIKE '$this->dni_socio' 
 		OR `nombre_socio` LIKE '$this->nombre_socio' OR `apellidos_socio` LIKE '$this->apellidos_socio' 
-		OR `email_socio` LIKE '$this->email_socio', OR `telefono_socio` LIKE '$this->telefono_socio' 
+		OR `email_socio` LIKE '$this->email_socio' OR `telefono_socio` LIKE '$this->telefono_socio' 
 		OR `socio_bloqueado` LIKE '$this->socio_bloqueado' )";
 
         if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe

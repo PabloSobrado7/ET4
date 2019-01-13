@@ -124,6 +124,7 @@ MIS ALQUILERES
 								<td><?php echo $row['nombre_juego']; ?></td>
 								<td><?php echo $row['plataforma']; ?></td>
 								<td><?php echo $row['genero']; ?></td>
+								<td>31-01-2019</td>
 								<td></td>
 								
 					           <td>

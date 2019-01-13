@@ -43,19 +43,26 @@
             <div class="resp-menu-close" onclick="hide()">
                 <img src="../Views/imgs/cross.png" alt="">
             </div>
-                <?php if(isset($_SESSION['login'])) {?>
+                <?php 
+				if(isset($_SESSION['login'])) {?>
             <ul>
                 <a href="../Controllers/Login_Controller.php">
                     <li>
                         <?php echo $strings['Inicio']; ?>
                     </li>
                 </a>
-				<?php if($_SESSION['login']=='admin'){ ?>
+				<?php 
+				
+				$archivo = fopen('../tipouser.txt', 'r');		
+				$useractual = fgets($archivo);
+				fclose($archivo);
+
+				if($useractual=='admin'){ ?>
                 <ul>Admin
 					<a href="../Controllers/VENDEDOR_Controller.php" ><li>Administrar vendedores</li></a>
                      </ul>
-				<?php } ?>
-				<?php if($_SESSION['login']=='pablo'){ ?>
+				<?php }  ?>
+				<?php if($useractual=='vendedor'){ ?>
 				<ul>Vendedor
 					<a href="../Controllers/JUEGO_Controller.php" ><li>Gestionar juegos</li></a>
                     <a href="../Controllers/SOCIO_Controller.php" ><li>Gestionar socios</li></a>
@@ -65,7 +72,7 @@
 					<a href="../Controllers/ACTIVOS_Controller.php" ><li>Socios más activos</li></a>
 					</ul>
 					<?php } ?>
-					<?php if($_SESSION['login']=='juan'){ ?>
+					<?php if($useractual=='socio'){ ?>
 				<ul>Socio
 				<a href="../Controllers/CATALOGO_Controller.php" ><li>Consultar catálogo</li></a>
 					<a href="../Controllers/NOVEDADES_Controller.php" ><li>Consultar novedades</li></a>

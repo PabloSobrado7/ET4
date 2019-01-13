@@ -49,11 +49,9 @@ $(document).ready(function() {
         <section class="form-basic-start">
 
             <div class="showall">
-SOCIOS MÁS ACTIVOS
+TOP SOCIOS MÁS ACTIVOS
                 <div >
-                    <form  action="../Controllers/CATALOGO_Controller.php" method="">
-						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-						 </form>
+
 
                 </div>
 				

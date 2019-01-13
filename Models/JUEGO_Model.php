@@ -129,18 +129,15 @@ class JUEGO_Model
         $result; //variable que albergara el valor de resultado
 
         // construimos el sql para buscar esa clave en la tabla
-        $sql = "SELECT * FROM `JUEGO` WHERE 
-		(`id_juego`LIKE '%$this->id_juego%'
-		OR `nombre_juego` LIKE '%$this->nombre_juego%'
-		OR `plataforma`LIKE '%$this->plataforma%'
-		OR `genero`LIKE '%$this->genero%'
-		OR `precio_compra` LIKE'%$this->precio_compra%'
-		OR `categoria`LIKE '%$this->categoria%'
-		OR `novedad` LIKE'%$this->novedad%'
-		OR `compra` LIKE'%$this->compra%'
-		OR `venta`LIKE '%$this->venta%'
+        
+		$sql = "SELECT * FROM `JUEGO` WHERE (
+		`id_juego` = '$this->id_juego' 
+		OR `nombre_juego` = '$this->nombre_juego'
+		OR `plataforma` = '$this->plataforma' 
+		OR `genero` = '$this->genero' 
+		OR `precio_compra` = '$this->precio_compra' 
+		OR `categoria` = '$this->categoria'
 		)";
-
 		
         if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
             return 'It does not exist in DB';
@@ -194,7 +191,9 @@ class JUEGO_Model
         $result; //variable que albergara el valor de resultado
 
         // construimos el sql para buscar esa clave en la tabla
-		$sql = "SELECT * FROM `JUEGO` where `plataforma` = 'PS4'";
+		$sql = "SELECT * 
+		FROM `JUEGO`
+		LIMIT 5";
 
         if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
 
@@ -213,8 +212,9 @@ class JUEGO_Model
         $result; //variable que albergara el valor de resultado
 
         // construimos el sql para buscar esa clave en la tabla
-                $sql = "SELECT * FROM `JUEGO` where `genero` = 'Plataformas'";
-
+		$sql = "SELECT * 
+		FROM `JUEGO`
+		LIMIT 5";
         if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
             return 'It does not exist in DB';
         } else { // si existe
