@@ -44,39 +44,39 @@ class Juego_ADD {
                 <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/JUEGO_Controller.php">
                     <div class="form-group">
                         <label class="form-label" for="id_juego">#Juego</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="id_juego" name="id_juego">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="id_juego" name="id_juego" onblur=" comprobarVacio(this); comprobarTexto(this, 15)" >
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="nombre_juego">Nombre</label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="nombre_juego" name="nombre_juego">
+                        <input type="text" class="form-control" maxlength="20" size="15" id="nombre_juego" name="nombre_juego" onblur=" comprobarVacio(this); comprobarTexto(this, 20); comprobarAlfabetico(this,20)" >
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="plataforma">Plataforma</label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="plataforma" name="plataforma">
+                        <input type="text" class="form-control" maxlength="20" size="15" id="plataforma" name="plataforma" onblur=" comprobarVacio(this); comprobarTexto(this, 15);comprobarAlfabetico(this,20)" >
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="genero">Genero</label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="genero" name="genero">
+                        <input type="text" class="form-control" maxlength="20" size="15" id="genero" name="genero" onblur=" comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,15)" >
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="precio_compra">Precio Compra</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra" onblur=" comprobarVacio(this); comprobarEntero(this,2,0,200)" >
                     </div>
 					<div class="form-group">
                         <label class="form-label" for="categoria">Categoria</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="categoria" name="categoria">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="categoria" name="categoria" onblur=" comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,15)">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="novedad">Novedad</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="novedad" name="novedad">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="novedad" name="novedad" onblur="comprobarVacio(this)">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="compra">Compra</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="compra" name="compra">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="compra" name="compra" onblur="comprobarVacio(this)">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="venta">Venta</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="venta" name="venta">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="venta" name="venta" onblur="comprobarVacio(this)">
                     </div>
                     <button name="action" value="ADD" type="submit" class="boton-env">
                         <img src="../Views/imgs/send.png" alt="">
