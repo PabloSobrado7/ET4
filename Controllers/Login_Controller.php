@@ -36,6 +36,15 @@ else{
 	include '../Models/ADMIN_Model.php';
 	$usuario = new ADMIN_Model($_REQUEST['login'],$_REQUEST['password']);
 	$respuesta = $usuario->login();
+	$user = $usuario->tipouser();
+	
+	$archivo = fopen('../tipouser.txt', 'w');
+	fwrite($archivo, $user);
+	fclose($archivo);
+	
+	//echo $user;
+	//die();
+	
 	
 	//Comprueba si el usuario existe y coincide con la contraseña
         if ($respuesta == 'true') {

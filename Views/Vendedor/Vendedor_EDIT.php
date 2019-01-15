@@ -52,43 +52,38 @@
                 ?>
 <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/VENDEDOR_Controller.php">
                     <div class="form-group">
-                        <label class="form-label" for="login_vendedor"><?php echo $strings['Usuario']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="login_vendedor" name="login_vendedor" value="<?php echo $login_vendedor; ?>">
+                        <label class="form-label" for="login_vendedor">Login</label>
+                        <input type="text" class="form-control" maxlength="60" size="60" id="login_vendedor" name="login_vendedor" value="<?php echo $login; ?>" readonly>
                     </div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="login"><?php echo $strings['Name']; ?></label>
-                        <input type="text" class="form-control" maxlength="30" size="30" id="lotnombre" name="lotnombre" value="<?php echo $lotnombre; ?>" onblur="comprobarTexto(this,30)">
+                        <label class="form-label" for="pass_vendedor">Password</label>
+                        <input type="text" class="form-control" maxlength="30" size="30" id="pass_vendedor" name="pass_vendedor" value="<?php echo $password; ?>" readonly>
                     </div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="pass_vendedor"><?php echo $strings['Contraseña']; ?></label>
-                        <input type="text" class="form-control" maxlength="40" size="40" id="pass_vendedor" name="pass_vendedor" value="<?php echo $pass_vendedor; ?>">
+                        <label class="form-label" for="dni_vendedor">DNI</label>
+                        <input type="text" class="form-control" maxlength="40" size="40" id="dni_vendedor" name="dni_vendedor" value="<?php echo $dni; ?>" onblur="comprobarVacio(this);comprobarDNI(this)">
                     </div>
 					
 					<div class="form-group">
-                        <label class="form-label" for="dni_vendedor"><?php echo $strings['DNI']; ?></label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="dni_vendedor" name="dni_vendedor" value="<?php echo $dni_vendedor; ?>">
+                        <label class="form-label" for="nombre_vendedor">Nombre</label>
+                        <input type="text" class="form-control" maxlength="3" size="3" id="nombre_vendedor" name="nombre_vendedor" value="<?php echo $nombre; ?>"  onblur="comprobarVacio(this);comprobarTexto(this,25);comprobarAlfabetico(this,25)">
                     </div>
 					
 					<div class="form-group">
-                        <label class="form-label" for="nombre_vendedor"><?php echo $strings['Nombre']; ?></label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="nombre_vendedor" name="nombre_vendedor" value="<?php echo $nombre_vendedor; ?>">
+                        <label class="form-label" for="apellidos_vendedor">Apellidos</label>
+                        <input type="text" class="form-control" maxlength="3" size="3" id="apellidos_vendedor" name="apellidos_vendedor" value="<?php echo $apellidos; ?>" onblur="comprobarVacio(this);comprobarTexto(this,50);comprobarAlfabetico(this,50)">
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="apellidos_vendedor"><?php echo $strings['Apellidos']; ?></label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="apellidos_vendedor" name="apellidos_vendedor" value="<?php echo $apellidos_vendedor; ?>">
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label" for="email_vendedor"><?php echo $strings['Correo']; ?></label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="email_vendedor" name="email_vendedor" value="<?php echo $email_vendedor; ?>">
+                        <label class="form-label" for="email_vendedor">Email</label>
+                        <input type="text" class="form-control" maxlength="3" size="3" id="email_vendedor" name="email_vendedor" value="<?php echo $email; ?>" onblur="comprobarVacio(this);comprobarTexto(this,60);comprobarCorreo(this)">
                     </div>
 
                      <div class="form-group">
-                        <label class="form-label" for="telefono_vendedor"><?php echo $strings['Telefono']; ?></label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="telefono_vendedor" name="telefono_vendedor" value="<?php echo $telefono_vendedor; ?>">
+                        <label class="form-label" for="telefono_vendedor">Telefono</label>
+                        <input type="text" class="form-control" maxlength="3" size="3" id="telefono_vendedor" name="telefono_vendedor" value="<?php echo $telefono; ?>" onblur="comprobarVacio(this);comprobarTelefono(this)">
                     </div>
 
                     
@@ -104,13 +99,12 @@
 				<h6>Gamerenting</h6>
             </footer>
         </section>
-        <!--<script src="../Views/js/md5.js"></script>
+       
         <?php include '../Views/js/validaciones.js'; ?>
-        <script src="../Views/js/main.js"></script>-->
+      
         </body>
         </html>
-		<script src="../js/validaciones.js"></script> 
-
+		
         <?php
 
     }

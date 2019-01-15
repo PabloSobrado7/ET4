@@ -3,7 +3,7 @@
  * Funcion: Vista que nos permite buscar por juegos
  * Autor: Mario Gayoso Pérez
   */
-class Juego_SEARCH {
+class Catalogo_SEARCH {
 
     function __construct(){
 
@@ -46,16 +46,7 @@ class Juego_SEARCH {
 
                 ?>
  
-				<form  action="<?php echo $message; ?>" method="post">	
-					<div class="form-group">
-                        <label class="form-label" for="id_juego">#Juego</label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="id_juego" name="id_juego" >
-                    </div>
-					
-				<div class="showall">
-                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-                </div>
-				</form>
+
                 <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="nombre_juego">Nombre</label>
@@ -66,74 +57,79 @@ class Juego_SEARCH {
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
 				</form> 
-                 <form  action="<?php echo $message; ?>" method="post">  
-                    <div class="form-group">
-                        <label class="form-label" for="plataforma">Plataforma</label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="plataforma" name="plataforma" >
-                    </div>
+                 <form  action="<?php echo $message; ?>" method="post"> 
+				<label class="form-label" for="plataforma">Plataforma</label>
+					 
+<select name="plataforma">
+  <option value="PS4">PS4</option>
+  <option value="Xbox 360">Xbox 360</option>
+  <option value="PC">PC</option>
+  <option value="Nintendo Switch">Nintendo Switch</option>
+</select>
       
                <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
 				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
-                    <div class="form-group">
-                        <label class="form-label" for="genero">Genero</label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="genero" name="genero" >
-                    </div>
-                   
+                    
+					<label class="form-label" for="genero">Género</label>
+				
+     <select name="genero">
+  <option value="PS4">Accion</option>
+  <option value="Xbox 360">Estrategia</option>
+  <option value="PC">Deportes</option>
+  <option value="Nintendo Switch">Plataformas</option>
+</select>
+              
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
 				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="precio_compra">Precio Compra</label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="precio_compra" name="precio_compra" >
-                    </div>
+                        <label class="form-label" for="precio_compra">Precio Compra (max)</label>
+                         <input type="range" name="precio_compra" min="5" max="70" step="5" value="35">
+						 </div>
                    
                <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
 				</form> 
-                 <form  action="<?php echo $message; ?>" method="post">  
-                    <div class="form-group">
-                        <label class="form-label" for="categoria">Categoria</label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="categoria" name="categoria" >
-                    </div>
-                 
+
+                 <form  action="<?php echo $message; ?>" method="post"> 
+				 
+                    <label class="form-label" for="novedad">Novedad</label>
+                <input type="checkbox" name="novedad" value="1"> SI<br>
+				<input type="checkbox" name="novedad" value="0"> NO <br>
+					
                <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
 				</form> 
-                 <form  action="<?php echo $message; ?>" method="post">  
-                    <div class="form-group">
-                        <label class="form-label" for="novedad">¿Novedad?</label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="novedad" name="novedad" >
-                    </div>
-               <div class="showall">
-                    <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-                </div>
-				</form> 
-                 <form  action="<?php echo $message; ?>" method="post">  
-                    <div class="form-group">
-                        <label class="form-label" for="compra">¿Compra?</label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="compra" name="compra" >
-                    </div>
+				
+                 <form  action="<?php echo $message; ?>" method="post"> 
+				 
+                    <label class="form-label" for="compra">Compra</label>
+                <input type="checkbox" name="compra" value="1"> SI<br>
+				<input type="checkbox" name="compra" value="0"> NO <br>
+				
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
 				 </form> 
-				<form  action="<?php echo $message; ?>" method="post">  
-                    <div class="form-group">
-                        <label class="form-label" for="venta">¿Alquiler?</label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="venta" name="venta" >
-                    </div>
+				 
+				<form  action="<?php echo $message; ?>" method="post"> 
+				
+			 <label class="form-label" for="venta">Alquiler</label>
+                <input type="checkbox" name="venta" value="1"> SI<br>
+				<input type="checkbox" name="venta" value="0"> NO <br>
+				
                <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
 			 </form>
-               
+			 
             </div>
 
             <footer>

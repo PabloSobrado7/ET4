@@ -8,9 +8,9 @@
 
 class Vendedor_DELETE {
 
-    function __construct($login_vendedor,$pass_vendedor,$dni_vendedor,$nss_vendedor,$nombre_vendedor,$apellidos_vendedor,$email_vendedor,$telefono_vendedor,$login_admin){
+    function __construct($login_vendedor,$pass_vendedor,$dni_vendedor,$nombre_vendedor,$apellidos_vendedor,$email_vendedor,$telefono_vendedor){
 
-        $this->pinta($login_vendedor,$pass_vendedor,$dni_vendedor,$nss_vendedor,$nombre_vendedor,$apellidos_vendedor,$email_vendedor,$telefono_vendedor,$login_admin);
+        $this->pinta($login_vendedor,$pass_vendedor,$dni_vendedor,$nombre_vendedor,$apellidos_vendedor,$email_vendedor,$telefono_vendedor);
 
     }
 
@@ -45,37 +45,37 @@ class Vendedor_DELETE {
                 <form enctype="multipart/form-data" action="../Controllers/VENDEDOR_Controller.php" method="post">
                     <ul>
                         <li>
-                            <h5><?php echo $strings['Login']; ?></h5>
+                            <h5>Login</h5>
                             <span><input type="hidden" name="login_vendedor" value="<?php echo $login_vendedor; ?>"><?php echo $login_vendedor; ?></span>
                         </li>
 						
 						<li>
-                            <h5><?php echo $strings['Password']; ?></h5>
+                            <h5>Password</h5>
                             <span><?php echo $pass_vendedor; ?></span>
                         </li>
 
                         <li>
-                            <h5><?php echo $strings['DNI']; ?></h5>
+                            <h5>DNI</h5>
                             <span><?php echo $dni_vendedor; ?></span>
                         </li>
 
                          <li>
-                            <h5><?php echo $strings['Name']; ?></h5>
+                            <h5>Nombre</h5>
                             <span><?php echo $nombre_vendedor; ?></span>
                         </li>
 						
 					    <li>
-                            <h5><?php echo $strings['Surname']; ?></h5>
+                            <h5>Apellidos</h5>
                             <span><?php echo $apellidos_vendedor; ?></span>
                         </li>
 						
 						<li>
-                            <h5><?php echo $strings['Email']; ?></h5>
+                            <h5>Email</h5>
                             <span><?php echo $email_vendedor; ?></span>
                         </li>
 						
 						<li>
-                            <h5><?php echo $strings['Telefono']; ?></h5>
+                            <h5>Telefono</h5>
                             <span><?php echo $telefono_vendedor; ?></span>
                         </li>
 						

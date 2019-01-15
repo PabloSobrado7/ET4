@@ -15,6 +15,8 @@ if (!IsAuthenticated()){
 
 }else{
 
+	require_once('../Models/JUEGO_Model.php');
+	require_once('../Models/SOCIO_Model.php');
     require_once('../Models/COMPRA_Model.php');
     include '../Views/Compra/Compra_SHOWALL.php';
     include '../Views/Compra/Compra_ADD.php';
@@ -46,15 +48,25 @@ if (!IsAuthenticated()){
         case 'ADD':
 		
             $COMPRA; //coge los valores y los mete en la variable
-            $respuesta; //almacena la respuesta que muestra el mensaje
+			$JUEGO;
+			$SOCIO;
+			$respuesta; //almacena la respuesta que muestra el mensaje
 
                 if (!$_POST){ //si entra por get envia un formulario
-				   new Compra_ADD();
+				   
+				$JUEGO = new JUEGO_Model('','','','','','','','','');
+				$datosjuego = $JUEGO->AllData();
+				
+				$SOCIO = new SOCIO_Model('','','','','','','','');
+				$datossocio = $SOCIO->AllData();
+				
+				   new Compra_ADD($datosjuego,$datossocio);
                 }
                 else{//Si entra por post recoge los datos y los envia a la BD y manda mensaje
 
 					$COMPRA = get_data_form();
                     $respuesta = $COMPRA->ADD();
+					$juego = 
                     new MESSAGE($respuesta, '../Controllers/COMPRA_Controller.php');
                 }
                 break;
@@ -64,10 +76,12 @@ if (!IsAuthenticated()){
             $COMPRA;
             $respuesta;
 			
+			
                 if (!$_POST){ //Si entra por get envia un formulario para el eliminado
 
-					new Compra_DELETE($_GET['login_socio'],$_GET['id_juego'],$_GET['fecha_compra']);
-                }
+				new Compra_DELETE($_GET['login_socio'],$_GET['id_juego'],$_GET['fecha_compra']);
+                
+				}
                 else{//Si entra por post recoge los datos y los envia a la BD y manda mensaje
                     
 					$COMPRA = new COMPRA_Model($_REQUEST['login_socio'],$_REQUEST['id_juego'],$_REQUEST['fecha_compra']);
@@ -81,12 +95,11 @@ if (!IsAuthenticated()){
 
         default:
 
-            
             $datos; //almacena los datos
 
             
                 if (!$_POST){//Si entra por get envia una tabla con los usuarios
-
+				
                     $COMPRA = new COMPRA_Model('','','');
                 }
                 else{//Si entra por post recoge el valor de un usuario y muestro la tabal con todos los usuarios
@@ -94,6 +107,7 @@ if (!IsAuthenticated()){
                     $COMPRA = new COMPRA_Model($_REQUEST['login_socio'],$_REQUEST['id_juego'],$_REQUEST['fecha_compra']);}
 
                 //lo hace de todas formas
+				
                 $datos = $COMPRA->AllData();
                 new Compra_SHOWALL($datos, '../Controllers/COMPRA_Controller.php');
            

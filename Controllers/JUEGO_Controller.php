@@ -77,7 +77,7 @@ if (!IsAuthenticated()){
 					$_GET['genero'],$_GET['precio_compra'],$_GET['categoria'],$_GET['novedad'],$_GET['compra'],$_GET['venta']);
 				}
                 else{//Si entra por post recoge los datos y los envia a la BD y manda mensaje
-                    $JUEGO = get_data_form();
+					$JUEGO = get_data_form();
                     $respuesta = $JUEGO->EDIT();
                     new MESSAGE($respuesta, '../Controllers/JUEGO_Controller.php');
 				}
@@ -92,7 +92,8 @@ if (!IsAuthenticated()){
                     new Juego_SEARCH();
 				}
                 else{//Si entra por post recoge los datos y los envia a la BD y manda mensaje
-                    $JUEGO = get_data_form();
+
+					$JUEGO = get_data_form();
 
                     $respuesta = $JUEGO->SEARCH();
 					 new Juego_SHOWALL($respuesta, '../Controllers/JUEGO_Controller.php');

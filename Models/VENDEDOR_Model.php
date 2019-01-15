@@ -121,9 +121,9 @@ class VENDEDOR_Model
         $result; //variable que albergara el valor de resultado
 
         // construimos el sql para buscar esa clave en la tabla
-        $sql = "SELECT * FROM `VENDEDOR` WHERE (`login_vendedor` = '$this->login_vendedor' OR `dni_vendedor` LIKE '$this->dni_vendedor' 
-		OR `nombre_vendedor` LIKE '$this->nombre_vendedor' OR `apellidos_vendedor` LIKE '$this->apellidos_vendedor' 
-		OR `email_vendedor` LIKE '$this->email_vendedor', OR `telefono_vendedor` LIKE '$this->telefono_vendedor' )";
+        $sql = "SELECT * FROM `VENDEDOR` WHERE (`login_vendedor` = '$this->login_vendedor' OR `dni_vendedor` = '$this->dni_vendedor' 
+		OR `nombre_vendedor` = '$this->nombre_vendedor' OR `apellidos_vendedor` = '$this->apellidos_vendedor' 
+		OR `email_vendedor` = '$this->email_vendedor' OR `telefono_vendedor` = '$this->telefono_vendedor')";
 
         if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
             return 'It does not exist in DB';
@@ -131,6 +131,7 @@ class VENDEDOR_Model
             $result = $resultado;//guarda el valor deresultado en result
             return $result; //devuelve result
         }
+		
     }
 
     function AllData()

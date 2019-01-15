@@ -57,17 +57,6 @@ class Socio_SEARCH {
 					<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
 				</div>
 				</form>
-
-				<form  action="<?php echo $message; ?>" method="post">
-					<div class="form-group">
-                        <label class="form-label" for="pass_socio"><?php echo $strings['Contraseña']; ?></label>
-                        <input type="text" class="form-control" maxlength="20" size="20" id="pass_socio" name="pass_socio">
-                    </div>
-					
-				<div class="showall">
-					<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-                </div>
-				</form>
 					
 					<form  action="<?php echo $message; ?>" method="post">
 					<div class="form-group">

@@ -7,7 +7,7 @@
  */
 include_once '../Functions/Authentication.php';
 
-class Juego_SHOWALL {
+class Novedades_SHOWALL {
 
     function __construct($users,$message){
 
@@ -36,14 +36,13 @@ class Juego_SHOWALL {
 
         new HEADER();
         ?>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.js"></script> 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		
-<script type="text/javascript" src="jquery.tablesorter.js"></script>
 <script>
 $(document).ready(function() {
   //cuando la página se cargue convertimos la tabla con id "simple" en una tabla ordenable
-	$("#games").tableSorter();
+	$("#juegos").tableSorter();
 });
 </script>
 
@@ -54,12 +53,11 @@ $(document).ready(function() {
                 <div >
                     <form  action="<?php echo $message; ?>" method="">
 						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-						<button class="showall-action" name="action" value="ADD" type="submit"><img src="../Views/imgs/add.png" alt="" srcset=""></button>
-                    </form>
+						 </form>
 
                 </div>
 				
-                <table id="games" class="showall-tab">
+                <table id="juegos" class="showall-tab">
                     <tr>
                         <th>#Juego</th>
 						<th>Nombre</th>
@@ -70,6 +68,9 @@ $(document).ready(function() {
 						<th>Novedad</th>
                         <th>Compra</th>
                         <th>Venta</th>
+
+                        <th>
+                        </th>
                     </tr>
                     <?php
 
@@ -101,9 +102,7 @@ $(document).ready(function() {
                                 <td><?php echo $row['compra']; ?></td>
                                 <td><?php echo $row['venta']; ?></td>
                                 <td>
-									<button class="showall-action" name="action" value="EDIT" type="submit"><img src="../Views/imgs/edit.png" alt="" srcset=""></button>
-                                    <button class="showall-action" name="action" value="DELETE" type="submit"><img src="../Views/imgs/delete.png" alt="" srcset=""></button>
-                                </td>
+									</td>
                             </form>
                         </tr>
 

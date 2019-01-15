@@ -80,20 +80,76 @@ function login(){
 			WHERE (
 				(login_admin = '$this->login_admin') 
 			)";
+	$resultado = $this->mysqli->query($sql);
+	
+if ($resultado->num_rows == 0){
+
+	$sql = "SELECT *
+			FROM `VENDEDOR`
+			WHERE (
+				(login_vendedor = '$this->login_admin') 
+			)";
 
 	$resultado = $this->mysqli->query($sql);
+	
+}	
+if ($resultado->num_rows == 0){
+	
+	$sql = "SELECT *
+			FROM `SOCIO`
+			WHERE (
+				(login_socio = '$this->login_admin') 
+			)";
+	$resultado = $this->mysqli->query($sql);		
+}			
 	if ($resultado->num_rows == 0){
 		return 'El login no existe';
 	}
 	else{
 		$tupla = $resultado->fetch_array();
-		if ($tupla['pass_admin'] == $this->pass_admin){
+		if (($tupla['pass_admin'] == $this->pass_admin)
+		OR ($tupla['pass_vendedor'] == $this->pass_admin)
+OR ($tupla['pass_socio'] == $this->pass_admin))	{
 			return true;
 		}
 		else{
 			return 'La password para este usuario no es correcta';
 		}
 	}
+}//fin metodo login
+
+function tipouser(){
+	
+	$user;
+	$sql = "SELECT *
+			FROM `ADMIN`
+			WHERE (
+				(login_admin = '$this->login_admin') 
+			)";
+	$resultado = $this->mysqli->query($sql);
+	$user = 'admin';
+if ($resultado->num_rows == 0){
+
+	$sql = "SELECT *
+			FROM `VENDEDOR`
+			WHERE (
+				(login_vendedor = '$this->login_admin') 
+			)";
+
+	$resultado = $this->mysqli->query($sql);
+	$user = 'vendedor';
+}	
+if ($resultado->num_rows == 0){
+	
+	$sql = "SELECT *
+			FROM `SOCIO`
+			WHERE (
+				(login_socio = '$this->login_admin') 
+			)";
+	$resultado = $this->mysqli->query($sql);
+	$user = 'socio';	
+}			
+	return $user;
 }//fin metodo login
 
 //

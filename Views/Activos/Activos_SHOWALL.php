@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite ver todas las compras
+ * Funcion: Vista que nos permite ver el catalogo para los users
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
 include_once '../Functions/Authentication.php';
 
-class Compra_SHOWALL {
+class Activos_SHOWALL {
 
     function __construct($users,$message){
 
@@ -36,28 +36,37 @@ class Compra_SHOWALL {
 
         new HEADER();
         ?>
-		 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.js"></script> 
+
+<script>
+$(document).ready(function() {
+  //cuando la página se cargue convertimos la tabla con id "simple" en una tabla ordenable
+	$("#juegos").tableSorter();
+});
+</script>
+
         <section class="form-basic-start">
 
             <div class="showall">
-
+TOP SOCIOS MÁS ACTIVOS
                 <div >
-                    <form  action="<?php echo $message; ?>" method="">
-						<button class="showall-action" name="action" value="ADD" type="submit"><img src="../Views/imgs/add.png" alt="" srcset=""></button>
-                    </form>
+
 
                 </div>
-
-                <table class="showall-tab">
+				
+                <table id="socios" class="showall-tab">
                     <tr>
-                        <th>Login socio</th>
-						<th>Id Juego</th>
-						<th>Fecha compra</th>
+						<th>Login</th>
+						<th>Email</th>
+						<th>Telefono</th>
+
 
                         <th>
                         </th>
                     </tr>
                     <?php
+
                     $row;//almacena usuarios
 
                     //mientras existan usuarios
@@ -65,19 +74,14 @@ class Compra_SHOWALL {
                         ?>
 
                         <tr>
-                            <form action="../Controllers/COMPRA_Controller.php" method="" >
 
-							<input type="hidden" name="login_socio" value="<?php echo $row['login_socio']; ?>">
-							<input type="hidden" name="id_juego" value="<?php echo $row['id_juego']; ?>">
-							<input type="hidden" name="fecha_compra" value="<?php echo $row['fecha_compra']; ?>">
 								<td><?php echo $row['login_socio']; ?></td>
-								<td><?php echo $row['id_juego']; ?></td>
-								<td><?php echo $row['fecha_compra'];?></td>
-
-                                <td>
-									<button class="showall-action" name="action" value="DELETE" type="submit"><img src="../Views/imgs/delete.png" alt="" srcset=""></button>
-                                </td>
-                            </form>
+								<td><?php echo $row['email_socio']; ?></td>
+								<td><?php echo $row['telefono_socio']; ?></td>
+					
+					           <td>
+									</td>
+                            
                         </tr>
 
                         <?php
@@ -85,9 +89,11 @@ class Compra_SHOWALL {
                     ?>
                 </table>
             </div>
+
 			
             <footer>
-				<h6>GAMERENTING - 2018</h6>
+				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
+				<h6>Socio Showall</h6>
             </footer>
         </section>
 

@@ -7,15 +7,15 @@
  */
  class Alquila_ADD {
 
-    function __construct(){
+    function __construct($datosjuego,$datossocio,$datostarifa){
 
-        $this->pinta();
+        $this->pinta($datosjuego,$datossocio,$datostarifa);
 
     }
 
 
     //función que contiene la vista
-    function pinta(){
+    function pinta($datosjuego,$datossocio,$datostarifa){
         //comprueba si hay un idioma en $_SESSION
         //si no, inserta el idioma español
         if(!isset($_SESSION['idioma'])){
@@ -43,29 +43,70 @@
                 <?php
 
                 ?>
-                <h3>Realizar alquilar</h3>
+                <h3>Realizar alquiler</h3>
                 <?php
 
                 ?>
                 <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/ALQUILA_Controller.php">
-                    <div class="form-group">
-                        <label class="form-label" for="login_socio">Login socio</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="login_socio" name="login_socio">
-                    </div>
-					
 					 <div class="form-group">
-                        <label class="form-label" for="id_tarifa">Id Tarifa</label>
-                        <input type="text" class="form-control" maxlength="20" size="20" id="id_tarifa" name="id_tarifa">
-                    </div>
+                        <label class="form-label" for="login_socio">Socio</label>
+                        
+					<td>
+								<select name="login_socio">
+
+								<?php
+								while ($row = $datossocio->fetch_array()){
+									?>
+								<option value="<?php echo $row['login_socio']; ?>"><?php echo $row['login_socio']; ?></option>
+		                        <?php
+								}
+								?>
+
+								</select></td>
+					</div>
+	
+						 <div class="form-group">
+                        <label class="form-label" for="id_tarifa">Tarifa</label>
+                        
+					<td>
+								<select name="id_tarifa">
+
+								<?php
+								while ($row = $datostarifa->fetch_array()){
+									?>
+								
+								<option value="<?php echo $row['id_tarifa']; ?>"><?php echo $row['tiempo_tarifa']; ?> días</option>
+		                        <?php
+								}
+								?>
+
+								</select></td>
+					</div>
+
 	
 					 <div class="form-group">
-                        <label class="form-label" for="id_juego">Id Juego</label>
-                        <input type="text" class="form-control" id="id_juego" name="id_juego">
-                    </div>
+                        <label class="form-label" for="id_juego">Juego</label>
+                        
+					<td>
+								<select name="id_juego">
+
+								<?php
+								while ($row = $datosjuego->fetch_array()){
+									?>
+									
+																		
+									<?php
+								if($row['venta']=='1'){ ?>
+								<option value="<?php echo $row['id_juego']; ?>"><?php echo $row['nombre_juego']; ?> | <?php echo $row['plataforma']; ?> </option>
+		                        <?php
+								}}
+								?>
+
+								</select></td>
+					</div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="fecha_alquiler">Fecha alquiler</label>
-                        <input type="date" class="form-control" id="fecha_alquiler" name="fecha_alquiler">
+                       <input type="hidden" class="form-control" id="fecha_alquiler" name="fecha_alquiler" value="<?php echo date("Y-m-d\TH-i");?>">
                     </div>
 					
                     <button name="action" value="ADD" type="submit" class="boton-env">

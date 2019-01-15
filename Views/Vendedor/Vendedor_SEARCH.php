@@ -47,7 +47,7 @@ class Vendedor_SEARCH {
 
                 ?>
  
-				<form  action="<?php echo $message; ?>" method="post">	
+				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">	
 					<div class="form-group">
                         <label class="form-label" for="login_vendedor"><?php echo $strings['Usuario']; ?></label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="login_vendedor" name="login_vendedor" >
@@ -58,7 +58,7 @@ class Vendedor_SEARCH {
 				</div>
 				</form>
 
-				<form  action="<?php echo $message; ?>" method="post">
+				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">
 					<div class="form-group">
                         <label class="form-label" for="pass_vendedor"><?php echo $strings['Contraseña']; ?></label>
                         <input type="text" class="form-control" maxlength="30" size="30" id="pass_vendedor" name="pass_vendedor">
@@ -69,7 +69,7 @@ class Vendedor_SEARCH {
                 </div>
 				</form>
 					
-				<form  action="<?php echo $message; ?>" method="post">
+				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">
                     <div class="form-group">
                         <label class="form-label" for="dni_vendedor"><?php echo $strings['DNI']; ?></label>
                         <input type="text" class="form-control" maxlength="30" size="30" id="dni_vendedor" name="dni_vendedor">
@@ -80,7 +80,7 @@ class Vendedor_SEARCH {
                 </div>
                 </form>
 				
-				<form  action="<?php echo $message; ?>" method="post">
+				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">
                     <div class="form-group">
                         <label class="form-label" for="nombre_vendedor"><?php echo $strings['Nombre']; ?></label>
                         <input type="text" class="form-control" maxlength="30" size="30" id="nombre_vendedor" name="nombre_vendedor">
@@ -91,7 +91,7 @@ class Vendedor_SEARCH {
                 </div>
                 </form> 
 				   
-				<form  action="<?php echo $message; ?>" method="post">
+				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">
                     <div class="form-group">
                         <label class="form-label" for="apellidos_vendedor"><?php echo $strings['Apellidos']; ?></label>
                         <input type="text" class="form-control" maxlength="30" size="30" id="apellidos_vendedor" name="apellidos_vendedor">
@@ -102,7 +102,7 @@ class Vendedor_SEARCH {
                 </div>
                 </form>
 					
-				<form  action="<?php echo $message; ?>" method="post">
+				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">
                     <div class="form-group">
                         <label class="form-label" for="email_vendedor"><?php echo $strings['Correo']; ?></label>
                         <input type="text" class="form-control" maxlength="30" size="30" id="email_vendedor" name="email_vendedor">
@@ -113,7 +113,7 @@ class Vendedor_SEARCH {
                 </div>
                 </form>
 
-                <form  action="<?php echo $message; ?>" method="post">
+                <form  action="../Controllers/VENDEDOR_Controller.php" method="post">
                     <div class="form-group">
                         <label class="form-label" for="telefono_vendedor"><?php echo $strings['Telefono']; ?></label>
                         <input type="text" class="form-control" maxlength="30" size="30" id="telefono_vendedor" name="telefono_vendedor">

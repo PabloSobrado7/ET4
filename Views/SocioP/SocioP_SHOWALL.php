@@ -1,21 +1,21 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite ver todas las loteria
+ * Funcion: Vista que nos permite ver el catalogo para los users
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
 include_once '../Functions/Authentication.php';
 
-class Juego_SHOWALL {
+class SocioP_SHOWALL {
 
-    function __construct($users,$message){
+    function __construct($users,$datos,$message){
 
-        $this->pinta($users,$message);
+        $this->pinta($users,$datos,$message);
 
     }
     //función que contiene la vista
-    function pinta($users,$message){
+    function pinta($users,$datos,$message){
         if(!isset($_SESSION['idioma'])){
             $_SESSION['idioma'] = 'SPANISH';
         }
@@ -36,40 +36,31 @@ class Juego_SHOWALL {
 
         new HEADER();
         ?>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.js"></script> 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		
-<script type="text/javascript" src="jquery.tablesorter.js"></script>
 <script>
 $(document).ready(function() {
   //cuando la página se cargue convertimos la tabla con id "simple" en una tabla ordenable
-	$("#games").tableSorter();
+	$("#juegos").tableSorter();
 });
 </script>
 
         <section class="form-basic-start">
 
             <div class="showall">
+MIS COMPRAS
 
-                <div >
-                    <form  action="<?php echo $message; ?>" method="">
-						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-						<button class="showall-action" name="action" value="ADD" type="submit"><img src="../Views/imgs/add.png" alt="" srcset=""></button>
-                    </form>
-
-                </div>
 				
-                <table id="games" class="showall-tab">
+                <table id="juegos" class="showall-tab">
                     <tr>
-                        <th>#Juego</th>
 						<th>Nombre</th>
 						<th>Plataforma</th>
 						<th>Genero</th>
 						<th>Precio Compra</th>
-						<th>Categoria</th>
-						<th>Novedad</th>
-                        <th>Compra</th>
-                        <th>Venta</th>
+
+                        <th>
+                        </th>
                     </tr>
                     <?php
 
@@ -80,31 +71,65 @@ $(document).ready(function() {
                         ?>
 
                         <tr>
-                            <form action="../Controllers/JUEGO_Controller.php" method="" >    
                               <input type="hidden" name="id_juego" value="<?php echo $row['id_juego']; ?>">      
                               <input type="hidden" name="nombre_juego" value="<?php echo $row['nombre_juego']; ?>">
                               <input type="hidden" name="plataforma" value="<?php echo $row['plataforma']; ?>">
                               <input type="hidden" name="genero" value="<?php echo $row['genero']; ?>">
                               <input type="hidden" name="precio_compra" value="<?php echo $row['precio_compra']; ?>">
-                              <input type="hidden" name="categoria" value="<?php echo $row['categoria']; ?>">                      
-                              <input type="hidden" name="novedad" value="<?php echo $row['novedad']; ?>">
-                              <input type="hidden" name="compra" value="<?php echo $row['compra']; ?>">
-                              <input type="hidden" name="venta" value="<?php echo $row['venta']; ?>">
-
-								<td><?php echo $row['id_juego']; ?></td>
+                              
 								<td><?php echo $row['nombre_juego']; ?></td>
 								<td><?php echo $row['plataforma']; ?></td>
 								<td><?php echo $row['genero']; ?></td>
-								<td><?php echo $row['precio_compra']; ?></td>
-								<td><?php echo $row['categoria']; ?></td>
-								<td><?php echo $row['novedad']; ?></td>
-                                <td><?php echo $row['compra']; ?></td>
-                                <td><?php echo $row['venta']; ?></td>
-                                <td>
-									<button class="showall-action" name="action" value="EDIT" type="submit"><img src="../Views/imgs/edit.png" alt="" srcset=""></button>
-                                    <button class="showall-action" name="action" value="DELETE" type="submit"><img src="../Views/imgs/delete.png" alt="" srcset=""></button>
-                                </td>
-                            </form>
+								<td><?php echo $row['precio_compra']; ?>€</td>
+
+					           <td>
+									</td>
+                            
+                        </tr>
+
+                        <?php
+                    }
+                    ?>
+                </table>
+            </div>
+			
+			            <div class="showall">
+MIS ALQUILERES
+
+				
+                <table id="juegos" class="showall-tab">
+                    <tr>
+						<th>Nombre</th>
+						<th>Plataforma</th>
+						<th>Genero</th>
+						<th>Fecha fin alquiler</th>
+
+                        <th>
+                        </th>
+                    </tr>
+                    <?php
+
+                    $row;//almacena usuarios
+
+                    //mientras existan usuarios
+                    while ($row = $datos->fetch_array()){
+                        ?>
+
+                        <tr>
+                              <input type="hidden" name="id_juego" value="<?php echo $row['id_juego']; ?>">      
+                              <input type="hidden" name="nombre_juego" value="<?php echo $row['nombre_juego']; ?>">
+                              <input type="hidden" name="plataforma" value="<?php echo $row['plataforma']; ?>">
+                              <input type="hidden" name="genero" value="<?php echo $row['genero']; ?>">
+                            
+								<td><?php echo $row['nombre_juego']; ?></td>
+								<td><?php echo $row['plataforma']; ?></td>
+								<td><?php echo $row['genero']; ?></td>
+								<td>31-01-2019</td>
+								<td></td>
+								
+					           <td>
+									</td>
+                            
                         </tr>
 
                         <?php
