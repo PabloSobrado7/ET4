@@ -33,6 +33,7 @@ array(
 	'Eliminarsocio' => 'Eliminar socio',
 	'Editarsocio' => 'Editar socio',
 	'Eliminarvendedor' =>' Eliminar vendedor',
+	'Desbloquear usuario' => 'Desbolquear usuario ',
 
 	'Sexo' => 'Sexo',
 	'Hombre' => 'Hombre',
