@@ -106,7 +106,7 @@
             </footer>
         </section>
         
-        <?php include '../Views/js/validaciones.js'; ?>
+        <script type="text/javascript" src="../Views/js/validaciones.js"></script>
 
         </body>
         </html>

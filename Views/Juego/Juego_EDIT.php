@@ -57,7 +57,7 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="plataforma">Plataforma</label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="plataforma" name="plataforma" value="<?php echo $plataforma; ?>" onblur=" comprobarVacio(this); comprobarTexto(this, 15);comprobarAlfabetico(this,20)">
+                        <input type="text" class="form-control" maxlength="20" size="15" id="plataforma" name="plataforma" value="<?php echo $plataforma; ?>" onblur=" comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,20)">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="genero">Genero</label>
@@ -99,7 +99,7 @@
             </footer>
         </section>
         
-        <?php include '../Views/js/validaciones.js'; ?>
+        <script type="text/javascript" src="../Views/js/validaciones.js"></script>
 
         </body>
         </html>
