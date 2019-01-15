@@ -90,13 +90,12 @@ class Juego_ADD {
 				<h6>Prueba formulario ADD Juego</h6>
             </footer>
         </section>
-        <!--<script src="../Views/js/md5.js"></script>
+        
         <?php include '../Views/js/validaciones.js'; ?>
-        <script src="../Views/js/main.js"></script>-->
+
         </body>
         </html>
-		<script src="../js/validaciones.js"></script>  
-
+		
         <?php
 
     }
