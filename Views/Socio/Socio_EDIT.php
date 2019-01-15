@@ -8,17 +8,17 @@
  class Socio_EDIT {
 
     function __construct($login_socio,$pass_socio,$dni_socio,
-	$nombre_socio,$apellidos_socio,$email_socio,$telefono_socio){
+	$nombre_socio,$apellidos_socio,$email_socio,$telefono_socio, $socio_bloqueado){
 
         $this->pinta($login_socio,$pass_socio,$dni_socio,
-    $nombre_socio,$apellidos_socio,$email_socio,$telefono_socio);
+    $nombre_socio,$apellidos_socio,$email_socio,$telefono_socio, $socio_bloqueado);
 
     }
 
 
     //función que contiene la vista
     function pinta($login_socio,$pass_socio,$dni_socio,
-    $nombre_socio,$apellidos_socio,$email_socio,$telefono_socio){
+    $nombre_socio,$apellidos_socio,$email_socio,$telefono_socio, $socio_bloqueado){
         //comprueba si hay un idioma en $_SESSION
         //si no, inserta el idioma español
         if(!isset($_SESSION['idioma'])){
@@ -53,12 +53,12 @@
 <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/SOCIO_Controller.php">
                     <div class="form-group">
                         <label class="form-label" for="login_socio"><?php echo $strings['Usuario'];?></label>
-                        <input type="text" class="form-control" maxlength="25" size="25" id="login_socio" name="login_socio" value="<?php echo $login_socio; ?>>
+                        <input type="text" class="form-control" maxlength="25" size="25" id="login_socio" name="login_socio" value="<?php echo $login_socio; ?>">
                     </div>
 					
 					 <div class="form-group">
                         <label class="form-label" for="pass_socio"><?php echo $strings['Contraseña'];?></label>
-                        <input type="text" class="form-control" maxlength="20" size="20" id="login_socio" name="login_socio" value="<?php echo $login_socio;?>>
+                        <input type="text" class="form-control" maxlength="20" size="20" id="login_socio" name="login_socio" value="<?php echo $login_socio;?>">
                     </div>
 					
 					 <div class="form-group">
@@ -73,7 +73,7 @@
 					
 					<div class="form-group">
                         <label class="form-label" for="apellidos_socio"><?php echo $strings['Apellidos'];?></label>
-                        <input type="text" class="form-control" maxlength="50" size="50" id="nombre_socio" name="nombre_socio" value="<?php echo $apellidos_socio; ?>">
+                        <input type="text" class="form-control" maxlength="50" size="50" id="apellidos_socio" name="apellidos_socio" value="<?php echo $apellidos_socio; ?>">
                     </div>
 
                     <div class="form-group">
