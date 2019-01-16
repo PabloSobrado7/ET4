@@ -63,7 +63,7 @@ array(
 	'Prueba formulario DELETE Juego' => 'Proba formulario DELETE xogo',
 	'Prueba formulario EDIT' => 'Proba formulario EDIT',
 	'Prueba formulario SEARCH Juego' => 'Proba formulario SEARCH xogo',
-	'Juego SHOWALL' => 'Xogo SHOWALL'
+	'Juego SHOWALL' => 'Xogo SHOWALL',
 	'Prueba formulario SEARCH Catalogo' => 'Proba formulario SEARCH Catálogo',
 	'Catalogo SHOWALL' => 'Catálogo SHOWALL'
 

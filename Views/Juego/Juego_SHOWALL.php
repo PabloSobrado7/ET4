@@ -115,7 +115,7 @@ $(document).ready(function() {
 			
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6><?php echo $strings['Juego Showall']; ?></h6>
+				<h6><?php echo $strings['Juego SHOWALL']; ?></h6>
             </footer>
         </section>
 

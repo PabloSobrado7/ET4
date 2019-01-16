@@ -43,11 +43,11 @@ class Juego_ADD {
                 ?>
                 <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/JUEGO_Controller.php">
                     <div class="form-group">
-                        <label class="form-label" for="id_juego"><?php echo $strings['ID juego'];?></label>
+                        <label class="form-label" for="id_juego"><?php echo $strings['ID Juego']; ?></label>
                         <input type="text" class="form-control" maxlength="15" size="15" id="id_juego" name="id_juego" onblur=" comprobarVacio(this); comprobarTexto(this, 15)" >
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="nombre_juego"><?php echo $strings['Nombre'];?></label>
+                        <label class="form-label" for="nombre_juego"><?php echo $strings['Nombre']; ?></label>
                         <input type="text" class="form-control" maxlength="20" size="15" id="nombre_juego" name="nombre_juego" onblur=" comprobarVacio(this); comprobarTexto(this, 20); comprobarAlfabetico(this,20)" >
                     </div>
                     <div class="form-group">
