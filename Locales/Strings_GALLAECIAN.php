@@ -21,9 +21,9 @@ array(
 	'Telefono' => 'Teléfono',
 	'Delete' => 'Borrar',
 	'Login socio' => 'Login socio',
-	'Eliminarsocio' => 'Eliminar socio'
-	'Añadir socio' => 'Añadir socio'
-	'Socio  bloqueado' => 'Socio bloqueado',
+	'Eliminar socio' => 'Eliminar socio',
+	'Añadir socio' => 'Engadir socio',
+	'Socio bloqueado' => 'Socio bloqueado',
 	'Editarsocio' => 'Editar socio',
 	'Desbloquear usuario' => 'Desbolquear usuario',
 	'Busqueda' => 'Busca',
@@ -65,7 +65,7 @@ array(
 	'Prueba formulario SEARCH Juego' => 'Proba formulario SEARCH xogo',
 	'Juego SHOWALL' => 'Xogo SHOWALL',
 	'Prueba formulario SEARCH Catalogo' => 'Proba formulario SEARCH Catálogo',
-	'Catalogo SHOWALL' => 'Catálogo SHOWALL'
+	'Catalogo SHOWALL' => 'Catálogo SHOWALL',
 
 	
 	'Control de Acceso' => 'Control de Acceso',
@@ -78,10 +78,10 @@ array(
 	'Bienvenido' => 'Benvido',
 	'Ver loteria' => 'Ver a loteria',
 	
-	'Bloqueado' => 'Bloqueado'
-	'Loginvendedor' => 'Usuario vendedor'
+	'Bloqueado' => 'Bloqueado',
+	'Loginvendedor' => 'Usuario vendedor',
 	
-	'Editarsocio' => 'Editar socio'
+	'Editarsocio' => 'Editar socio',
 	
 	
 	'Sexo' => 'Sexo',

@@ -40,8 +40,7 @@ class Socio_DELETE {
         <section>
 
             <div class="form2">
-                <h4><?php echo $strings['Delete']; ?></h4>
-                <h4><?php echo $strings['Eliminar socio']; ?></h4>
+               <h4><?php echo $strings['Eliminar socio']; ?></h4>
                 <form enctype="multipart/form-data" action="../Controllers/SOCIO_Controller.php" method="post">
                     <ul>
                         <li>
@@ -80,7 +79,7 @@ class Socio_DELETE {
                         </li>						
 						
 						 <li>
-                            <h5><?php echo $strings['Socio Bloqueado']; ?></h5>
+                            <h5><?php echo $strings['Socio bloqueado']; ?></h5>
                             <span><input type="hidden" name="socio_bloqueado" value="<?php echo $socio_bloqueado; ?>"><?php echo $socio_bloqueado; ?></span>
                         </li>
 						

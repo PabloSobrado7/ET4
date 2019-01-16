@@ -43,7 +43,7 @@
                 <?php
 
                 ?>
-                <h3><?php echo $strings['Añadir Socio'];?></h3>
+                <h3><?php echo $strings['Añadir socio'];?></h3>
                 <?php
 
                 ?>
@@ -75,12 +75,12 @@
 					
 					<div class="form-group">
                         <label class="form-label" for="email_socio"><?php echo $strings['Email'];?></label>
-                        <input type="text" class="form-control" maxlength="50" size="50" id="email_socio" name="email_socio" onblur="comprobarVacio(this);comprobarCorreo(this)">
+                        <input type="text" class="form-control" maxlength="50" size="50" id="email_socio" name="email_socio" onblur="comprobarVacio(this); comprobarCorreo(this)">
                     </div>
 					
 					<div class="form-group">
                         <label class="form-label" for="telefono"><?php echo $strings['Telefono'];?></label>
-                        <input type="text" class="form-control" maxlength="12" size="12" id="telefono_socio" name="telefono_socio" onblur="comprobarVacio(this);comprobarTelf(this)">
+                        <input type="text" class="form-control" maxlength="12" size="12" id="telefono_socio" name="telefono_socio" onblur="comprobarVacio(this); comprobarTelf(this)">
                     </div>
  
                         <input type="hidden" class="form-control" maxlength="1" size="1" id="socio_bloqueado" name="socio_bloqueado" value="NO">
