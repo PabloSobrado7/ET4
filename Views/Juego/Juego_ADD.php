@@ -7,7 +7,7 @@ class Juego_ADD {
 	  function __construct(){
 
         $this->pinta();
-}
+    }
     //función que contiene la vista
     function pinta(){
         //comprueba si hay un idioma en $_SESSION
@@ -91,8 +91,8 @@ class Juego_ADD {
             </footer>
         </section>
         
-        <?php include '../Views/js/validaciones.js'; ?>
-
+        <!--<?php include '../Views/js/validaciones.js'; ?>*/ -->
+        <script type="text/javascript" src="../Views/js/validaciones.js"></script>
         </body>
         </html>
 		

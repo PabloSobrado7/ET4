@@ -9,13 +9,13 @@ include_once '../Functions/Authentication.php';
 
 class Activos_SHOWALL {
 
-    function __construct($users,$message){
+    function __construct($users,$datos,$message){
 
-        $this->pinta($users,$message);
+        $this->pinta($users,$datos,$message);
 
     }
     //función que contiene la vista
-    function pinta($users,$message){
+    function pinta($users,$datos,$message){
         if(!isset($_SESSION['idioma'])){
             $_SESSION['idioma'] = 'SPANISH';
         }
@@ -49,7 +49,7 @@ $(document).ready(function() {
         <section class="form-basic-start">
 
             <div class="showall">
-TOP SOCIOS MÁS ACTIVOS
+TOP SOCIOS MÁS ACTIVOS (COMPRA)
                 <div >
 
 
@@ -90,6 +90,47 @@ TOP SOCIOS MÁS ACTIVOS
                 </table>
             </div>
 
+            <div class="showall">
+TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)
+                <div >
+
+
+                </div>
+				
+                <table id="socios" class="showall-tab">
+                    <tr>
+						<th>Login</th>
+						<th>Email</th>
+						<th>Telefono</th>
+
+
+                        <th>
+                        </th>
+                    </tr>
+                    <?php
+
+                    $row;//almacena usuarios
+
+                    //mientras existan usuarios
+                    while ($row = $datos->fetch_array()){
+                        ?>
+
+                        <tr>
+
+								<td><?php echo $row['login_socio']; ?></td>
+								<td><?php echo $row['email_socio']; ?></td>
+								<td><?php echo $row['telefono_socio']; ?></td>
+					
+					           <td>
+									</td>
+                            
+                        </tr>
+
+                        <?php
+                    }
+                    ?>
+                </table>
+            </div>
 			
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>

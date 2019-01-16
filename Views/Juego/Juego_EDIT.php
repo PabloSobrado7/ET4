@@ -56,8 +56,13 @@
                         <input type="text" class="form-control" maxlength="20" size="15" id="nombre_juego" name="nombre_juego" value="<?php echo $nombre_juego; ?>"  onblur=" comprobarVacio(this); comprobarTexto(this, 20); comprobarAlfabetico(this,20)" >
                     </div>
                     <div class="form-group">
+
                         <label class="form-label" for="plataforma"><?php echo $strings['Plataforma']; ?></label>
                         <input type="text" class="form-control" maxlength="20" size="15" id="plataforma" name="plataforma" value="<?php echo $plataforma; ?>" onblur=" comprobarVacio(this); comprobarTexto(this, 15);comprobarAlfabetico(this,20)">
+
+                        <label class="form-label" for="plataforma">Plataforma</label>
+                        <input type="text" class="form-control" maxlength="20" size="15" id="plataforma" name="plataforma" value="<?php echo $plataforma; ?>" onblur=" comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,20)">
+
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="genero"><?php echo $strings['Genero']; ?></label>
@@ -99,7 +104,7 @@
             </footer>
         </section>
         
-        <?php include '../Views/js/validaciones.js'; ?>
+        <script type="text/javascript" src="../Views/js/validaciones.js"></script>
 
         </body>
         </html>

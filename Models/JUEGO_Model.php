@@ -192,7 +192,12 @@ class JUEGO_Model
 
         // construimos el sql para buscar esa clave en la tabla
 		$sql = "SELECT * 
-		FROM `JUEGO`
+   FROM `JUEGO` 
+   WHERE `id_juego`= 
+       (SELECT id_juego
+           FROM `COMPRA` 
+           WHERE `id_juego`=JUEGO.id_juego
+		   ORDER BY COUNT(id_juego))
 		LIMIT 5";
 
         if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
@@ -213,7 +218,12 @@ class JUEGO_Model
 
         // construimos el sql para buscar esa clave en la tabla
 		$sql = "SELECT * 
-		FROM `JUEGO`
+   FROM `JUEGO` 
+   WHERE `id_juego`= 
+       (SELECT id_juego
+           FROM `ALQUILA` 
+           WHERE `id_juego`=JUEGO.id_juego
+		   ORDER BY COUNT(id_juego))
 		LIMIT 5";
         if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
             return 'It does not exist in DB';

@@ -49,7 +49,7 @@ $(document).ready(function() {
         <section class="form-basic-start">
 
             <div class="showall">
-TOP MAS COMPRADOS
+TOP 5 MAS COMPRADOS
                 <div >
 
                 </div>
@@ -94,7 +94,7 @@ TOP MAS COMPRADOS
             </div>
 			
 			            <div class="showall">
-TOP MAS ALQUILADOS
+TOP 5 MAS ALQUILADOS
                 <div >
 
                 </div>
