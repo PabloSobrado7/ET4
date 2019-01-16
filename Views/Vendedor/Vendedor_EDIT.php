@@ -58,32 +58,32 @@
 					
 					 <div class="form-group">
                         <label class="form-label" for="pass_vendedor">Password</label>
-                        <input type="text" class="form-control" maxlength="30" size="30" id="pass_vendedor" name="pass_vendedor" value="<?php echo $password; ?>">
+                        <input type="text" class="form-control" maxlength="30" size="30" id="pass_vendedor" name="pass_vendedor" value="<?php echo $password; ?>" readonly>
                     </div>
 					
 					 <div class="form-group">
                         <label class="form-label" for="dni_vendedor">DNI</label>
-                        <input type="text" class="form-control" maxlength="40" size="40" id="dni_vendedor" name="dni_vendedor" value="<?php echo $dni; ?>">
+                        <input type="text" class="form-control" maxlength="40" size="40" id="dni_vendedor" name="dni_vendedor" value="<?php echo $dni; ?>" onblur="comprobarVacio(this);comprobarDNI(this)">
                     </div>
 					
 					<div class="form-group">
                         <label class="form-label" for="nombre_vendedor">Nombre</label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="nombre_vendedor" name="nombre_vendedor" value="<?php echo $nombre; ?>">
+                        <input type="text" class="form-control" maxlength="3" size="3" id="nombre_vendedor" name="nombre_vendedor" value="<?php echo $nombre; ?>"  onblur="comprobarVacio(this);comprobarTexto(this,25);comprobarAlfabetico(this,25)">
                     </div>
 					
 					<div class="form-group">
                         <label class="form-label" for="apellidos_vendedor">Apellidos</label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="apellidos_vendedor" name="apellidos_vendedor" value="<?php echo $apellidos; ?>">
+                        <input type="text" class="form-control" maxlength="3" size="3" id="apellidos_vendedor" name="apellidos_vendedor" value="<?php echo $apellidos; ?>" onblur="comprobarVacio(this);comprobarTexto(this,50);comprobarAlfabetico(this,50)">
                     </div>
 
                     <div class="form-group">
                         <label class="form-label" for="email_vendedor">Email</label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="email_vendedor" name="email_vendedor" value="<?php echo $email; ?>">
+                        <input type="text" class="form-control" maxlength="3" size="3" id="email_vendedor" name="email_vendedor" value="<?php echo $email; ?>" onblur="comprobarVacio(this);comprobarTexto(this,60);comprobarCorreo(this)">
                     </div>
 
                      <div class="form-group">
                         <label class="form-label" for="telefono_vendedor">Telefono</label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="telefono_vendedor" name="telefono_vendedor" value="<?php echo $telefono; ?>">
+                        <input type="text" class="form-control" maxlength="3" size="3" id="telefono_vendedor" name="telefono_vendedor" value="<?php echo $telefono; ?>" onblur="comprobarVacio(this);comprobarTelefono(this)">
                     </div>
 
                     
@@ -99,13 +99,12 @@
 				<h6>Gamerenting</h6>
             </footer>
         </section>
-        <!--<script src="../Views/js/md5.js"></script>
-        <?php include '../Views/js/validaciones.js'; ?>
-        <script src="../Views/js/main.js"></script>-->
+       
+        <script type="text/javascript" src="../Views/js/validaciones.js"></script>
+      
         </body>
         </html>
-		<script src="../js/validaciones.js"></script> 
-
+		
         <?php
 
     }

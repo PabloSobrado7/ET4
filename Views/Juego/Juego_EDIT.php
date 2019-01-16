@@ -53,35 +53,35 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="nombre_juego">Nombre</label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="nombre_juego" name="nombre_juego" value="<?php echo $nombre_juego; ?>">
+                        <input type="text" class="form-control" maxlength="20" size="15" id="nombre_juego" name="nombre_juego" value="<?php echo $nombre_juego; ?>"  onblur=" comprobarVacio(this); comprobarTexto(this, 20); comprobarAlfabetico(this,20)" >
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="plataforma">Plataforma</label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="plataforma" name="plataforma" value="<?php echo $plataforma; ?>">
+                        <input type="text" class="form-control" maxlength="20" size="15" id="plataforma" name="plataforma" value="<?php echo $plataforma; ?>" onblur=" comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,20)">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="genero">Genero</label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="genero" name="genero" value="<?php echo $genero; ?>">
+                        <input type="text" class="form-control" maxlength="20" size="15" id="genero" name="genero" value="<?php echo $genero; ?>" onblur=" comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,15)">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="precio_compra">Precio Compra</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra" value="<?php echo $precio_compra; ?>" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra" value="<?php echo $precio_compra; ?>" onblur=" comprobarVacio(this); comprobarEntero(this,2,0,200)" >
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="categoria">Categoria</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="categoria" name="categoria" value="<?php echo $categoria; ?>">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="categoria" name="categoria" value="<?php echo $categoria; ?>" onblur=" comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,15)">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="novedad">Novedad</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="novedad" name="novedad" value="<?php echo $novedad; ?>">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="novedad" name="novedad" value="<?php echo $novedad; ?>" onblur="comprobarVacio(this)">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="compra">Compra</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="compra" name="compra" value="<?php echo $compra; ?>">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="compra" name="compra" value="<?php echo $compra; ?>" onblur="comprobarVacio(this)">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="venta">Venta</label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="venta" name="venta" value="<?php echo $venta; ?>">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="venta" name="venta" value="<?php echo $venta; ?>" onblur="comprobarVacio(this)">
                     </div>
 						                
 					   
@@ -98,14 +98,12 @@
 				<h6>Prueba de Formulario EDIT</h6>
             </footer>
         </section>
-        <!--<script src="../Views/js/md5.js"></script>
-        <?php include '../Views/js/validaciones.js'; ?>
-        <script src="../Views/js/main.js"></script>-->
+        
+        <script type="text/javascript" src="../Views/js/validaciones.js"></script>
+
         </body>
         </html>
-		<script src="../js/validaciones.js"></script> 
-
-        
+		        
         <?php
     }
    

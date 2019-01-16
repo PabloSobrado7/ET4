@@ -60,27 +60,27 @@
 					
 					 <div class="form-group">
                         <label class="form-label" for="dni_vendedor">DNI</label>
-                        <input type="text" class="form-control" maxlength="9" size="9" id="dni_vendedor" name="dni_vendedor">
+                        <input type="text" class="form-control" maxlength="9" size="9" id="dni_vendedor" name="dni_vendedor" onblur="comprobarVacio(this);comprobarDNI(this)">
                     </div>
 					
 					 <div class="form-group">
                         <label class="form-label" for="nombre_vendedor">Nombre</label>
-                        <input type="text" class="form-control" maxlength="25" size="25" id="nombre_vendedor" name="nombre_vendedor">
+                        <input type="text" class="form-control" maxlength="25" size="25" id="nombre_vendedor" name="nombre_vendedor" onblur="comprobarVacio(this);comprobarTexto(this,25);comprobarAlfabetico(this,25)">
                     </div>
 					
 					 <div class="form-group">
                         <label class="form-label" for="apellidos_vendedor">Apellidos</label>
-                        <input type="text" class="form-control" maxlength="50" size="50" id="apellidos_vendedor" name="apellidos_vendedor">
+                        <input type="text" class="form-control" maxlength="50" size="50" id="apellidos_vendedor" name="apellidos_vendedor" onblur="comprobarVacio(this);comprobarTexto(this,50);comprobarAlfabetico(this,50)">
                     </div>
 					
 					 <div class="form-group">
                         <label class="form-label" for="email_vendedor">Email</label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="email_vendedor" name="email_vendedor">
+                        <input type="text" class="form-control" maxlength="60" size="60" id="email_vendedor" name="email_vendedor" onblur="comprobarVacio(this);comprobarTexto(this,60);comprobarCorreo(this)">
                     </div>
 					
 					 <div class="form-group">
                         <label class="form-label" for="telefono_vendedor">Teléfono</label>
-                        <input type="text" class="form-control" maxlength="12" size="12" id="telefono_vendedor" name="telefono_vendedor">
+                        <input type="text" class="form-control" maxlength="12" size="12" id="telefono_vendedor" name="telefono_vendedor" onblur="comprobarVacio(this);comprobarTelefono(this)">
                     </div>
 					
                     <button name="action" value="ADD" type="submit" class="boton-env">
@@ -95,13 +95,12 @@
 				<h6>Gamerenting</h6>
             </footer>
         </section>
-        <!--<script src="../Views/js/md5.js"></script>
-        <?php include '../Views/js/validaciones.js'; ?>
-        <script src="../Views/js/main.js"></script>-->
+        
+        <script type="text/javascript" src="../Views/js/validaciones.js"></script>
+        
         </body>
         </html>
-		<script src="../js/validaciones.js"></script>  
-
+		
         <?php
 
     }
