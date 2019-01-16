@@ -43,18 +43,18 @@
                 <?php
 
                 ?>
-                <h3>Añadir socio</h3>
+                <h3><?php echo $strings['Añadir Socio'];?></h3>
                 <?php
 
                 ?>
                 <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/SOCIO_Controller.php">
                     <div class="form-group">
-                        <label class="form-label" for="login_socio"><?php echo $strings['Usuario'];?></label>
+                        <label class="form-label" for="login_socio"><?php echo $strings['Login'];?></label>
                         <input type="text" class="form-control" maxlength="25" size="25" id="login_socio" name="login_socio">
                     </div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="pass_socio"><?php echo $strings['Contraseña'];?></label>
+                        <label class="form-label" for="pass_socio"><?php echo $strings['Password'];?></label>
                         <input type="text" class="form-control" maxlength="20" size="20" id="pass_socio" name="pass_socio">
                     </div>
 					
@@ -74,7 +74,7 @@
                     </div>
 					
 					<div class="form-group">
-                        <label class="form-label" for="email_socio"><?php echo $strings['Correo'];?></label>
+                        <label class="form-label" for="email_socio"><?php echo $strings['Email'];?></label>
                         <input type="text" class="form-control" maxlength="50" size="50" id="email_socio" name="email_socio" onblur="comprobarVacio(this);comprobarCorreo(this)">
                     </div>
 					

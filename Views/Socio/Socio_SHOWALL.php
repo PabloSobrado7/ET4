@@ -51,14 +51,14 @@ class Socio_SHOWALL {
 				
                 <table class="showall-tab">
                     <tr>
-                        <th><?php echo $strings['Usuario']; ?></th>
-						<th><?php echo $strings['Contraseña']; ?></th>
+                        <th><?php echo $strings['Login']; ?></th>
+						<th><?php echo $strings['Password']; ?></th>
 						<th><?php echo $strings['DNI']; ?></th>
 						<th><?php echo $strings['Nombre']; ?></th>
 						<th><?php echo $strings['Apellidos']; ?></th>
-						<th><?php echo $strings['Correo']; ?></th>
+						<th><?php echo $strings['Email']; ?></th>
 						<th><?php echo $strings['Telefono']; ?></th>
-						<th>Socio bloqueado</th>
+						<th><?php echo $strings['Socio bloqueado']; ?></th>
                         <th>
                         </th>
                     </tr>

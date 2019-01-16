@@ -49,7 +49,7 @@ class Vendedor_SEARCH {
  
 				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">	
 					<div class="form-group">
-                        <label class="form-label" for="login_vendedor"><?php echo $strings['Usuario']; ?></label>
+                        <label class="form-label" for="login_vendedor"><?php echo $strings['Login']; ?></label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="login_vendedor" name="login_vendedor" >
                     </div>
 					
@@ -60,7 +60,7 @@ class Vendedor_SEARCH {
 
 				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">
 					<div class="form-group">
-                        <label class="form-label" for="pass_vendedor"><?php echo $strings['Contraseña']; ?></label>
+                        <label class="form-label" for="pass_vendedor"><?php echo $strings['Password']; ?></label>
                         <input type="text" class="form-control" maxlength="30" size="30" id="pass_vendedor" name="pass_vendedor">
                     </div>
 					
@@ -104,7 +104,7 @@ class Vendedor_SEARCH {
 					
 				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">
                     <div class="form-group">
-                        <label class="form-label" for="email_vendedor"><?php echo $strings['Correo']; ?></label>
+                        <label class="form-label" for="email_vendedor"><?php echo $strings['Email']; ?></label>
                         <input type="text" class="form-control" maxlength="30" size="30" id="email_vendedor" name="email_vendedor">
                     </div>
                     

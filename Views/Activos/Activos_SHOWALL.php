@@ -57,9 +57,9 @@ TOP SOCIOS MÁS ACTIVOS
 				
                 <table id="socios" class="showall-tab">
                     <tr>
-						<th>Login</th>
-						<th>Email</th>
-						<th>Telefono</th>
+						<th><?php echo $strings['Login'];?></th>
+						<th><?php echo $strings['Email'];?></th>
+						<th><?php echo $strings['Telefono'];?></th>
 
 
                         <th>

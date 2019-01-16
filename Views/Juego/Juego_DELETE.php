@@ -39,50 +39,50 @@ class Juego_DELETE {
         <section>
 
             <div class="form2">
-                <h4>Delete</h4>
+                <h4<?php echo $strings['Delete']; ?></h4>
                 <form enctype="multipart/form-data" action="../Controllers/JUEGO_Controller.php" method="post">
                     <ul>
                         <li>
-                            <h5>Juego</h5>
+                            <h5><?php echo $strings['ID Juego']; ?></h5>
                             <span><input type="hidden" name="id_juego" value="<?php echo $id_juego; ?>"><?php echo $id_juego; ?></span>
                         </li>
 						
 						<li>
-                            <h5>Nombre</h5>
+                            <h5><?php echo $strings['Nombre juego']; ?></h5>
                             <span><?php echo $nombre_juego; ?></span>
                         </li>
 						
 					    <li>
-                            <h5>Plataforma</h5>
+                            <h5><?php echo $strings['Plataforma']; ?></h5>
                             <span><?php echo $plataforma; ?></span>
                         </li>
 						
 						<li>
-                            <h5>Genero</h5>
+                            <h5><?php echo $strings['Genero']; ?></h5>
                             <span><?php echo $genero; ?></span>
                         </li>
 						
 						<li>
-                            <h5>Precio</h5>
+                            <h5><?php echo $strings['Precio']; ?></h5>
                             <span><?php echo $precio_compra; ?></span>
                         </li>
 						
 						<li>
-                            <h5>Categoria</h5>
+                            <h5><?php echo $strings['Categoria']; ?></h5>
                             <span><?php echo $categoria; ?></span>
                         </li>
 						
 						<li>
-                            <h5>Novedad</h5>
+                            <h5><?php echo $strings['Novedad']; ?></h5>
                             <span><?php echo $novedad; ?></span>
                         </li>
 						
 						<li>
-                            <h5>Compra</h5>
+                            <h5><?php echo $strings['Compra']; ?></h5>
                             <span><?php echo $compra; ?></span>
                         </li>
                         <li>
-                            <h5>Venta</h5>
+                            <h5><?php echo $strings['Venta']; ?></h5>
                             <span><?php echo $venta; ?></span>
                         </li>
                         
@@ -103,7 +103,7 @@ class Juego_DELETE {
             </div>
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Prueba formulario DELETE Juego</h6>
+				<h6><?php echo $strings['Prueba formulario DELETE Juego']; ?></h6>
             </footer>
         </section>
         <!--<script src="../js/main.js"></script>

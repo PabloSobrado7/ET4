@@ -7,15 +7,67 @@
 
 $strings = 
 array(
-
-	'Inicio' => 'Inicio',
-	
-	'Login' => 'Usuario', 
+	'Usuario no autenticado' => 'Usuario non autenticado',
+	'Login' => 'Usuario',
 	'Password' => 'Contrasinal',
-	'Name' => 'Nome',
-	'Surname' => 'Apelidos',
-	'Telefono' => 'Telefono',
+	'Lenguaje' => 'Linguaxe',
+	'Vendedor'=> 'Vendedor',
+	'Socio' => 'Socio',
+	'DNI' => 'DNI',
+	'Nombre' => 'Nome',
+	'Apellidos' => 'Apelidos',
+	'NSS' => 'Número Seguridade Social',
 	'Email' => 'Correo',
+	'Telefono' => 'Teléfono',
+	'Delete' => 'Borrar',
+	'Login socio' => 'Login socio',
+	'Eliminarsocio' => 'Eliminar socio'
+	'Añadir socio' => 'Añadir socio'
+	'Socio  bloqueado' => 'Socio bloqueado',
+	'Editarsocio' => 'Editar socio',
+	'Desbloquear usuario' => 'Desbolquear usuario',
+	'Busqueda' => 'Busca',
+	'Eliminarvendedor' =>' Eliminar vendedor',
+	'Añadir vendedor' => 'Engadir vendedor',
+	'Editar vendedor' => 'Editar vendedor',
+	'Login vendedor' => 'Login vendedor',
+	'Inicio' => 'Inicio',
+	'Añadir vendedor' => 'Engadir vendedor',
+	'Nombre juego' => 'Nome xogo',
+	'Añadir juego' => 'Engadir xogo',
+	'Id juego' => 'Id xogo',
+	'Juego' => 'Xogo',
+	'Plataforma' => 'Plataforma',
+	'Genero' => 'Xénero',
+	'Precio' => 'Prezo',
+	'Categoria' => 'Categoría',
+	'Novedad' => 'Novidade',
+	'Compra' => 'Compra',
+	'Venta' => 'Venda',
+	'Alquiler' => 'Aluguer',
+	'Realizar alquiler' => 'Facer aluguer',
+	'Eliminar alquiler' => 'Eliminar aluguer',
+	'Tarifa' => 'Taxa',
+	'ID Tarifa' => 'ID Taxa',
+	'ID Juego' => 'ID Xogo',
+	'Fecha alquiler' => 'Data aluguer',
+	'Accion' => 'Accion',
+	'Estrategia' => 'Estratexia',
+	'Deporte' => 'Deporte',
+	'Precio compra' => 'Prezo compra',
+	'Si' => 'Si',
+	'No' => 'Non',
+	
+
+
+	'Prueba formulario DELETE Juego' => 'Proba formulario DELETE xogo',
+	'Prueba formulario EDIT' => 'Proba formulario EDIT',
+	'Prueba formulario SEARCH Juego' => 'Proba formulario SEARCH xogo',
+	'Juego SHOWALL' => 'Xogo SHOWALL'
+	'Prueba formulario SEARCH Catalogo' => 'Proba formulario SEARCH Catálogo',
+	'Catalogo SHOWALL' => 'Catálogo SHOWALL'
+
+	
 	'Control de Acceso' => 'Control de Acceso',
 	'Acciones' => 'Accions',
 	'Funcionalidades' => 'Funcionalidades',
@@ -25,12 +77,12 @@ array(
 	'Fotopersonal' => 'Foto personal',
 	'Bienvenido' => 'Benvido',
 	'Ver loteria' => 'Ver a loteria',
-	'Delete' => 'Borrar',
+	
 	'Bloqueado' => 'Bloqueado'
 	'Loginvendedor' => 'Usuario vendedor'
-	'Eliminarsocio' => 'Eliminar socio'
+	
 	'Editarsocio' => 'Editar socio'
-	'Eliminarvendedor' =>' Eliminar vendedor'
+	
 	
 	'Sexo' => 'Sexo',
 	'Hombre' => 'Home',

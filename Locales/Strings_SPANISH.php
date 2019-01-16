@@ -8,12 +8,69 @@
 $strings = 
 array(
 
-	'Usuario no autenticado' => 'User not logged',
-	'Usuario' => 'Usuario', 
-	'Contraseña' => 'Contraseña',
+	'Usuario no autenticado' => 'Usuario no autenticado',
+	'Login' => 'Usuario', 
+	'Password' => 'Contraseña',
 	'Lenguaje' => 'Lenguaje',
 	'Vendedor'=> 'Vendedor',
+	'Socio' => 'Socio',
+	'DNI' => 'DNI',
+	'Nombre' => 'Nombre',
+	'Apellidos' => 'Apellidos',
 	'NSS' => 'Número Seguridad Social',
+	'Email' => 'Correo',
+	'Telefono' => 'Teléfono',
+	'Delete' => 'Borrar',
+	'Login socio' => 'Login socio';
+	'Eliminarsocio' => 'Eliminar socio',
+	'Añadir socio' => 'Añadir socio'
+	'Socio  bloqueado' => 'Socio bloqueado',
+	'Editarsocio' => 'Editar socio',
+	'Desbloquear usuario' => 'Desbolquear usuario',
+	'Busqueda' => 'Búsqueda',
+	'Eliminarvendedor' =>' Eliminar vendedor',
+	'Añadir vendedor' => 'Engadir vendedor',
+	'Inicio' => 'Inicio',
+	'Añadir vendedor' => 'Añadir vendedor',
+	'Login vendedor' => 'Login vendedor',
+	'Editar vendedor' => 'Editar vendedor',
+	'Nombre juego' => 'Nombre juego',
+	'Añadir juego' => 'Añadir juego',
+	'Id juego' => 'Id juego',
+	'Juego' => 'Juego',
+	'Plataforma' => 'Plataforma',
+	'Genero' => 'Género',
+	'Precio' => 'Precio',
+	'Precio compra' => 'Precio compra',
+	'Categoria' => 'Categoría',
+	'Novedad' => 'Novedad',
+	'Compra' => 'Compra',
+	'Venta' => 'Venta',
+	'Alquiler' => 'Alquiler',
+	'Realizar alquiler' => 'Realizar alquiler',
+	'Eliminar alquiler' => 'Eliminar alquiler',
+	'Tarifa' => 'Tarifa',
+	'ID Tarifa' => 'ID Tarifa',
+	'ID Juego' => 'ID Juego',
+	'Fecha alquiler' => 'Fecha alquiler',
+	'Accion' => 'Accion',
+	'Estrategia' => 'Estrategia',
+	'Deporte' => 'Deporte',
+	'Precio compra' => 'Precio compra',
+	'Si' => 'Si',
+	'No' => 'No',
+
+
+
+	'Prueba formulario DELETE Juego' => 'Prueba formulario DELETE Juego',
+	'Prueba formulario EDIT' => 'Prueba formulario EDIT',
+	'Prueba formulario SEARCH Juego' => 'Prueba formulario SEARCH Juego',
+	'Juego SHOWALL' => 'Juego SHOWALL'
+	'Prueba formulario SEARCH Catalogo' => 'Prueba formulario SEARCH Catálogo',
+	'Catalogo SHOWALL' => 'Catálogo SHOWALL'
+
+
+
 	'Administrador' => 'Administrador',
 
 	'ENGLISH' => 'ENGLISH',
@@ -23,30 +80,30 @@ array(
 	'Incorrect password for this login' => 'Contraseña incorrecta para login',
 	'Register' => 'Registrar',
 	'Add error' => 'Error de añadido',
-	'Telefono' => 'Telefono',
+	
 	'Fecha' => 'Fecha',
 	'Fotopersonal' => 'Foto personal',
-	'Nombre' => 'Nombre',
-	'Apellidos' => 'Apellidos',
+	
+	
 	'Bloqueado' => 'Bloqueado',
 	'Loginvendedor' => 'Usuario vendedor',
-	'Eliminarsocio' => 'Eliminar socio',
-	'Editarsocio' => 'Editar socio',
-	'Eliminarvendedor' =>' Eliminar vendedor',
-	'Desbloquear usuario' => 'Desbolquear usuario ',
+	
+	
+	
+	
 
 	'Sexo' => 'Sexo',
 	'Hombre' => 'Hombre',
 	'Mujer' => 'Mujer',
 	
 	'Success delete' => 'Borrado correcto',
-	'DNI' => 'DNI',
+	
 	'¿Have not you account? Sign up' => '¿No tienes cuenta? Registrate',
 	'Add' => 'Añadir',
 	'Sign up' => 'Registrarse',
 	'Correo' => 'Correo',
 
-	'Delete' => 'Borrar',
+	
 	'Edit' => 'Editar',
 	'Search' => 'Buscar',
 	'ShowCurrent' => 'Detallado',
@@ -139,7 +196,6 @@ array(
 
 
 	'Bienvenido' => 'Bienvenido',
-	'Ver loteria' => 'Ver la loteria',
 	'Busqueda' => 'Búsqueda por parámetros'
 
 
