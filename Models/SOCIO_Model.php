@@ -156,7 +156,7 @@ class SOCIO_Model
         }
     }
 	
-			    function MASACTIVOS()
+			    function MASACTIVOSCOMPRA()
     {
 
         $sql; //variable que alberga la sentencia sql
@@ -164,9 +164,40 @@ class SOCIO_Model
         $result; //variable que albergara el valor de resultado
 
         // construimos el sql para buscar esa clave en la tabla
-				$sql = "SELECT *
-				FROM `SOCIO`
-				ORDER BY 'login_socio'";
+		$sql = "SELECT * 
+   FROM `SOCIO` 
+   WHERE `login_socio`= 
+       (SELECT login_socio
+           FROM `COMPRA` 
+           WHERE `login_socio`=SOCIO.login_socio
+		   ORDER BY COUNT(login_socio))
+		LIMIT 5";
+
+        if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
+
+			return 'It does not exist in DB';
+        } else { // si existe
+			$result = $resultado;//guarda el valor deresultado en result
+            return $result; //devuelve result
+        }
+    }
+	
+				    function MASACTIVOSALQUILER()
+    {
+
+        $sql; //variable que alberga la sentencia sql
+        $resultado; //almacena la consulta sql
+        $result; //variable que albergara el valor de resultado
+
+        // construimos el sql para buscar esa clave en la tabla
+		$sql = "SELECT * 
+   FROM `SOCIO` 
+   WHERE `login_socio`= 
+       (SELECT login_socio
+           FROM `ALQUILA` 
+           WHERE `login_socio`=SOCIO.login_socio
+		   ORDER BY COUNT(login_socio))
+		LIMIT 5";
 
         if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
 

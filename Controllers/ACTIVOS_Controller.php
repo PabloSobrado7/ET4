@@ -31,8 +31,12 @@ if (!IsAuthenticated()){
 			
 			$SOCIO = new SOCIO_Model('','','','','','','','');
                 //lo hace de todas formas
-                $datos = $SOCIO->MASACTIVOS();
-                new Activos_SHOWALL($datos, '../Controllers/JUEGO_Controller.php');
+                $datos = $SOCIO->MASACTIVOSCOMPRA();
+				
+			$SOCIO = new SOCIO_Model('','','','','','','','');
+                //lo hace de todas formas
+                $datosal = $SOCIO->MASACTIVOSALQUILER();
+                new Activos_SHOWALL($datos,$datosal, '../Controllers/JUEGO_Controller.php');
            
     }
 

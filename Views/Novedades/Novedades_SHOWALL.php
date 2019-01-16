@@ -50,12 +50,6 @@ $(document).ready(function() {
 
             <div class="showall">
 
-                <div >
-                    <form  action="<?php echo $message; ?>" method="">
-						<button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
-						 </form>
-
-                </div>
 				
                 <table id="juegos" class="showall-tab">
                     <tr>
@@ -82,15 +76,6 @@ $(document).ready(function() {
 
                         <tr>
                             <form action="../Controllers/JUEGO_Controller.php" method="" >    
-                              <input type="hidden" name="id_juego" value="<?php echo $row['id_juego']; ?>">      
-                              <input type="hidden" name="nombre_juego" value="<?php echo $row['nombre_juego']; ?>">
-                              <input type="hidden" name="plataforma" value="<?php echo $row['plataforma']; ?>">
-                              <input type="hidden" name="genero" value="<?php echo $row['genero']; ?>">
-                              <input type="hidden" name="precio_compra" value="<?php echo $row['precio_compra']; ?>">
-                              <input type="hidden" name="categoria" value="<?php echo $row['categoria']; ?>">                      
-                              <input type="hidden" name="novedad" value="<?php echo $row['novedad']; ?>">
-                              <input type="hidden" name="compra" value="<?php echo $row['compra']; ?>">
-                              <input type="hidden" name="venta" value="<?php echo $row['venta']; ?>">
 
 								<td><?php echo $row['id_juego']; ?></td>
 								<td><?php echo $row['nombre_juego']; ?></td>
