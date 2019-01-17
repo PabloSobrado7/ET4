@@ -50,7 +50,7 @@ class Juego_SEARCH {
 				<form  action="<?php echo $message; ?>" method="post">	
 					<div class="form-group">
                         <label class="form-label" for="id_juego"><?php echo $strings['ID Juego']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="id_juego" name="id_juego" >
+                        <input type="text" class="form-control" maxlength="15" size="25" id="id_juego" name="id_juego" readonly>
                     </div>
 					
 				<div class="showall">
@@ -60,7 +60,7 @@ class Juego_SEARCH {
                 <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="nombre_juego"><?php echo $strings['Nombre juego']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="nombre_juego" name="nombre_juego" >
+                        <input type="text" class="form-control" maxlength="20" size="25" id="nombre_juego" name="nombre_juego" >
                     </div>
                
                <div class="showall">
@@ -70,7 +70,7 @@ class Juego_SEARCH {
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="plataforma"><?php echo $strings['Plataforma']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="plataforma" name="plataforma" >
+                        <input type="text" class="form-control" maxlength="20" size="25" id="plataforma" name="plataforma" >
                     </div>
       
                <div class="showall">
@@ -80,7 +80,7 @@ class Juego_SEARCH {
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="genero"><?php echo $strings['Genero']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="genero" name="genero" >
+                        <input type="text" class="form-control" maxlength="20" size="25" id="genero" name="genero" >
                     </div>
                    
                 <div class="showall">
@@ -90,7 +90,7 @@ class Juego_SEARCH {
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="precio_compra"><?php echo $strings['Precio compra']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="precio_compra" name="precio_compra" >
+                        <input type="text" class="form-control" maxlength="15" size="25" id="precio_compra" name="precio_compra" >
                     </div>
                    
                <div class="showall">
@@ -100,7 +100,7 @@ class Juego_SEARCH {
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="categoria"><?php echo $strings['Categoria']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="categoria" name="categoria" >
+                        <input type="text" class="form-control" maxlength="15" size="25" id="categoria" name="categoria" >
                     </div>
                  
                <div class="showall">
@@ -109,8 +109,12 @@ class Juego_SEARCH {
 				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="novedad"><?php echo $strings['Novedad']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="novedad" name="novedad" >
+                        <label class="form-label" for="novedad"><?php echo $strings['Novedad'];?></label>
+                                     
+                        <select name="novedad">
+                          <option value="1"><?php echo $strings['Si'];?></option>
+                          <option value="0"><?php echo $strings['No'];?></option>
+                        </select>
                     </div>
                <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
@@ -118,8 +122,12 @@ class Juego_SEARCH {
 				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="compra"><?php echo $strings['Compra']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="compra" name="compra" >
+                        <label class="form-label" for="compra"><?php echo $strings['Compra'];?></label>
+                                     
+                        <select name="compra">
+                          <option value="1"><?php echo $strings['Si'];?></option>
+                          <option value="0"><?php echo $strings['No'];?></option>
+                        </select>
                     </div>
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
@@ -127,8 +135,12 @@ class Juego_SEARCH {
 				 </form> 
 				<form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="venta"><?php echo $strings['Alquiler']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="60" id="venta" name="venta" >
+                       <label class="form-label" for="venta"><?php echo $strings['Venta'];?></label>
+                                     
+                        <select name="venta">
+                          <option value="1"><?php echo $strings['Si'];?></option>
+                          <option value="0"><?php echo $strings['No'];?></option>
+                        </select>
                     </div>
                <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>

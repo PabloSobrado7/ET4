@@ -41,8 +41,6 @@ function comprobarTexto(campo, size)
 	}
 	return true;
 }
-
-
 //FUNCIÓN PARA COMPROBAR EL CORREO: SI ESTÁ EN EL FORMATO OBLIGATORIO, ETC.
 function comprobarCorreo(campo)
 {
@@ -147,34 +145,12 @@ function comprobarReal(campo, numD, vmenor, vmayor)
 	}
 	return true;
 }
-function nif(dni) {
-  var numero
-  var letr
-  var letra
-  var expresion_regular_dni
- 
-  expresion_regular_dni = /^\d{8}[a-zA-Z]$/;
- 
-  if(expresion_regular_dni.test (dni) == true){
-     numero = dni.substr(0,dni.length-1);
-     letr = dni.substr(dni.length-1,1);
-     numero = numero % 23;
-     letra='TRWAGMYFPDXBNJZSQVHLCKET';
-     letra=letra.substring(numero,numero+1);
-    if (letra!=letr.toUpperCase()) {
-       alert('Dni erroneo, la letra del NIF no se corresponde');
-     }else{
-       alert('Dni correcto');
-     }
-  }else{
-     alert('Dni erroneo, formato no válido');
-   }
-}
+
 var aux = false;
-function comprobarDni(campo)
+function comprobarDNI(campo)
 {
 
-	var dni = /^[0-9]{8}[a-z]$/i; //Asignamos una expresion regular de dni a una variable
+	var dni = /^\d{8}[a-zA-Z]$/; //Asignamos una expresion regular de dni a una variable
 
 	if(!dni.test(campo.value))
 	{ //comprobamos que el campo cumple las condiciones.

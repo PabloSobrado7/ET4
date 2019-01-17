@@ -59,13 +59,13 @@
 					
 					 <div class="form-group">
                         <label class="form-label" for="pass_socio"><?php echo $strings['Password'];?></label>
-                        <input type="text" class="form-control" maxlength="20" size="20" id="pass_socio" name="pass_socio" value="<?php echo $pass_socio; ?>" readonly>
+                        <input type="text" class="form-control" maxlength="20" size="25" id="pass_socio" name="pass_socio" value="<?php echo $pass_socio; ?>" readonly>
 
                     </div>
 					
 					 <div class="form-group">
                         <label class="form-label" for="dni_socio"><?php echo $strings['DNI'];?></label>
-                        <input type="text" class="form-control" maxlength="9" size="9" id="dni_socio" name="dni_socio" value="<?php echo $dni_socio; ?>" onblur="comprobarVacio(this);comprobarDNI(this)">
+                        <input type="text" class="form-control" maxlength="9" size="25" id="dni_socio" name="dni_socio" value="<?php echo $dni_socio; ?>" onblur="comprobarVacio(this);comprobarDNI(this)">
                     </div>
 					
 					 <div class="form-group">
@@ -75,23 +75,26 @@
 					
 					<div class="form-group">
                         <label class="form-label" for="apellidos_socio"><?php echo $strings['Apellidos'];?></label>
-                        <input type="text" class="form-control" maxlength="50" size="50" id="apellidos_socio" name="apellidos_socio" value="<?php echo $apellidos_socio; ?>" onblur="comprobarVacio(this); comprobarTexto(this,50); comprobarAlfabetico (this,25)">
+                        <input type="text" class="form-control" maxlength="50" size="25" id="apellidos_socio" name="apellidos_socio" value="<?php echo $apellidos_socio; ?>" onblur="comprobarVacio(this); comprobarTexto(this,50); comprobarAlfabetico (this,25)">
 
                     </div>
 
                     <div class="form-group">
                         <label class="form-label" for="email_socio"><?php echo $strings['Email'];?></label>
-                        <input type="text" class="form-control" maxlength="50" size="50" id="email_socio" name="email_socio" value="<?php echo $email_socio; ?>" onblur="comprobarVacio(this);comprobarCorreo(this)">
+                        <input type="text" class="form-control" maxlength="50" size="25" id="email_socio" name="email_socio" value="<?php echo $email_socio; ?>" onblur="comprobarVacio(this);comprobarCorreo(this)">
                     </div>
 
                     <div class="form-group">
                         <label class="form-label" for="telefono_socio"><?php echo $strings['Telefono']; ?></label>
-                        <input type="text" class="form-control" maxlength="12" size="12" id="telefono_socio" name="telefono_socio" value="<?php echo $telefono_socio; ?>" onblur="comprobarVacio(this);comprobarTelf(this)">
+                        <input type="text" class="form-control" maxlength="12" size="25" id="telefono_socio" name="telefono_socio" value="<?php echo $telefono_socio; ?>" onblur="comprobarVacio(this);comprobarTelf(this)">
                     </div>
 					
 					<div class="form-group">
-                        <label class="form-label" for="socio_bloqueado">Socio bloqueado</label>
-                        <input type="text" class="form-control" maxlength="12" size="12" id="socio_bloqueado" name="socio_bloqueado" value="<?php echo $socio_bloqueado; ?>">
+                        <label class="form-label" for="socio_bloqueado"><?php echo $strings['Socio bloqueado']; ?></label>
+                            <select name="socio_bloqueado">
+                            <option value="1"><?php echo $strings['Si'];?></option>
+                            <option value="0"><?php echo $strings['No'];?></option>
+                        </select>
                     </div>
 
                   

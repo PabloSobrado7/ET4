@@ -50,17 +50,17 @@
                 <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/SOCIO_Controller.php">
                     <div class="form-group">
                         <label class="form-label" for="login_socio"><?php echo $strings['Login'];?></label>
-                        <input type="text" class="form-control" maxlength="25" size="25" id="login_socio" name="login_socio" onblur="comprobarVacio(this)">
+                        <input type="text" class="form-control" maxlength="25" size="25" id="login_socio" name="login_socio" onblur="comprobarVacio(this);comprobarTexto(this,25)">
                     </div>
 					
 					 <div class="form-group">
                         <label class="form-label" for="pass_socio"><?php echo $strings['Password'];?></label>
-                        <input type="text" class="form-control" maxlength="20" size="25" id="pass_socio" name="pass_socio" onblur="comprobarVacio(this)">
+                        <input type="text" class="form-control" maxlength="20" size="25" id="pass_socio" name="pass_socio" onblur="comprobarVacio(this);comprobarTexto(this,20)">
                     </div>
 					
 					 <div class="form-group">
                         <label class="form-label" for="dni_socio"><?php echo $strings['DNI'];?></label>
-                        <input type="text" class="form-control" maxlength="9" size="25" id="dni_socio" name="dni_socio" onblur="nif(this); comprobarDni(this)">
+                        <input type="text" class="form-control" maxlength="9" size="25" id="dni_socio" name="dni_socio" onblur="comprobarVacio(this); comprobarDNI(this)">
                     </div>
 					
 					 <div class="form-group">

@@ -45,45 +45,29 @@ class Juego_ADD {
                 <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/JUEGO_Controller.php">
                     <div class="form-group">
                         <label class="form-label" for="id_juego"><?php echo $strings['ID Juego']; ?></label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="id_juego" name="id_juego" onblur=" comprobarVacio(this); comprobarTexto(this, 15)" >
+                        <input type="text" class="form-control" maxlength="15" size="25" id="id_juego" name="id_juego" onblur=" comprobarVacio(this); comprobarTexto(this, 15)" >
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="nombre_juego"><?php echo $strings['Nombre']; ?></label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="nombre_juego" name="nombre_juego" onblur=" comprobarVacio(this); comprobarTexto(this, 20); comprobarAlfabetico(this,20)" >
+                        <input type="text" class="form-control" maxlength="20" size="25" id="nombre_juego" name="nombre_juego" onblur=" comprobarVacio(this); comprobarTexto(this, 20); comprobarAlfabetico(this,20)" >
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="plataforma"><?php echo $strings['Plataforma'];?></label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="plataforma" name="plataforma" onblur=" comprobarVacio(this);comprobarTexto(this, 15);comprobarAlfabetico(this,20)">
+                        <input type="text" class="form-control" maxlength="20" size="25" id="plataforma" name="plataforma" onblur=" comprobarVacio(this);comprobarTexto(this, 15);comprobarAlfabetico(this,20)">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="genero"><?php echo $strings['Genero'];?></label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="genero" name="genero" onblur=" comprobarVacio(this); comprobarTexto(this, 15);comprobarAlfabetico(this,15)" >
+                        <input type="text" class="form-control" maxlength="20" size="25" id="genero" name="genero" onblur=" comprobarVacio(this); comprobarTexto(this, 15);comprobarAlfabetico(this,15)" >
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="precio_compra"><?php echo $strings['Precio compra'];?></label>
-                        <input type="number" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra" onblur="comprobarVacio(this); comprobarReal(this,2,0,200)">
+                        <input type="number" class="form-control" maxlength="15" size="25" id="precio_compra" name="precio_compra" onblur="comprobarVacio(this); comprobarReal(this,2,0,200)">
                     </div>
 					<div class="form-group">
                         <label class="form-label" for="categoria"><?php echo $strings['Categoria'];?></label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="categoria" name="categoria" onblur="comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,15)">
+                        <input type="text" class="form-control" maxlength="15" size="25" id="categoria" name="categoria" onblur="comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,15)">
                     </div>
                     <div>
-
-                    <label class="form-label" for="novedad"><?php echo $strings['Novedad'];?></label>
-              		  	<input type="checkbox" name="novedad" value="1"><?php echo $strings['Si'];?><br>
-						<input type="checkbox" name="novedad" value="0"><?php echo $strings['No'];?><br>
-					</div>
-					<div>
-                    <label class="form-label" for="compra"><?php echo $strings['Compra'];?></label>
-              		  	<input type="checkbox" name="compra" value="1"><?php echo $strings['Si'];?><br>
-						<input type="checkbox" name="compra" value="0"><?php echo $strings['No'];?><br>
-					</div>
-					<div>
-                    <label class="form-label" for="venta"><?php echo $strings['Alquiler'];?></label>
-              		  	<input type="checkbox" name="venta" value="1"><?php echo $strings['Si'];?><br>
-						<input type="checkbox" name="venta" value="0"><?php echo $strings['No'];?><br>
-					</div>
-
                    	<label class="form-label" for="novedad"><?php echo $strings['Novedad'];?></label>
 									 
 				        <select name="novedad">
