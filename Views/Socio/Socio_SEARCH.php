@@ -50,7 +50,7 @@ class Socio_SEARCH {
 				<form  action="<?php echo $message; ?>" method="post">	
 					<div class="form-group">
                         <label class="form-label" for="login_socio"><?php echo $strings['Login']; ?></label>
-                        <input type="text" class="form-control" maxlength="25" size="25" id="login_socio" name="login_socio" >
+                        <input type="text" class="form-control" maxlength="25" size="50" id="login_socio" name="login_socio" >
                     </div>
 					
 				<div class="showall">
@@ -61,7 +61,7 @@ class Socio_SEARCH {
 					<form  action="<?php echo $message; ?>" method="post">
 					<div class="form-group">
                         <label class="form-label" for="dni_socio"><?php echo $strings['DNI']; ?></label>
-                        <input type="text" class="form-control" maxlength="9" size="9" id="dni_socio" name="dni_socio">
+                        <input type="text" class="form-control" maxlength="9" size="50" id="dni_socio" name="dni_socio">
                     </div>
 					
 				<div class="showall">                    
@@ -73,7 +73,7 @@ class Socio_SEARCH {
 					 <form  action="<?php echo $message; ?>" method="post">
 					 <div class="form-group">
                         <label class="form-label" for="nombre_socio"><?php echo $strings['Nombre']; ?></label>
-                        <input type="text" class="form-control" maxlength="25" size="25" id="nombre_socio" name="nombre_socio">
+                        <input type="text" class="form-control" maxlength="25" size="50" id="nombre_socio" name="nombre_socio">
                     </div>
 				
 				<div class="showall">                    
@@ -109,7 +109,7 @@ class Socio_SEARCH {
                  <form  action="<?php echo $message; ?>" method="post">
                      <div class="form-group">
                         <label class="form-label" for="telefono_socio"><?php echo $strings['Telefono']; ?></label>
-                        <input type="text" class="form-control" maxlength="12" size="12" id="telefono_socio" name="telefono_socio">
+                        <input type="text" class="form-control" maxlength="12" size="50" id="telefono_socio" name="telefono_socio">
                     </div>
                 
                 <div class="showall">                    
@@ -120,7 +120,10 @@ class Socio_SEARCH {
                  <form  action="<?php echo $message; ?>" method="post">
                      <div class="form-group">
                         <label class="form-label" for="socio_bloqueado"><?php echo $strings['Socio bloqueado']; ?></label>
-                        <input type="text" class="form-control" maxlength="12" size="12" id="socio_bloqueado" name="socio_bloqueado">
+                            <select name="socio_bloqueado">
+                            <option value="1"><?php echo $strings['Si'];?></option>
+                            <option value="0"><?php echo $strings['No'];?></option>
+                        </select>
                     </div>
                 
                 <div class="showall">                    

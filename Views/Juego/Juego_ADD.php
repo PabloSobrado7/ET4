@@ -87,10 +87,16 @@ class Juego_ADD {
 				          <option value="0"><?php echo $strings['No'];?></option>
 				        </select>
 				    </div> 
+				    
 
+					<div class="boton-grup">
                     <button name="action" value="ADD" type="submit" class="boton-env">
                         <img src="../Views/imgs/send.png" alt="">
                     </button>
+                    <button name="action" value="" class="boton-env">
+                        <img src="../Views/imgs/return.png" alt="" >
+                    </button>
+               		</div>
                 </form>
             </div>
 

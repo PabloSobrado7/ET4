@@ -40,7 +40,6 @@ class Vendedor_DELETE {
         <section>
 
             <div class="form2">
-                <h4><?php echo $strings['Delete']; ?></h4>
                 <h4><?php echo $strings['Eliminar vendedor']; ?></h4>
                 <form enctype="multipart/form-data" action="../Controllers/VENDEDOR_Controller.php" method="post">
                     <ul>

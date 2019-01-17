@@ -70,7 +70,7 @@ array(
 	'Gestionar juegos' => 'Manage games',
 	'Gestionar socios' => 'Manage partners',
 	'Gestionar compra' => 'Manage partners',
-	'Gestionar alquiler' => 'Gestionar rent',
+	'Gestionar alquiler' => 'Manage rent',
 	'Socios más activos' => 'Most active partners',
 	'Consultar catálogo' => 'Check catalog',
 	'Consultar novedades' => 'Check news',
