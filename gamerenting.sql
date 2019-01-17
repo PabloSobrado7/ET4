@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-01-2019 a las 21:38:37
+-- Tiempo de generación: 16-01-2019 a las 18:26:33
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.9
 
@@ -58,7 +58,7 @@ CREATE TABLE `alquila` (
 --
 
 INSERT INTO `alquila` (`login_socio`, `id_tarifa`, `fecha_alquiler`, `id_juego`) VALUES
-('admin', '3', '2019-01-12 20:20:00', '8'),
+('juan', '1', '2019-01-16 17:37:00', '3'),
 ('juan', '2', '2019-01-11 19:02:00', '6');
 
 -- --------------------------------------------------------
@@ -90,8 +90,11 @@ CREATE TABLE `compra` (
 --
 
 INSERT INTO `compra` (`login_socio`, `id_juego`, `fecha_compra`) VALUES
-('admin', '2', '2019-01-23 06:00:00'),
-('david', '10', '2019-01-11 18:56:00');
+('david', '10', '2019-01-11 18:56:00'),
+('david', '3', '2019-01-16 17:35:00'),
+('david', '6', '2019-01-16 17:34:00'),
+('juan', '10', '2019-01-16 17:35:00'),
+('juan', '8', '2019-01-16 17:34:00');
 
 -- --------------------------------------------------------
 

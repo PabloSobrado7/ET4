@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite ver todas las loteria
+ * Funcion: Vista que nos permite ver todos los juegos
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
@@ -69,7 +69,7 @@ $(document).ready(function() {
 						<th><?php echo $strings['Categoria']; ?></th>
 						<th><?php echo $strings['Novedad']; ?></th>
                         <th><?php echo $strings['Compra']; ?></th>
-                        <th><?php echo $strings['Venta']; ?></th>
+                        <th><?php echo $strings['Alquiler']; ?></th>
                     </tr>
                     <?php
 
@@ -115,7 +115,7 @@ $(document).ready(function() {
 			
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6><?php echo $strings['Juego SHOWALL']; ?></h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
 

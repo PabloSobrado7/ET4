@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite editar una loteria
+ * Funcion: Vista que nos permite editar un vendedor
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
@@ -58,32 +58,32 @@
 					
 					 <div class="form-group">
                         <label class="form-label" for="pass_vendedor"><?php echo $strings['Password']; ?></label>
-                        <input type="text" class="form-control" maxlength="30" size="30" id="pass_vendedor" name="pass_vendedor" value="<?php echo $password; ?>" readonly>
+                        <input type="text" class="form-control" maxlength="30" size="30" id="pass_vendedor" name="pass_vendedor" value="<?php echo $password; ?>">
                     </div>
 					
 					 <div class="form-group">
                         <label class="form-label" for="dni_vendedor"><?php echo $strings['DNI']; ?></label>
-                        <input type="text" class="form-control" maxlength="40" size="40" id="dni_vendedor" name="dni_vendedor" value="<?php echo $dni; ?>" onblur="comprobarVacio(this);comprobarDNI(this)">
+                        <input type="text" class="form-control" maxlength="40" size="40" id="dni_vendedor" name="dni_vendedor" value="<?php echo $dni; ?>">
                     </div>
 					
 					<div class="form-group">
                         <label class="form-label" for="nombre_vendedor"><?php echo $strings['Nombre']; ?></label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="nombre_vendedor" name="nombre_vendedor" value="<?php echo $nombre; ?>"  onblur="comprobarVacio(this);comprobarTexto(this,25);comprobarAlfabetico(this,25)">
+                        <input type="text" class="form-control" maxlength="50" size="25" id="nombre_vendedor" name="nombre_vendedor" value="<?php echo $nombre; ?>">
                     </div>
 					
 					<div class="form-group">
                         <label class="form-label" for="apellidos_vendedor"><?php echo $strings['Apellidos']; ?></label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="apellidos_vendedor" name="apellidos_vendedor" value="<?php echo $apellidos; ?>" onblur="comprobarVacio(this);comprobarTexto(this,50);comprobarAlfabetico(this,50)">
+                        <input type="text" class="form-control" maxlength="50" size="50" id="apellidos_vendedor" name="apellidos_vendedor" value="<?php echo $apellidos; ?>">
                     </div>
 
                     <div class="form-group">
                         <label class="form-label" for="email_vendedor"><?php echo $strings['Email']; ?></label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="email_vendedor" name="email_vendedor" value="<?php echo $email; ?>" onblur="comprobarVacio(this);comprobarTexto(this,60);comprobarCorreo(this)">
+                        <input type="text" class="form-control" maxlength="60" size="60" id="email_vendedor" name="email_vendedor" value="<?php echo $email; ?>">
                     </div>
 
                      <div class="form-group">
                         <label class="form-label" for="telefono_vendedor"><?php echo $strings['Telefono']; ?></label>
-                        <input type="text" class="form-control" maxlength="3" size="3" id="telefono_vendedor" name="telefono_vendedor" value="<?php echo $telefono; ?>" onblur="comprobarVacio(this);comprobarTelefono(this)">
+                        <input type="text" class="form-control" maxlength="12" size="12" id="telefono_vendedor" name="telefono_vendedor" value="<?php echo $telefono; ?>">
                     </div>
 
                     
@@ -96,7 +96,7 @@
             </div>
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Gamerenting</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
        

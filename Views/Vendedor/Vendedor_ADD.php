@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite añadir una loteria
+ * Funcion: Vista que nos permite añadir un vendedor
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
@@ -92,7 +92,7 @@
             </div>
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Gamerenting</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
         

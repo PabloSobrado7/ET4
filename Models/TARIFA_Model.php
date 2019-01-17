@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Modelo de socios que nos permite acceder a la tabla en la bd
+ * Funcion: Modelo de gestion de tarifas
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */

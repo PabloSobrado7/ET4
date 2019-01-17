@@ -1,6 +1,6 @@
 <?php
 /**
- * Funcion: Vista que nos permite buscar loterias por cada campo
+ * Funcion: Vista que nos permite buscar socios por cada campo
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
@@ -129,7 +129,7 @@ class Vendedor_SEARCH {
             </div>
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Gamerenting</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
         <!--<script src="../Views/js/md5.js"></script>

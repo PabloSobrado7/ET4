@@ -3,6 +3,7 @@
 /**
  * Funcion: Vista que nos permite eliminar un juego
  * Autor: Mario Gayoso Pérez
+  * Fecha: 28/11/2018
  */
 
 class Juego_DELETE {
@@ -82,7 +83,7 @@ class Juego_DELETE {
                             <span><?php echo $compra; ?></span>
                         </li>
                         <li>
-                            <h5><?php echo $strings['Venta']; ?></h5>
+                            <h5><?php echo $strings['Alquiler']; ?></h5>
                             <span><?php echo $venta; ?></span>
                         </li>
                         
@@ -103,7 +104,7 @@ class Juego_DELETE {
             </div>
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6><?php echo $strings['Prueba formulario DELETE Juego']; ?></h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
         <!--<script src="../js/main.js"></script>

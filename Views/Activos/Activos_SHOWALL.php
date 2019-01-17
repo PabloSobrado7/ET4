@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite ver el catalogo para los users
+ * Funcion: Vista que nos permite ver la lista de socios mas activos
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
@@ -49,7 +49,7 @@ $(document).ready(function() {
         <section class="form-basic-start">
 
             <div class="showall">
-TOP SOCIOS MÁS ACTIVOS (COMPRA)
+<?php echo $strings['TOP 5 SOCIOS MÁS ACTIVOS (COMPRA)'];?>
                 <div >
 
 
@@ -91,7 +91,7 @@ TOP SOCIOS MÁS ACTIVOS (COMPRA)
             </div>
 
             <div class="showall">
-TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)
+<?php echo $strings['TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)'];?>
                 <div >
 
 
@@ -99,9 +99,9 @@ TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)
 				
                 <table id="socios" class="showall-tab">
                     <tr>
-						<th>Login</th>
-						<th>Email</th>
-						<th>Telefono</th>
+						<th><?php echo $strings['Login'];?></th>
+                        <th><?php echo $strings['Email'];?></th>
+                        <th><?php echo $strings['Telefono'];?></th>
 
 
                         <th>
@@ -134,7 +134,7 @@ TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)
 			
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Socio Showall</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
 

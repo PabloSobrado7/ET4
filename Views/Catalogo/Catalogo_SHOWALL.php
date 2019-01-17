@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite ver el catalogo para los users
+ * Funcion: Vista que nos permite ver el catalogo de juegos para los usuarios
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
@@ -61,11 +61,11 @@ $(document).ready(function() {
                     <tr>
 						<th><?php echo $strings['Nombre juego'];?></th>
 						<th><?php echo $strings['Plataforma'];?></th>
-						<th>Genero</th>
-						<th>Precio Compra</th>
-						<th>Novedad</th>
-                        <th>Venta</th>
-						<th>Alquiler</th>
+						<th><?php echo $strings['Genero'];?></th>
+						<th><?php echo $strings['Precio compra'];?></th>
+						<th><?php echo $strings['Novedad'];?></th>
+                        <th><?php echo $strings['Compra'];?></th>
+						<th><?php echo $strings['Alquiler'];?></th>
 
                         <th>
                         </th>
@@ -110,7 +110,7 @@ $(document).ready(function() {
 			
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Juego Showall</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
 

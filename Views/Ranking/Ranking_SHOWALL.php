@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite ver el catalogo para los users
+ * Funcion: Vista que nos permite ver el top de compras/alquileres
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
@@ -49,18 +49,19 @@ $(document).ready(function() {
         <section class="form-basic-start">
 
             <div class="showall">
-TOP 5 MAS COMPRADOS
+<?php echo $strings['TOP 5 MAS COMPRADOS']; ?>
                 <div >
 
                 </div>
 				
                 <table id="juegos" class="showall-tab">
                     <tr>
-						<th>Nombre</th>
-						<th>Plataforma</th>
-						<th>Genero</th>
-						<th>Precio Compra</th>
-						<th>Novedad</th>
+						<th><?php echo $strings['Nombre juego']; ?></th>
+						<th><?php echo $strings['Plataforma']; ?></th>
+						<th><?php echo $strings['Genero']; ?></th>
+						<th><?php echo $strings['Precio compra']; ?></th>
+						<th><?php echo $strings['Novedad']; ?></th>
+                        
 
 
                         <th>
@@ -80,7 +81,7 @@ TOP 5 MAS COMPRADOS
 								<td><?php echo $row['plataforma']; ?></td>
 								<td><?php echo $row['genero']; ?></td>
 								<td><?php echo $row['precio_compra']; ?>€</td>
-					<?php if ($row['novedad']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
+					<?php if ($row['novedad']=='1'){ ?> <td><?php echo $strings['Si']; ?></td> <?php }else{?><td><?php echo $strings['No']; ?></td><?php } ?>
 
 					           <td>
 									</td>
@@ -94,18 +95,18 @@ TOP 5 MAS COMPRADOS
             </div>
 			
 			            <div class="showall">
-TOP 5 MAS ALQUILADOS
+<?php echo $strings['TOP 5 MAS ALQUILADOS']; ?>
                 <div >
 
                 </div>
 				
                 <table id="juegos" class="showall-tab">
                     <tr>
-						<th>Nombre</th>
-						<th>Plataforma</th>
-						<th>Genero</th>
-						<th>Precio Compra</th>
-						<th>Novedad</th>
+						<th><?php echo $strings['Nombre juego']; ?></th>
+						<th><?php echo $strings['Plataforma']; ?></th>
+						<th><?php echo $strings['Genero']; ?></th>
+						<th><?php echo $strings['Precio compra']; ?></th>
+						<th><?php echo $strings['Novedad']; ?></th>
 
                         <th>
                         </th>
@@ -124,7 +125,7 @@ TOP 5 MAS ALQUILADOS
 								<td><?php echo $row['plataforma']; ?></td>
 								<td><?php echo $row['genero']; ?></td>
 								<td><?php echo $row['precio_compra']; ?>€</td>
-					<?php if ($row['novedad']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
+					<?php if ($row['novedad']=='1'){ ?> <td><?php echo $strings['Si']; ?></td> <?php }else{?><td><?php echo $strings['No']; ?></td><?php } ?>
 
 					           <td>
 									</td>
@@ -139,7 +140,7 @@ TOP 5 MAS ALQUILADOS
 			
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Juego Showall</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
 

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Modelo de usuarios que nos permite acceder a la tabla en la bd
+ * Funcion: Modelo de admin que nos permite acceder a la tabla en la bd y controlar el login de usuarios
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
@@ -79,6 +79,8 @@ function login(){
 			FROM `ADMIN`
 			WHERE (
 				(login_admin = '$this->login_admin') 
+				AND
+				(pass_admin = '$this->pass_admin')
 			)";
 	$resultado = $this->mysqli->query($sql);
 	
@@ -88,6 +90,8 @@ if ($resultado->num_rows == 0){
 			FROM `VENDEDOR`
 			WHERE (
 				(login_vendedor = '$this->login_admin') 
+								AND
+				(pass_vendedor = '$this->pass_admin')
 			)";
 
 	$resultado = $this->mysqli->query($sql);
@@ -99,6 +103,8 @@ if ($resultado->num_rows == 0){
 			FROM `SOCIO`
 			WHERE (
 				(login_socio = '$this->login_admin') 
+								AND
+				(pass_socio = '$this->pass_admin')
 			)";
 	$resultado = $this->mysqli->query($sql);		
 }			

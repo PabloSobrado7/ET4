@@ -83,11 +83,11 @@
                         <input type="text" class="form-control" maxlength="60" size="40" id="email" name="email" onblur="comprobarExpresionRegular(this,/^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/,50)">
                     </div> 
 					<div class="form-group">
-                        <label class="form-label" for="FechaNacimiento"><?php echo $strings['Fecha']; ?></label>
+                        <label class="form-label" for="FechaNacimiento"><?php echo $strings['Fecha nacimiento']; ?></label>
                         <input type="date" class="form-control" id="FechaNacimiento" name="FechaNacimiento" onblur="comprobarVacio(this)">
                     </div> 
 					<div class="form-group">
-                        <label class="form-label" for="fotopersonal"><?php echo $strings['Fotopersonal']; ?></label>
+                        <label class="form-label" for="fotopersonal"><?php echo $strings['Foto personal']; ?></label>
                         <input type="file" name="fotopersonal" id="fotopersonal">
 					</div>
 					
@@ -105,7 +105,7 @@
                 </form>
             </div>
             <footer>
-				<h6>GAMERENTING - 2018</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
             </section>
             <!--<script src="../Views/js/md5.js"></script>

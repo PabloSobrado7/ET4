@@ -1,6 +1,6 @@
 <?php
 /**
- * Funcion: Archivo php donde se controlan las acciones del juego
+ * Funcion: Archivo php donde se controlan las acciones de las novedades
  * Autor: Mario
  */	
 session_start();

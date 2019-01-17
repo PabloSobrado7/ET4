@@ -50,9 +50,9 @@ class Compra_SHOWALL {
 
                 <table class="showall-tab">
                     <tr>
-                        <th>Login socio</th>
-						<th>Id Juego</th>
-						<th>Fecha compra</th>
+                        <th><?php echo $strings['Login socio'];?></th>
+						<th><?php echo $strings['ID Juego'];?></th>
+						<th><?php echo $strings['Fecha compra'];?></th>
 
                         <th>
                         </th>
@@ -87,7 +87,7 @@ class Compra_SHOWALL {
             </div>
 			
             <footer>
-				<h6>GAMERENTING - 2018</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
 

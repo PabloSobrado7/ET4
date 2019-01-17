@@ -1,7 +1,7 @@
 <?php
 /**
- * Funcion: Archivo php donde se controlan las acciones del juego
- * Autor: Mario
+ * Funcion: Archivo php donde se controlan las acciones de los juegos top mas vendidos/alquilados
+ * Autor: Mario Gayoso Perez
  */	
 session_start();
 include '../Functions/Authentication.php';
