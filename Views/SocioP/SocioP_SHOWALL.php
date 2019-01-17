@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite ver el catalogo para los users
+ * Funcion: Vista que nos permite ver las compras y alquileres de un socio
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
@@ -65,22 +65,18 @@ MIS COMPRAS
                     <?php
 
                     $row;//almacena usuarios
-
+					$acumulado = 0;
                     //mientras existan usuarios
                     while ($row = $users->fetch_array()){
                         ?>
 
                         <tr>
-                              <input type="hidden" name="id_juego" value="<?php echo $row['id_juego']; ?>">      
-                              <input type="hidden" name="nombre_juego" value="<?php echo $row['nombre_juego']; ?>">
-                              <input type="hidden" name="plataforma" value="<?php echo $row['plataforma']; ?>">
-                              <input type="hidden" name="genero" value="<?php echo $row['genero']; ?>">
-                              <input type="hidden" name="precio_compra" value="<?php echo $row['precio_compra']; ?>">
-                              
+
 								<td><?php echo $row['nombre_juego']; ?></td>
 								<td><?php echo $row['plataforma']; ?></td>
 								<td><?php echo $row['genero']; ?></td>
-								<td><?php echo $row['precio_compra']; ?>€</td>
+								<td><?php echo $row['precio_compra']; 
+								$acumulado = $acumulado + $row['precio_compra'];?>€</td>
 
 					           <td>
 									</td>
@@ -90,8 +86,14 @@ MIS COMPRAS
                         <?php
                     }
                     ?>
+					
                 </table>
+				
             </div>
+			
+			<td>TOTAL GASTADO EN COMPRAS: <?php echo $acumulado; 
+				
+								?>€ </td>
 			
 			            <div class="showall">
 MIS ALQUILERES
@@ -102,29 +104,48 @@ MIS ALQUILERES
 						<th>Nombre</th>
 						<th>Plataforma</th>
 						<th>Genero</th>
-						<th>Fecha fin alquiler</th>
-
+						<th>Fecha alquiler</th>
+						<th>Tiempo alquiler</th>
+						<th>Precio alquiler</th>
+						
+						
                         <th>
                         </th>
                     </tr>
                     <?php
 
                     $row;//almacena usuarios
-
+					$acumulado2 = 0;
                     //mientras existan usuarios
                     while ($row = $datos->fetch_array()){
                         ?>
 
                         <tr>
-                              <input type="hidden" name="id_juego" value="<?php echo $row['id_juego']; ?>">      
-                              <input type="hidden" name="nombre_juego" value="<?php echo $row['nombre_juego']; ?>">
-                              <input type="hidden" name="plataforma" value="<?php echo $row['plataforma']; ?>">
-                              <input type="hidden" name="genero" value="<?php echo $row['genero']; ?>">
-                            
+
 								<td><?php echo $row['nombre_juego']; ?></td>
 								<td><?php echo $row['plataforma']; ?></td>
 								<td><?php echo $row['genero']; ?></td>
-								<td>31-01-2019</td>
+								<td><?php echo $row['fecha_alquiler']; ?></td>
+								<td><?php 
+								if($row['id_tarifa']=='1'){
+								echo '2 días';}
+								if($row['id_tarifa']=='2'){
+								echo '7 días';}
+								if($row['id_tarifa']=='3'){
+								echo '15 días';}
+								if($row['id_tarifa']=='4'){
+								echo '30 días';}
+								?></td>
+								<td><?php 
+								if($row['id_tarifa']=='1'){
+								echo '4€'; $acumulado2 = $acumulado2 + 4;}
+								if($row['id_tarifa']=='2'){
+								echo '9€'; $acumulado2 = $acumulado2 + 9;}
+								if($row['id_tarifa']=='3'){
+								echo '12€'; $acumulado2 = $acumulado2 + 12;}
+								if($row['id_tarifa']=='4'){
+								echo '17€'; $acumulado2 = $acumulado2 + 17;}
+								?></td>
 								<td></td>
 								
 					           <td>
@@ -133,11 +154,14 @@ MIS ALQUILERES
                         </tr>
 
                         <?php
-                    }
+                    } 
                     ?>
                 </table>
             </div>
-			
+						<td>TOTAL GASTADO EN ALQUILER: <?php echo $acumulado2; ?>€ </td>
+	
+
+					
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
 				<h6>Juego Showall</h6>

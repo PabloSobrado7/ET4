@@ -2,6 +2,7 @@
 /**
  * Funcion: Vista que nos permite buscar por juegos
  * Autor: Mario Gayoso Pérez
+  * Fecha: 28/11/2018
   */
 class Juego_SEARCH {
 

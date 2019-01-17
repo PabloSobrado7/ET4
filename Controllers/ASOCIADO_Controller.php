@@ -1,7 +1,7 @@
 <?php
 /**
  * Funcion: Archivo php donde se controlan las acciones de la asociacion entre juego y tarifa
- * Autor: Mario
+ * Autor: Mario Gayoso Perez
  */
 
 session_start();

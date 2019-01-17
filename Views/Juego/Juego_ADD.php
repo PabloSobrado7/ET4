@@ -2,6 +2,7 @@
 /* 
 * Funcion: Vista que nos permite añadir un juego 
 * Autor : Mario Gayoso Pérez
+ * Fecha: 28/11/2018
 */
 class Juego_ADD {
 	  function __construct(){

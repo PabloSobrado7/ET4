@@ -1,6 +1,6 @@
 <?php
 /**
- * Funcion: Vista que nos permite buscar por juegos
+ * Funcion: Vista que nos permite buscar por el catalogo de juegos
  * Autor: Mario Gayoso Pérez
   */
 class Catalogo_SEARCH {

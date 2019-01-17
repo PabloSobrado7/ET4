@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite ver el catalogo para los users
+ * Funcion: Vista que nos permite ver el top de compras/alquileres
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */

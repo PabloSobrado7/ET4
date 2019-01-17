@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite eliminar una loteria
+ * Funcion: Vista que nos permite eliminar un vendedor
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */

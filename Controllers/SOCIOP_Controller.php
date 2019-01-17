@@ -1,6 +1,6 @@
 <?php
 /**
- * Funcion: Archivo php donde se controlan las acciones del juego
+ * Funcion: Archivo php donde se controlan las acciones de las compras y alquileres de cada socio
  * Autor: Mario
  */	
 session_start();

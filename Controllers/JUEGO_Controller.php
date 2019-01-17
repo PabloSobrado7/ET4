@@ -1,7 +1,7 @@
 <?php
 /**
  * Funcion: Archivo php donde se controlan las acciones del juego
- * Autor: Mario
+ * Autor: Mario Gayoso Perez
  */	
 session_start();
 include '../Functions/Authentication.php';

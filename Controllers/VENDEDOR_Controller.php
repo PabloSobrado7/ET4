@@ -1,6 +1,6 @@
 <?php
 /**
- * Funcion: Archivo php donde se controlan las acciones de la loteria
+ * Funcion: Archivo php donde se controlan las acciones de la gestion de vendedores
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */

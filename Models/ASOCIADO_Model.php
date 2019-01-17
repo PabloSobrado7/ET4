@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Modelo de loterias que nos permite acceder a la tabla en la bd
+ * Funcion: Modelo de asociacion entre tarifa y juego que nos permite acceder a la tabla en la bd
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */

@@ -1,7 +1,7 @@
 <?php
 /**
- * Funcion: Archivo php donde se controlan las acciones del juego
- * Autor: Mario
+ * Funcion: Archivo php donde se controlan las acciones del top de socios mas activos
+ * Autor: Manuel Boo Martinez
  */	
 session_start();
 include '../Functions/Authentication.php';

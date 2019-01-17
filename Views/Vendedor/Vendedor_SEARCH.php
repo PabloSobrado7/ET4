@@ -1,6 +1,6 @@
 <?php
 /**
- * Funcion: Vista que nos permite buscar loterias por cada campo
+ * Funcion: Vista que nos permite buscar socios por cada campo
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */

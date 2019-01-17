@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Modelo de loterias que nos permite acceder a la tabla en la bd
+ * Funcion: Modelo de gestion de vendedores
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */

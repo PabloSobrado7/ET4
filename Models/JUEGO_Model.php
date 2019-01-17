@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Modelo de loterias que nos permite acceder a la tabla en la bd
+ * Funcion: Modelo de juegos que nos permite acceder a la tabla en la bd
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
@@ -266,7 +266,7 @@ class JUEGO_Model
 
         // construimos el sql para buscar esa clave en la tabla
 
-				$sql = "SELECT *
+				$sql = "SELECT *,alquila.fecha_alquiler,alquila.id_tarifa 
 				FROM `JUEGO`
 				INNER JOIN `ALQUILA`
 				ON juego.id_juego=alquila.id_juego AND alquila.login_socio = '$login'";

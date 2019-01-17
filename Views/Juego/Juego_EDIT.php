@@ -2,7 +2,8 @@
 
 /**
  * Funcion: Vista que nos permite editar un juego
- * Autor: Mario Gayoso Perez 
+ * Autor: Mario Gayoso Perez
+ * Fecha: 28/11/2018 
 
  */
  class Juego_EDIT {

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite añadir una loteria
+ * Funcion: Vista que nos permite añadir un socio
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */

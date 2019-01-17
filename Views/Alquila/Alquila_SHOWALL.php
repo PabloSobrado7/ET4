@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Funcion: Vista que nos permite ver todas las loteria
+ * Funcion: Vista que nos permite ver todos los alquileres
  * Autor: Pablo Sobrado Pinto
  * Fecha: 28/11/2018
  */
