@@ -58,12 +58,12 @@
 				fclose($archivo);
 
 				if($useractual=='admin'){ ?>
-                <ul>Admin
+                <ul><?php echo $strings['Admin']; ?>
 					<a href="../Controllers/VENDEDOR_Controller.php" ><li><?php echo $strings['Administrar vendedores']; ?></li></a>
                      </ul>
 				<?php }  ?>
 				<?php if($useractual=='vendedor'){ ?>
-				<ul>Vendedor
+				<ul><?php echo $strings['Vendedor']; ?>
 					<a href="../Controllers/JUEGO_Controller.php" ><li><?php echo $strings['Gestionar juegos']; ?></li></a>
                     <a href="../Controllers/SOCIO_Controller.php" ><li><?php echo $strings['Gestionar socios']; ?></li></a>
                     <a href="../Controllers/COMPRA_Controller.php" ><li><?php echo $strings['Gestionar compra']; ?></li></a>
@@ -73,7 +73,7 @@
 					</ul>
 					<?php } ?>
 					<?php if($useractual=='socio'){ ?>
-				<ul>Socio
+				<ul><?php echo $strings['Socio']; ?>
 				<a href="../Controllers/CATALOGO_Controller.php" ><li><?php echo $strings['Consultar catálogo']; ?></li></a>
 					<a href="../Controllers/NOVEDADES_Controller.php" ><li><?php echo $strings['Consultar novedades']; ?></li></a>
 					<a href="../Controllers/RANKING_Controller.php" ><li><?php echo $strings['Productos mas comprados/alquilados']; ?></li></a>

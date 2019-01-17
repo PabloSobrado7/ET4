@@ -91,7 +91,7 @@ class Alquila_SHOWALL {
             </div>
 			
             <footer>
-				<h6>GameRentig 2019</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
 

@@ -105,7 +105,7 @@
                 </form>
             </div>
             <footer>
-				<h6>GameRent 2019</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
             </section>
             <!--<script src="../Views/js/md5.js"></script>

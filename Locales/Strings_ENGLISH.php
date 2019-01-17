@@ -51,6 +51,12 @@ array(
 	'ID Tarifa' => 'ID Rate',
 	'ID Juego' => 'ID Game',
 	'Fecha alquiler' => 'Date rent',
+	'Tiempo alquiler' => 'Time rent',
+	'Precio alquiler' => 'Prize rent',
+	'MIS COMPRAS' => 'MY PURCHASES',
+	'MIS ALQUILERES' => 'MY RENTS',
+	'TOTAL GASTADO EN COMPRAS' => 'TOTAL SPENT ON PURCHASES',
+	'TOTAL GASTADO EN ALQUILER' => 'TOTAL SPENT ON RENTS',
 	'Fecha fin alquiler' => 'End date rent',
 	'Accion' => 'Action',
 	'Estrategia' => 'Estrategy',
@@ -77,10 +83,15 @@ array(
 	'Hombre' => 'Boy',
 	'Mujer' => 'Girl',
 	'TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)' => 'TOP 5 MOST ACTIVE PARTNERS (RENT)',
-	'TOP 5 SOCIOS MÁS ACTIVOS (COMPRA)' => 'TOP 5 TOP 5 MOST ACTIVE PARTNERS (PURCHASE)',
+	'TOP 5 SOCIOS MÁS ACTIVOS (COMPRA)' => 'TOP 5 MOST ACTIVE PARTNERS (PURCHASE)',
+	'TOP 5 MAS COMPRADOS' => 'TOP 5 MORE PURCHASED GAMES',
+	'TOP 5 MAS ALQUILADOS' => 'TOP 5 MORE RENT GAMES',
 
-
-
+	'Admin' => 'Admin',
+	'Vendedor' => 'Salesman',
+	'Socio' => 'Partner',
+	
+	
 	'Prueba formulario DELETE Juego' => 'Test form DELETE game',
 	'Prueba formulario EDIT' => 'Test form EDIT',
 	'Prueba formulario SEARCH Juego' => 'Test form SEARCH game',
@@ -107,7 +118,7 @@ array(
 	'Editarsocio' => 'Edit socio',
 	'Eliminarvendedor' => 'Remove seller',
 	
-	
+	'Editar' => 'Edit',
 	
 	
 	'Surname' => 'Surname',
@@ -122,7 +133,7 @@ array(
 	'hombre' => 'Men',
 	'mujer' => 'Women',
 	
-	'Edit' => 'Edit',
+	
 	'Search' => 'Search',
 	'ShowCurrent' => 'ShowCurrent',
 	'No exist image' => 'No exist image',
@@ -163,6 +174,8 @@ array(
 	'Can not content whitespaces at beginning' => 'Can not content whitespaces at beginning',
 	'NewPassword' => 'New Password',
 
+	'El login no existe' => 'Login doesnt exist',
+	
     'Esta a punto de eliminar esta informacion' => 'You are on the point of delete this information',
     'Esta es la informacion seleccionada' => 'This is the selected information',
     'Esta a punto de eliminar esta informacion' => 'You are going to delete this information',

@@ -49,8 +49,8 @@ $(document).ready(function() {
         <section class="form-basic-start">
 
             <div class="showall">
-MIS COMPRAS
 
+<?php echo $strings['MIS COMPRAS']; ?>
 				
                 <table id="juegos" class="showall-tab">
                     <tr>
@@ -91,32 +91,24 @@ MIS COMPRAS
 				
             </div>
 			
-			<td>TOTAL GASTADO EN COMPRAS: <?php echo $acumulado; 
+			<td><?php echo $strings['TOTAL GASTADO EN COMPRAS']; ?>: <?php echo $acumulado; 
 				
 								?>€ </td>
 			
 			            <div class="showall">
-MIS ALQUILERES
+
+<?php echo $strings['MIS ALQUILERES']; ?>
 
 				
                 <table id="juegos" class="showall-tab">
                     <tr>
-
-						<th>Nombre</th>
-						<th>Plataforma</th>
-						<th>Genero</th>
-						<th>Fecha alquiler</th>
-						<th>Tiempo alquiler</th>
-						<th>Precio alquiler</th>
-						
-						
-
+		
 						<th><?php echo $strings['Nombre']; ?></th>
                         <th><?php echo $strings['Plataforma']; ?></th>
                         <th><?php echo $strings['Genero']; ?></th>
-						<th>Fecha alquiler</th>
-						<th>Tiempo alquiler</th>
-						<th>Precio alquiler</th>
+						<th><?php echo $strings['Fecha alquiler']; ?></th>
+						<th><?php echo $strings['Tiempo alquiler']; ?></th>
+						<th><?php echo $strings['Precio alquiler']; ?></th>
 
                         <th>
                         </th>
@@ -167,7 +159,7 @@ MIS ALQUILERES
                     ?>
                 </table>
             </div>
-						<td>TOTAL GASTADO EN ALQUILER: <?php echo $acumulado2; ?>€ </td>
+						<td><?php echo $strings['TOTAL GASTADO EN ALQUILER']; ?>: <?php echo $acumulado2; ?>€ </td>
 	
 
 					

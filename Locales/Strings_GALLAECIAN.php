@@ -50,6 +50,13 @@ array(
 	'Tarifa' => 'Taxa',
 	'ID Tarifa' => 'ID Taxa',
 	'ID Juego' => 'ID Xogo',
+	'Fecha alquiler' => 'Data aluguer',
+	'Tiempo alquiler' => 'Tempo aluguer',
+	'Precio alquiler' => 'Prezo aluguer',
+	'MIS COMPRAS' => 'MIÑAS COMPRAS',
+	'MIS ALQUILERES' => 'MEUS ALQUILERES',
+	'TOTAL GASTADO EN COMPRAS' => 'TOTAL GASTADO EN COMPRAS',
+	'TOTAL GASTADO EN ALQUILER' => 'TOTAL GASTADO EN ALUGUERES',
 	'Fecha fin alquiler' => 'Data final aluguer',
 	'Accion' => 'Accion',
 	'Estrategia' => 'Estratexia',
@@ -78,9 +85,14 @@ array(
 	'Mujer' => 'Muller',
 	'TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)' => 'TOP 5 SOCIOS MÁIS ACTIVOS (ALUGER)',
 	'TOP 5 SOCIOS MÁS ACTIVOS (COMPRA)' => 'TOP 5 SOCIOS MÁIS ACTIVOS (COMPRA)',
+	'TOP 5 MAS COMPRADOS' => 'TOP 5 MAIS MERCADOS',
+	'TOP 5 MAS ALQUILADOS' => 'TOP 5 MAIS ALUGADOS',
 
-
-
+	'Admin' => 'Admin',
+	'Vendedor' => 'Vendedor',
+	'Socio' => 'Socio',
+	
+	
 	'Prueba formulario DELETE Juego' => 'Proba formulario DELETE xogo',
 	'Prueba formulario EDIT' => 'Proba formulario EDIT',
 	'Prueba formulario SEARCH Juego' => 'Proba formulario SEARCH xogo',
@@ -107,13 +119,66 @@ array(
 	
 	'Editarsocio' => 'Editar socio',
 	
+	'Editar' => 'Editar',
 	
-	
-
-
-
 
 	
+	'Fallo al conectar a MYSQL:' => 'Error ao conectar a MYSQL:',
+	
+	'Incorrect password for this login' => 'Contrasinal incorrecta para este usuario',
+	
+	'Search' => 'Buscar',
+	'ShowCurrent' => 'Detallado',
+	'No exist image' => 'Non existe imaxe',
+	'You need sign in' => 'Necesitas registrarte',
+	'It is not possible connect to DB' => 'Non e posibel conectar coa base de datos',
+	'Duplicate email' => 'Xa existe unha conta con ese email',
+	'Duplicate DNI' => 'Xa existe unha conta con ese DNI',
+	'Unknowed Error' => 'Error descoñecido',
+	'Success insert' => 'Insercion correcta',
+	'It is already in DB' => 'Xa existe na base de datos',
+	'Introduce a value' => 'Introduce un valor',
+	'It does not exist in DB' => 'Non existe na base de datos',
+	'Query Error about DB' => 'Error da consulta na base de datos',
+	"Correctly delete" =>  "Correctamente borrado",
+	"It does not exist" => "Non existe",
+	'Success Modify' => 'Modificado correctamente',
+	'User does not exists' => 'O usuario non existe',
+	'Password for this user does not exists' => 'A contrasinal para este usuario non existe',
+	'User already exists' => 'O usuario xa existe',
+
+	'Error image insert' => 'Error na insercion da imaxe',
+	'El campo' => 'O campo',
+	'is empty' => 'esta vacio',
+	'Introduce less of' => 'Introduce menos de',
+	'characters for' => 'caracteres para',
+	'Introduced characters not allow' => 'Caracter incorrecto non permitido',
+	'characters' => 'caracter',
+	'Introduce numerical value' => 'Introduce valor numerico',
+	'Introduce a value between' => 'Introduce un valor entre',
+	'and' => 'e',
+	'Do not introduce letters' => 'Non introduzas letras',
+	'Incorrect format for DNI' => 'Formato de DNI incorrecto',
+	'Incorrect length for DNI' => 'Lonxitude invalida para DNI',
+	'Incorrect format number' => 'Formato de numero incorrecto',
+	'Incorrect format email' => 'Formato de email incorrecto',
+	'Can not content whitespaces' => 'Non pode conter espazos en branco',
+	'Can not content whitespaces at beginning' => 'Non pode conter espazos en branco ao principio',
+	
+    'Esta a punto de eliminar esta informacion' => 'Esta a punto de eliminar esta informacion',
+    'Esta es la informacion seleccionada' => 'Esta e a informacion seleccionada',
+    'Esta a punto de eliminar esta informacion' => 'Esta a punto de eliminar esta informacion',
+    'Duplicate entry' => 'Entrada duplicada',
+    'Introduce a value' => 'Introduce un valor',
+    'El atributo ' => 'O atributo ',
+    ' no puede ser vacio' => ' non pode ser vacio',
+    'Longitud incorrecta. El atributo ' => 'Lonxitude incorrecta. O atributo ',
+    ' debe ser maximo ' => ' debe ser maximo ',
+    ' y es ' => ' e é ',
+    'Solamente se admiten caracteres de tipo letra(a-z)' => 'Soamente se admiten caracteres de tipo letra(a-z)',
+    'No se pueden introducir espacios' => 'Non se poden introducir espazos',
+    'No puedes introducir espacios al principio' => 'Non podes introducir espazos ao principio',
+	'El login no existe' => 'O login non existe',
 
  )
 ;

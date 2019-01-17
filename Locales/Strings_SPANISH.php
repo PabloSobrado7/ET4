@@ -36,7 +36,7 @@ array(
 	'Editar vendedor' => 'Editar vendedor',
 	'Nombre juego' => 'Nombre juego',
 	'Añadir juego' => 'Añadir juego',
-	'ID juego' => 'ID juego',
+	'Id juego' => 'ID juego',
 	'Juego' => 'Juego',
 	'Plataforma' => 'Plataforma',
 	'Genero' => 'Género',
@@ -52,6 +52,12 @@ array(
 	'ID Tarifa' => 'ID Tarifa',
 	'ID Juego' => 'ID Juego',
 	'Fecha alquiler' => 'Fecha alquiler',
+	'Tiempo alquiler' => 'Tiempo alquiler',
+	'Precio alquiler' => 'Precio alquiler',
+	'MIS COMPRAS' => 'MIS COMPRAS',
+	'MIS ALQUILERES' => 'MIS ALQUILERES',
+	'TOTAL GASTADO EN COMPRAS' => 'TOTAL GASTADO EN COMPRAS',
+	'TOTAL GASTADO EN ALQUILER' => 'TOTAL GASTADO EN ALQUILER',
 	'Fecha fin alquiler' => 'Fecha fin alquiler',
 	'Accion' => 'Accion',
 	'Estrategia' => 'Estrategia',
@@ -80,6 +86,8 @@ array(
 	'Mujer' => 'Mujer',
 	'TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)' => 'TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)',
 	'TOP 5 SOCIOS MÁS ACTIVOS (COMPRA)' => 'TOP 5 SOCIOS MÁS ACTIVOS (COMPRA)',
+	'TOP 5 MAS COMPRADOS' => 'TOP 5 MAS COMPRADOS',
+	'TOP 5 MAS ALQUILADOS' => 'TOP 5 MAS ALQUILADOS',
 
 
 
@@ -103,7 +111,7 @@ array(
 	'Register' => 'Registrar',
 	'Add error' => 'Error de añadido',
 	
-	
+	'Editar' => 'Editar',
 	
 	
 	
@@ -111,7 +119,9 @@ array(
 	'Loginvendedor' => 'Usuario vendedor',
 	
 	
-	
+	'Admin' => 'Admin',
+	'Vendedor' => 'Vendedor',
+	'Socio' => 'Socio',
 	
 
 	
@@ -125,7 +135,6 @@ array(
 	'Correo' => 'Correo',
 
 	
-	'Edit' => 'Editar',
 	'Search' => 'Buscar',
 	'ShowCurrent' => 'Detallado',
 	'No exist image' => 'No existe imagen',
@@ -178,6 +187,7 @@ array(
     'No se pueden introducir espacios' => 'No se pueden introducir espacios',
     'No puedes introducir espacios al principio' => 'No puedes introducir espacios al principio',
 
+	'El login no existe' => 'El login no existe',
 
 	'BIENVENIDO' => 'BIENVENIDO',
 

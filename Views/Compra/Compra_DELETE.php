@@ -40,24 +40,24 @@ class Compra_DELETE {
         <section>
 
             <div class="form2">
-                <h4><? php echo $strings['Eliminar'];?></h4>
-                <h4><? php echo $strings['Eliminar compra'];?></h4>
+                <h4><?php echo $strings['Eliminar'];?></h4>
+                <h4><?php echo $strings['Eliminar compra'];?></h4>
                 <form enctype="multipart/form-data" action="../Controllers/COMPRA_Controller.php" method="post">
                     <ul>
                         <li>
-                            <h5><? php echo $strings['Login socio'];?></h5>
+                            <h5><?php echo $strings['Login socio'];?></h5>
                             <span><?php echo $login_socio; ?></span>
 							<input type="hidden" name="login_socio" value="<?php echo $login_socio; ?>">
 							 </li>
 						
 						<li>
-                            <h5><? php echo $strings['ID Juego'];?></h5>
+                            <h5><?php echo $strings['ID Juego'];?></h5>
                             <span><?php echo $id_juego; ?></span>
 							<input type="hidden" name="id_juego" value="<?php echo $id_juego; ?>">
                         </li>
 						
 					    <li>
-                            <h5><? php echo $strings['Fecha compra'];?></h5>
+                            <h5><?php echo $strings['Fecha compra'];?></h5>
 							<span><?php echo $fecha_compra; ?></span>
 							<input type="hidden" name="fecha_compra" value="<?php echo $fecha_compra; ?>">
                         </li>
@@ -78,7 +78,7 @@ class Compra_DELETE {
                 </form>
             </div>
             <footer>
-				<h6>GameRentin 2019</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
         <!--<script src="../js/main.js"></script>

@@ -87,20 +87,20 @@ class Juego_ADD {
                    	<label class="form-label" for="novedad"><?php echo $strings['Novedad'];?></label>
 									 
 				        <select name="novedad">
-				          <option value="1">Sí</option>
-				          <option value="0">No</option>
+				          <option value="1"><?php echo $strings['Si'];?></option>
+				          <option value="0"><?php echo $strings['No'];?></option>
 				        </select>
 				    <label class="form-label" for="compra"><?php echo $strings['Compra'];?></label>
 									 
 				        <select name="compra">
-				          <option value="1">Sí</option>
-				          <option value="0">No</option>
+				          <option value="1"><?php echo $strings['Si'];?></option>
+				          <option value="0"><?php echo $strings['No'];?></option>
 				        </select>
 				    <label class="form-label" for="venta"><?php echo $strings['Venta'];?></label>
 									 
 				        <select name="venta">
-				          <option value="1">Sí</option>
-				          <option value="0">No</option>
+				          <option value="1"><?php echo $strings['Si'];?></option>
+				          <option value="0"><?php echo $strings['No'];?></option>
 				        </select>
 				    </div> 
 
