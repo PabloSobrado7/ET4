@@ -52,19 +52,19 @@ class Juego_ADD {
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="plataforma"><?php echo $strings['Plataforma'];?></label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="plataforma" name="plataforma" onblur=" comprobarVacio(this); comprobarTexto(this, 15);comprobarAlfabetico(this,20)" >
+                        <input type="text" class="form-control" maxlength="20" size="15" id="plataforma" name="plataforma" onblur=" comprobarVacio(this);comprobarTexto(this, 15);comprobarAlfabetico(this,20)">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="genero"><?php echo $strings['Genero'];?></label>
-                        <input type="text" class="form-control" maxlength="20" size="15" id="genero" name="genero" onblur=" comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,15)" >
+                        <input type="text" class="form-control" maxlength="20" size="15" id="genero" name="genero" onblur=" comprobarVacio(this); comprobarTexto(this, 15);comprobarAlfabetico(this,15)" >
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="precio_compra"><?php echo $strings['Precio compra'];?></label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra" onblur=" comprobarVacio(this); comprobarEntero(this,2,0,200)" >
+                        <input type="number" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra" onblur="comprobarVacio(this); comprobarReal(this,2,0,200)">
                     </div>
 					<div class="form-group">
                         <label class="form-label" for="categoria"><?php echo $strings['Categoria'];?></label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="categoria" name="categoria" onblur=" comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,15)">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="categoria" name="categoria" onblur="comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,15)">
                     </div>
                     <div>
                    	<label class="form-label" for="novedad"><?php echo $strings['Novedad'];?></label>
