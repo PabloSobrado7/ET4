@@ -22,7 +22,7 @@ array(
 	'Delete' => 'Borrar',
 	'Login socio' => 'Login socio',
 	'Eliminarsocio' => 'Eliminar socio'
-	'Añadir socio' => 'Añadir socio'
+	'Añadir socio' => 'Añadir socio',
 	'Socio  bloqueado' => 'Socio bloqueado',
 	'Editarsocio' => 'Editar socio',
 	'Desbloquear usuario' => 'Desbolquear usuario',

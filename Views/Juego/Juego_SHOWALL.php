@@ -65,7 +65,7 @@ $(document).ready(function() {
 						<th><?php echo $strings['Nombre juego']; ?></th>
 						<th><?php echo $strings['Plataforma']; ?></th>
 						<th><?php echo $strings['Genero']; ?></th>
-						<th><?php echo $strings['Precio Compra']; ?></th>
+						<th><?php echo $strings['Precio compra']; ?></th>
 						<th><?php echo $strings['Categoria']; ?></th>
 						<th><?php echo $strings['Novedad']; ?></th>
                         <th><?php echo $strings['Compra']; ?></th>

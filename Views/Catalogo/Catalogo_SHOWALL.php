@@ -61,11 +61,11 @@ $(document).ready(function() {
                     <tr>
 						<th><?php echo $strings['Nombre juego'];?></th>
 						<th><?php echo $strings['Plataforma'];?></th>
-						<th><?php echo $strings['Genero'];?></th>
-						<th><?php echo $strings['Precio compra'];?></th>
-						<th><?php echo $strings['Novedad'];?></th>
-                        <th><?php echo $strings['Venta'];?></th>
-						<th><?php echo $strings['Alquiler'];?></th>
+						<th>Genero</th>
+						<th>Precio Compra</th>
+						<th>Novedad</th>
+                        <th>Venta</th>
+						<th>Alquiler</th>
 
                         <th>
                         </th>
