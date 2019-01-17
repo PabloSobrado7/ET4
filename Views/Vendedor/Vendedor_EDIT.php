@@ -77,7 +77,7 @@
 
                      <div class="form-group">
                         <label class="form-label" for="telefono_vendedor"><?php echo $strings['Telefono']; ?></label>
-                        <input type="text" class="form-control" maxlength="12" size="25" id="telefono_vendedor" name="telefono_vendedor" value="<?php echo $telefono; ?>" onblur="comprobarVacio(this); comprobarTelefono(this)">
+                        <input type="text" class="form-control" maxlength="12" size="25" id="telefono_vendedor" name="telefono_vendedor" value="<?php echo $telefono; ?>" onblur="comprobarVacio(this); comprobarTelefono(this)" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
                     </div>
 
                     <div class="boton-grup">

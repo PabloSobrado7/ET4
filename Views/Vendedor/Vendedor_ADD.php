@@ -56,7 +56,7 @@
 					
 					 <div class="form-group">
                         <label class="form-label" for="dni_vendedor"><?php echo $strings['DNI'];?></label>
-                        <input type="text" class="form-control" maxlength="9" size="25" id="dni_vendedor" name="dni_vendedor" onblur="comprobarVacio(this); comprobarDNI(this)">
+                        <input type="text" class="form-control" maxlength="9" size="25" id="dni_vendedor" name="dni_vendedor" onblur="comprobarVacio(this);comprobarDNI(this)">
                     </div>
 					
 					 <div class="form-group">
@@ -76,7 +76,7 @@
 					
 					 <div class="form-group">
                         <label class="form-label" for="telefono_vendedor"><?php echo $strings['Telefono'];?></label>
-                        <input type="text" class="form-control" maxlength="12" size="25" id="telefono_vendedor" name="telefono_vendedor" onblur="comprobarVacio(this); comprobarTelefono(this)">
+                        <input type="text" class="form-control" maxlength="12" size="25" id="telefono_vendedor" name="telefono_vendedor" onblur="comprobarVacio(this);comprobarTelf(this)" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
                     </div>
 					<div class="boton-grup">
                     <button name="action" value="ADD" type="submit" class="boton-env">

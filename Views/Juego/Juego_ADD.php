@@ -61,7 +61,7 @@ class Juego_ADD {
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="precio_compra"><?php echo $strings['Precio compra'];?></label>
-                        <input type="number" class="form-control" maxlength="15" size="25" id="precio_compra" name="precio_compra" onblur="comprobarVacio(this); comprobarReal(this,2,0,200)">
+                        <input type="number" class="form-control" maxlength="15" size="25" id="precio_compra" name="precio_compra" onblur="comprobarVacio(this); comprobarReal(this,2,0,200)" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
                     </div>
 					<div class="form-group">
                         <label class="form-label" for="categoria"><?php echo $strings['Categoria'];?></label>
