@@ -67,6 +67,7 @@ class Juego_ADD {
                         <input type="text" class="form-control" maxlength="15" size="15" id="categoria" name="categoria" onblur=" comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,15)">
                     </div>
                     <div>
+
                     <label class="form-label" for="novedad"><?php echo $strings['Novedad'];?></label>
               		  	<input type="checkbox" name="novedad" value="1"><?php echo $strings['Si'];?><br>
 						<input type="checkbox" name="novedad" value="0"><?php echo $strings['No'];?><br>
@@ -81,6 +82,27 @@ class Juego_ADD {
               		  	<input type="checkbox" name="venta" value="1"><?php echo $strings['Si'];?><br>
 						<input type="checkbox" name="venta" value="0"><?php echo $strings['No'];?><br>
 					</div>
+
+                   	<label class="form-label" for="novedad"><?php echo $strings['Novedad'];?></label>
+									 
+				        <select name="novedad">
+				          <option value="1">Sí</option>
+				          <option value="0">No</option>
+				        </select>
+				    <label class="form-label" for="compra"><?php echo $strings['Compra'];?></label>
+									 
+				        <select name="compra">
+				          <option value="1">Sí</option>
+				          <option value="0">No</option>
+				        </select>
+				    <label class="form-label" for="venta"><?php echo $strings['Venta'];?></label>
+									 
+				        <select name="venta">
+				          <option value="1">Sí</option>
+				          <option value="0">No</option>
+				        </select>
+				    </div> 
+
                     <button name="action" value="ADD" type="submit" class="boton-env">
                         <img src="../Views/imgs/send.png" alt="">
                     </button>

@@ -66,8 +66,8 @@
 				<ul>Vendedor
 					<a href="../Controllers/JUEGO_Controller.php" ><li><?php echo $strings['Gestionar juegos']; ?></li></a>
                     <a href="../Controllers/SOCIO_Controller.php" ><li><?php echo $strings['Gestionar socios']; ?></li></a>
-                    <a href="../Controllers/COMPRA_Controller.php" ><li><?php echo $strings['Gestiónar compra']; ?></li></a>
-					<a href="../Controllers/ALQUILA_Controller.php" ><li><?php echo $strings['Gestiónar alquiler']; ?></li></a>
+                    <a href="../Controllers/COMPRA_Controller.php" ><li><?php echo $strings['Gestionar compra']; ?></li></a>
+					<a href="../Controllers/ALQUILA_Controller.php" ><li><?php echo $strings['Gestionar alquiler']; ?></li></a>
 					<a href="../Controllers/RANKING_Controller.php" ><li><?php echo $strings['Productos mas comprados/alquilados']; ?></li></a>
 					<a href="../Controllers/ACTIVOS_Controller.php" ><li><?php echo $strings['Socios más activos']; ?></li></a>
 					</ul>
