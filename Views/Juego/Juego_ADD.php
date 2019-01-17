@@ -69,17 +69,17 @@ class Juego_ADD {
                     <div>
                     <label class="form-label" for="novedad"><?php echo $strings['Novedad'];?></label>
               		  	<input type="checkbox" name="novedad" value="1"><?php echo $strings['Si'];?><br>
-						<input type="checkbox" name="novedad" value="0"><?php echo $strings['NO'];?><br>
+						<input type="checkbox" name="novedad" value="0"><?php echo $strings['No'];?><br>
 					</div>
 					<div>
                     <label class="form-label" for="compra"><?php echo $strings['Compra'];?></label>
               		  	<input type="checkbox" name="compra" value="1"><?php echo $strings['Si'];?><br>
-						<input type="checkbox" name="compra" value="0"><?php echo $strings['NO'];?><br>
+						<input type="checkbox" name="compra" value="0"><?php echo $strings['No'];?><br>
 					</div>
 					<div>
                     <label class="form-label" for="venta"><?php echo $strings['Alquiler'];?></label>
               		  	<input type="checkbox" name="venta" value="1"><?php echo $strings['Si'];?><br>
-						<input type="checkbox" name="venta" value="0"><?php echo $strings['NO'];?><br>
+						<input type="checkbox" name="venta" value="0"><?php echo $strings['No'];?><br>
 					</div>
                     <button name="action" value="ADD" type="submit" class="boton-env">
                         <img src="../Views/imgs/send.png" alt="">
@@ -90,7 +90,7 @@ class Juego_ADD {
             </div>
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Prueba formulario ADD Juego</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
         

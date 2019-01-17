@@ -22,7 +22,7 @@ array(
 	'Delete' => 'Borrar',
 	'Login socio' => 'Login socio',
 	'Añadir socio' => 'Añadir socio',
-	'Socio  bloqueado' => 'Socio bloqueado',
+	'Socio bloqueado' => 'Socio bloqueado',
 	'Eliminar socio' => 'Eliminar socio',
 	'Editarsocio' => 'Editar socio',
 	'Desbloquear usuario' => 'Desbolquear usuario',
@@ -50,21 +50,41 @@ array(
 	'Tarifa' => 'Taxa',
 	'ID Tarifa' => 'ID Taxa',
 	'ID Juego' => 'ID Xogo',
-	'Fecha alquiler' => 'Data aluguer',
+	'Fecha fin alquiler' => 'Data final aluguer',
 	'Accion' => 'Accion',
 	'Estrategia' => 'Estratexia',
 	'Deporte' => 'Deporte',
 	'Precio compra' => 'Prezo compra',
 	'Si' => 'Si',
 	'No' => 'Non',
-	
+	'Eliminar' => 'Eliminar',
+	'Eliminar compra' => 'Eliminar compra',
+	'Fecha compra' => 'Data compra',
+	'Administrar vendedores' => 'Xestionar vendedores',
+	'Gestionar juegos' => 'Xestionar xogos',
+	'Gestionar socios' => 'Xestionar socios',
+	'Gestionar compra' => 'Xestionar compra',
+	'Gestionar alquiler' => 'Xestionar alquiler',
+	'Socios más activos' => 'Socios mais activos',
+	'Consultar catálogo' => 'Consultar catálogo',
+	'Consultar novedades' => 'Consultar novidades',
+	'Productos mas comprados/alquilados' => 'Productos mais mercados/alugados',
+	'Mis compras/alquileres' => 'Miñas compras/alugeres',
+	'Sign up' => 'Rexistrarse',
+	'Fecha nacimiento' => 'Data nacemento',
+	'Foto personal' => 'Foto persoal',
+	'Sexo' => 'Sexo',
+	'Hombre' => 'Home',
+	'Mujer' => 'Muller',
+	'TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)' => 'TOP 5 SOCIOS MÁIS ACTIVOS (ALUGER)',
+	'TOP 5 SOCIOS MÁS ACTIVOS (COMPRA)' => 'TOP 5 SOCIOS MÁIS ACTIVOS (COMPRA)',
+
 
 
 	'Prueba formulario DELETE Juego' => 'Proba formulario DELETE xogo',
 	'Prueba formulario EDIT' => 'Proba formulario EDIT',
 	'Prueba formulario SEARCH Juego' => 'Proba formulario SEARCH xogo',
 	'Juego SHOWALL' => 'Xogo SHOWALL',
-	'Prueba formulario SEARCH Catalogo' => 'Proba formulario SEARCH Catálogo',
 	'Catalogo SHOWALL' => 'Catálogo SHOWALL',
 
 	
@@ -73,10 +93,8 @@ array(
 	'Funcionalidades' => 'Funcionalidades',
 	'Fecha' => 'Fecha',
 	'Fallo al conectar a MYSQL:' => 'Erro o conectar a MYSQL:',
-'Sign up' => 'Rexistro',
-	'Fotopersonal' => 'Foto personal',
 	'Bienvenido' => 'Benvido',
-	'Ver loteria' => 'Ver a loteria',
+	
 	
 	'Bloqueado' => 'Bloqueado',
 	'Loginvendedor' => 'Usuario vendedor',
@@ -84,23 +102,12 @@ array(
 	'Editarsocio' => 'Editar socio',
 	
 	
-	'Sexo' => 'Sexo',
-	'Hombre' => 'Home',
-	'Mujer' => 'Muller',
 	
-	'Participacion' => 'Participacion (€)',
-'Resguardo' => 'Resguardo',
-'Ingresado' => 'Ingresado?',
-'Premiopersonal' => 'Premio personal (€)',
-'Pagado' => 'Pagado?',
-'Anadirparticipante' => 'Novo participante',
-'Eliminarpart' => 'Esta a punto de eliminar esta participacion',
-'Editarpart' => 'Editar participacion',
 
-'SI' => 'SI',
-'NO' => 'NO',
 
-	'Busqueda' => 'Búsqueda por parámetros'
+
+
+	
 
  )
 ;

@@ -59,25 +59,25 @@
 
 				if($useractual=='admin'){ ?>
                 <ul>Admin
-					<a href="../Controllers/VENDEDOR_Controller.php" ><li>Administrar vendedores</li></a>
+					<a href="../Controllers/VENDEDOR_Controller.php" ><li><?php echo $strings['Administrar vendedores']; ?></li></a>
                      </ul>
 				<?php }  ?>
 				<?php if($useractual=='vendedor'){ ?>
 				<ul>Vendedor
-					<a href="../Controllers/JUEGO_Controller.php" ><li>Gestionar juegos</li></a>
-                    <a href="../Controllers/SOCIO_Controller.php" ><li>Gestionar socios</li></a>
-                    <a href="../Controllers/COMPRA_Controller.php" ><li>Gestión venta</li></a>
-					<a href="../Controllers/ALQUILA_Controller.php" ><li>Gestión alquiler</li></a>
-					<a href="../Controllers/RANKING_Controller.php" ><li>Productos mas vendidos/alquilados</li></a>
-					<a href="../Controllers/ACTIVOS_Controller.php" ><li>Socios más activos</li></a>
+					<a href="../Controllers/JUEGO_Controller.php" ><li><?php echo $strings['Gestionar juegos']; ?></li></a>
+                    <a href="../Controllers/SOCIO_Controller.php" ><li><?php echo $strings['Gestionar socios']; ?></li></a>
+                    <a href="../Controllers/COMPRA_Controller.php" ><li><?php echo $strings['Gestiónar compra']; ?></li></a>
+					<a href="../Controllers/ALQUILA_Controller.php" ><li><?php echo $strings['Gestiónar alquiler']; ?></li></a>
+					<a href="../Controllers/RANKING_Controller.php" ><li><?php echo $strings['Productos mas comprados/alquilados']; ?></li></a>
+					<a href="../Controllers/ACTIVOS_Controller.php" ><li><?php echo $strings['Socios más activos']; ?></li></a>
 					</ul>
 					<?php } ?>
 					<?php if($useractual=='socio'){ ?>
 				<ul>Socio
-				<a href="../Controllers/CATALOGO_Controller.php" ><li>Consultar catálogo</li></a>
-					<a href="../Controllers/NOVEDADES_Controller.php" ><li>Consultar novedades</li></a>
-					<a href="../Controllers/RANKING_Controller.php" ><li>Productos mas vendidos/alquilados</li></a>
-					<a href="../Controllers/SOCIOP_Controller.php" ><li>Mis compras/alquileres</li></a>
+				<a href="../Controllers/CATALOGO_Controller.php" ><li><?php echo $strings['Consultar catálogo']; ?></li></a>
+					<a href="../Controllers/NOVEDADES_Controller.php" ><li><?php echo $strings['Consultar novedades']; ?></li></a>
+					<a href="../Controllers/RANKING_Controller.php" ><li><?php echo $strings['Productos mas comprados/alquilados']; ?></li></a>
+					<a href="../Controllers/SOCIOP_Controller.php" ><li><?php echo $strings['Mis compras/alquileres']; ?></li></a>
                     </ul>
 					<?php } ?>
 

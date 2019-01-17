@@ -138,7 +138,7 @@ class Juego_SEARCH {
 
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6><?php echo $strings['Prueba formulario SEARCH Juego']; ?></h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
         <!--<script src="../Views/js/md5.js"></script>

@@ -54,10 +54,10 @@ MIS COMPRAS
 				
                 <table id="juegos" class="showall-tab">
                     <tr>
-						<th>Nombre</th>
-						<th>Plataforma</th>
-						<th>Genero</th>
-						<th>Precio Compra</th>
+						<th><?php echo $strings['Nombre']; ?></th>
+						<th><?php echo $strings['Plataforma']; ?></th>
+						<th><?php echo $strings['Genero']; ?></th>
+						<th><?php echo $strings['Precio compra']; ?></th>
 
                         <th>
                         </th>
@@ -99,10 +99,10 @@ MIS ALQUILERES
 				
                 <table id="juegos" class="showall-tab">
                     <tr>
-						<th>Nombre</th>
-						<th>Plataforma</th>
-						<th>Genero</th>
-						<th>Fecha fin alquiler</th>
+						<th><?php echo $strings['Nombre']; ?></th>
+                        <th><?php echo $strings['Plataforma']; ?></th>
+                        <th><?php echo $strings['Genero']; ?></th>
+						<th><?php echo $strings['Fecha fin alquiler']; ?></th>
 
                         <th>
                         </th>
@@ -140,7 +140,7 @@ MIS ALQUILERES
 			
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Juego Showall</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
 

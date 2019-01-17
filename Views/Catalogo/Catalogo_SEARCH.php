@@ -112,7 +112,7 @@ class Catalogo_SEARCH {
 				 
                     <label class="form-label" for="compra"><?php echo $strings['Compra'];?></label>
                 <input type="checkbox" name="compra" value="1"><?php echo $strings['Si'];?><br>
-				<input type="checkbox" name="compra" value="0"><?php echo $strings['NO'];?><br>
+				<input type="checkbox" name="compra" value="0"><?php echo $strings['No'];?><br>
 				
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
@@ -123,7 +123,7 @@ class Catalogo_SEARCH {
 				
 			 <label class="form-label" for="venta"><?php echo $strings['Venta'];?></label>
                 <input type="checkbox" name="venta" value="1"><?php echo $strings['Si'];?><br>
-				<input type="checkbox" name="venta" value="0"><?php echo $strings['NO'];?><br>
+				<input type="checkbox" name="venta" value="0"><?php echo $strings['No'];?><br>
 				
                <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
@@ -134,7 +134,7 @@ class Catalogo_SEARCH {
 
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6><?php echo $strings['Prueba formulario SEARCH Catalogo']; ?></h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
         <!--<script src="../Views/js/md5.js"></script>

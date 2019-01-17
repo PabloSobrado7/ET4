@@ -54,7 +54,7 @@
                 
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Loteria ESEI</h6>
+				<h6>GameRent 2019</h6>
             </footer>
             </section>
             <script src="../Views/js/main.js"></script>

@@ -84,7 +84,7 @@ class Alquila_DELETE {
                 </form>
             </div>
             <footer>
-				<h6>GAMERENTING - 2018</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
         <!--<script src="../js/main.js"></script>

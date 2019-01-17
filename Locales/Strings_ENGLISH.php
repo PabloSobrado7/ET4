@@ -23,13 +23,13 @@ array(
 	'Login socio' => 'Login partner',
 	'Eliminarsocio' => 'Remove partner',
 	'Añadir socio' => 'Add partner',
-	'Socio  bloqueado' => 'Socio bloqueado',
 	'Socio bloqueado' => 'Blocked partner',
 	'Editar socio' => 'Edit partner',
 	'Desbloquear usuario' => 'Unlock user',
 	'Busqueda' => 'Search',
 	'Eliminar vendedor' => 'Remove seller',
-	'Añadir vendedor' => 'Add seller',
+	'Inicio' => 'Entry',
+	'Añadir vendedor' => 'Add seller',	
 	'Login vendedor' => 'Login seller',
 	'Editar vendedor' => 'Edit seller',
 	'Nombre juego' => 'Name game',
@@ -51,12 +51,34 @@ array(
 	'ID Tarifa' => 'ID Rate',
 	'ID Juego' => 'ID Game',
 	'Fecha alquiler' => 'Date rent',
+	'Fecha fin alquiler' => 'End date rent',
 	'Accion' => 'Action',
 	'Estrategia' => 'Estrategy',
 	'Deporte' => 'Sport',
-	'Precio compra' => 'purchase price',
 	'Si' => 'Yes',
 	'No' => 'Not',
+	'Eliminar' => 'Remove',
+	'Eliminar compra' => 'Delete purchase',
+	'Fecha compra' => 'Purchase date',	
+	'Administrar vendedores' => 'Manage sellers',
+	'Gestionar juegos' => 'Manage games',
+	'Gestionar socios' => 'Manage partners',
+	'Gestionar compra' => 'Manage partners',
+	'Gestionar alquiler' => 'Gestionar rent',
+	'Socios más activos' => 'Most active partners',
+	'Consultar catálogo' => 'Check catalog',
+	'Consultar novedades' => 'Check news',
+	'Productos mas comprados/alquilados' => 'More products purchased/rented',
+	'Mis compras/alquileres' => 'My purchases rentals',
+	'Sign up' => 'Sign up',
+	'Fecha nacimiento' => 'Birth date',
+	'Foto personal' => 'Personal picture',
+	'Sexo' => 'Sex',
+	'Hombre' => 'Boy',
+	'Mujer' => 'Girl',
+	'TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)' => 'TOP 5 MOST ACTIVE PARTNERS (RENT)',
+	'TOP 5 SOCIOS MÁS ACTIVOS (COMPRA)' => 'TOP 5 TOP 5 MOST ACTIVE PARTNERS (PURCHASE)',
+
 
 
 	'Prueba formulario DELETE Juego' => 'Test form DELETE game',
@@ -73,15 +95,12 @@ array(
 	'Back' => 'Back',
 	'Incorrect password for this login' => 'Incorrect password for this login',
 	'Register' => 'Register',
-	
-	'Fecha' => 'Date',
+
 	'User Interface Management' => 'User Interface Management',
-	'Fotopersonal' => 'Personal picture',
-	'Sexo' => 'Sex',
-	'Hombre' => 'Boy',
-	'Mujer' => 'Girl',
+	
+	
+	
 	'Bloqueado' => 'locked',
-	'Loginvendedor' => 'Seller login',
 	
 	
 	
@@ -160,7 +179,7 @@ array(
 
     'login' => 'login',
  
-	'Inicio' => 'Entry',
+	
 	
 	'Fallo al conectar a MYSQL:' => 'MYSQL Error Connection :',
 
@@ -168,22 +187,11 @@ array(
 
 	
 'Bienvenido' => 'Welcome',
-'Ver loteria' => 'Show lottery',
-
-'SI' => 'YES',
-'NO' => 'NO',
 
 
 
-'Participacion' => 'Participation (€)',
-'Resguardo' => 'Guard',
-'Ingresado' => 'Deposited?',
-'Premiopersonal' => 'Prize (€)',
-'Pagado' => 'Paid out?',
-'Anadirparticipante' => 'Add new participant',
-'Eliminarpart' => 'You will delete this participant',
-'Editarpart' => 'Edit participation',
-'Busqueda' => 'Search for parameters'
+
+
 
 
 
