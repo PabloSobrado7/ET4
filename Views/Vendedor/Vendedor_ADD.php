@@ -78,10 +78,14 @@
                         <label class="form-label" for="telefono_vendedor"><?php echo $strings['Telefono'];?></label>
                         <input type="text" class="form-control" maxlength="12" size="25" id="telefono_vendedor" name="telefono_vendedor" onblur="comprobarVacio(this); comprobarTelefono(this)">
                     </div>
-					
+					<div class="boton-grup">
                     <button name="action" value="ADD" type="submit" class="boton-env">
                         <img src="../Views/imgs/send.png" alt="">
                     </button>
+                    <button name="action" value="" class="boton-env">
+                        <img src="../Views/imgs/return.png" alt="" >
+                    </button>
+                    </div>
                 </form>
             </div>
 

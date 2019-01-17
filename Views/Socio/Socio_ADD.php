@@ -85,9 +85,14 @@
  
                     <input type="hidden" class="form-control" maxlength="1" size="1" id="socio_bloqueado" name="socio_bloqueado" value="0">
 					
+                    <div class="boton-grup">
                     <button name="action" value="ADD" type="submit" class="boton-env">
                         <img src="../Views/imgs/send.png" alt="">
                     </button>
+                    <button name="action" value="" class="boton-env">
+                        <img src="../Views/imgs/return.png" alt="" >
+                    </button>
+                    </div>
                 </form>
             </div>
 

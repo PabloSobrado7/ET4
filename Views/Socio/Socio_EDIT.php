@@ -50,7 +50,7 @@
                 <?php
 
                 ?>
-<form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/SOCIO_Controller.php">
+                <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/SOCIO_Controller.php">
                     <div class="form-group">
                         <label class="form-label" for="login_socio"><?php echo $strings['Login'];?></label>
                         <input type="text" class="form-control" maxlength="25" size="25" id="login_socio" name="login_socio" value="<?php echo $login_socio; ?>" readonly>
@@ -97,10 +97,14 @@
                         </select>
                     </div>
 
-                  
+                    <div class="boton-grup">
                     <button name="action" value="EDIT" type="submit" class="boton-env">
                         <img src="../Views/imgs/send.png" alt="">
                     </button>
+                    <button name="action" value="" class="boton-env">
+                        <img src="../Views/imgs/return.png" alt="" >
+                    </button>
+                    </div>
                 </form>
             </div>
 

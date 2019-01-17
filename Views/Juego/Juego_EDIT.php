@@ -93,17 +93,21 @@
 				          <option value="0"><?php echo $strings['No']; ?></option>
 				        </select>
 				    </div>   
-                                
+                    <div class="boton-grup">            
 	                <button name="action" value="EDIT" type="submit" class="boton-env">
                         <img src="../Views/imgs/send.png" alt="">
                     </button>
+                    <button name="action" value="" class="boton-env">
+                        <img src="../Views/imgs/return.png" alt="" >
+                    </button>
+                    </div>
                 </form>
             </div>
 
             </div>
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6><?php echo $strings['Prueba formulario EDIT']; ?></h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
         

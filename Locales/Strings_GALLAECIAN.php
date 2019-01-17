@@ -21,7 +21,7 @@ array(
 	'Telefono' => 'Teléfono',
 	'Delete' => 'Borrar',
 	'Login socio' => 'Login socio',
-	'Añadir socio' => 'Añadir socio',
+	'Añadir socio' => 'Engadir socio',
 	'Socio bloqueado' => 'Socio bloqueado',
 	'Eliminar socio' => 'Eliminar socio',
 	'Editar socio' => 'Editar socio',

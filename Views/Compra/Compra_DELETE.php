@@ -40,7 +40,6 @@ class Compra_DELETE {
         <section>
 
             <div class="form2">
-                <h4><?php echo $strings['Eliminar'];?></h4>
                 <h4><?php echo $strings['Eliminar compra'];?></h4>
                 <form enctype="multipart/form-data" action="../Controllers/COMPRA_Controller.php" method="post">
                     <ul>
