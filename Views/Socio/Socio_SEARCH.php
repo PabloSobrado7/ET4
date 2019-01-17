@@ -49,7 +49,7 @@ class Socio_SEARCH {
  
 				<form  action="<?php echo $message; ?>" method="post">	
 					<div class="form-group">
-                        <label class="form-label" for="login_socio"><?php echo $strings['Usuario']; ?></label>
+                        <label class="form-label" for="login_socio"><?php echo $strings['Login']; ?></label>
                         <input type="text" class="form-control" maxlength="25" size="25" id="login_socio" name="login_socio" >
                     </div>
 					
@@ -96,7 +96,7 @@ class Socio_SEARCH {
 
                  <form  action="<?php echo $message; ?>" method="post">
                      <div class="form-group">
-                        <label class="form-label" for="email_socio"><?php echo $strings['Correo']; ?></label>
+                        <label class="form-label" for="email_socio"><?php echo $strings['Email']; ?></label>
                         <input type="text" class="form-control" maxlength="50" size="50" id="email_socio" name="email_socio">
                     </div>
                 
@@ -119,7 +119,7 @@ class Socio_SEARCH {
 
                  <form  action="<?php echo $message; ?>" method="post">
                      <div class="form-group">
-                        <label class="form-label" for="socio_bloqueado">Socio bloqueado</label>
+                        <label class="form-label" for="socio_bloqueado"><?php echo $strings['Socio bloqueado']; ?></label>
                         <input type="text" class="form-control" maxlength="12" size="12" id="socio_bloqueado" name="socio_bloqueado">
                     </div>
                 

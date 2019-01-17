@@ -8,45 +8,123 @@
 $strings = 
 array(
 
-	'Usuario no autenticado' => 'User not logged',
-	'Usuario' => 'Usuario', 
-	'Contraseña' => 'Contraseña',
+	'Usuario no autenticado' => 'Usuario no autenticado',
+	'Login' => 'Usuario', 
+	'Password' => 'Contraseña',
 	'Lenguaje' => 'Lenguaje',
 	'Vendedor'=> 'Vendedor',
+	'Socio' => 'Socio',
+	'DNI' => 'DNI',
+	'Nombre' => 'Nombre',
+	'Apellidos' => 'Apellidos',
 	'NSS' => 'Número Seguridad Social',
+	'Email' => 'Correo',
+	'Telefono' => 'Teléfono',
+	'Delete' => 'Borrar',
+	'Login socio' => 'Login socio',
+	'Eliminar socio' => 'Eliminar socio',
+	'Añadir socio' => 'Añadir socio',
+	'Socio bloqueado' => 'Socio bloqueado',
+	'Editar socio' => 'Editar socio',
+	'Desbloquear usuario' => 'Desbolquear usuario',
+	'Busqueda' => 'Búsqueda',
+	'Eliminarvendedor' =>' Eliminar vendedor',
+	'Añadir vendedor' => 'Engadir vendedor',
+	'Inicio' => 'Inicio',
+	'Añadir vendedor' => 'Añadir vendedor',
+	'Login vendedor' => 'Login vendedor',
+	'Editar vendedor' => 'Editar vendedor',
+	'Nombre juego' => 'Nombre juego',
+	'Añadir juego' => 'Añadir juego',
+	'ID juego' => 'ID juego',
+	'Juego' => 'Juego',
+	'Plataforma' => 'Plataforma',
+	'Genero' => 'Género',
+	'Precio' => 'Precio',
+	'Categoria' => 'Categoría',
+	'Novedad' => 'Novedad',
+	'Compra' => 'Compra',
+	'Venta' => 'Venta',
+	'Alquiler' => 'Alquiler',
+	'Realizar alquiler' => 'Realizar alquiler',
+	'Eliminar alquiler' => 'Eliminar alquiler',
+	'Tarifa' => 'Tarifa',
+	'ID Tarifa' => 'ID Tarifa',
+	'ID Juego' => 'ID Juego',
+	'Fecha alquiler' => 'Fecha alquiler',
+	'Fecha fin alquiler' => 'Fecha fin alquiler',
+	'Accion' => 'Accion',
+	'Estrategia' => 'Estrategia',
+	'Deporte' => 'Deporte',
+	'Precio compra' => 'Precio compra',
+	'Si' => 'Si',
+	'No' => 'No',
+	'Eliminar' => 'Eliminar',
+	'Eliminar compra' => 'Eliminar compra',
+	'Fecha compra' => 'Fecha compra',
+	'Administrar vendedores' => 'Administrar vendedores',
+	'Gestionar juegos' => 'Gestionar juegos',
+	'Gestionar socios' => 'Gestionar socios',
+	'Gestionar compra' => 'Gestionar compra',
+	'Gestionar alquiler' => 'Gestionar alquiler',
+	'Productos mas alquilados' => 'Productos mas comprados/alquilados',
+	'Socios más activos' => 'Socios más activos',
+	'Consultar catálogo' => 'Consultar catálogo',
+	'Consultar novedades' => 'Consultar novedades',
+	'Productos mas comprados/alquilados' => 'Productos mas comprados/alquilados',
+	'Mis compras/alquileres' => 'Mis compras/alquileres',
+	'Fecha nacimiento' => 'Fecha nacimiento',
+	'Foto personal' => 'Foto personal',
+	'Sexo' => 'Sexo',
+	'Hombre' => 'Hombre',
+	'Mujer' => 'Mujer',
+	'TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)' => 'TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)',
+	'TOP 5 SOCIOS MÁS ACTIVOS (COMPRA)' => 'TOP 5 SOCIOS MÁS ACTIVOS (COMPRA)',
+
+
+
+
+	'Prueba formulario DELETE Juego' => 'Prueba formulario DELETE Juego',
+	'Prueba formulario EDIT' => 'Prueba formulario EDIT',
+	'Prueba formulario SEARCH Juego' => 'Prueba formulario SEARCH Juego',
+	'Juego SHOWALL' => 'Juego SHOWALL',
+	'Prueba formulario SEARCH Catalogo' => 'Prueba formulario SEARCH Catálogo',
+	'Catalogo SHOWALL' => 'Catálogo SHOWALL',
+
+
+
 	'Administrador' => 'Administrador',
 
 	'ENGLISH' => 'ENGLISH',
 	'SPANISH' => 'SPANISH',
 	'The login dont exists' => 'El login no existe',
 	'Back' => 'Volver',
-	'Incorrect password for this login' => 'Contraseña incorrecta para login',
+	'Incorrect password for this login' => 'Contraseña incorrecta para login', 
 	'Register' => 'Registrar',
 	'Add error' => 'Error de añadido',
-	'Telefono' => 'Telefono',
-	'Fecha' => 'Fecha',
-	'Fotopersonal' => 'Foto personal',
-	'Nombre' => 'Nombre',
-	'Apellidos' => 'Apellidos',
+	
+	
+	
+	
+	
 	'Bloqueado' => 'Bloqueado',
 	'Loginvendedor' => 'Usuario vendedor',
-	'Eliminarsocio' => 'Eliminar socio',
-	'Editarsocio' => 'Editar socio',
-	'Eliminarvendedor' =>' Eliminar vendedor',
-	'Desbloquear usuario' => 'Desbolquear usuario ',
+	
+	
+	
+	
 
-	'Sexo' => 'Sexo',
-	'Hombre' => 'Hombre',
-	'Mujer' => 'Mujer',
+	
+	
 	
 	'Success delete' => 'Borrado correcto',
-	'DNI' => 'DNI',
+	
 	'¿Have not you account? Sign up' => '¿No tienes cuenta? Registrate',
 	'Add' => 'Añadir',
 	'Sign up' => 'Registrarse',
 	'Correo' => 'Correo',
 
-	'Delete' => 'Borrar',
+	
 	'Edit' => 'Editar',
 	'Search' => 'Buscar',
 	'ShowCurrent' => 'Detallado',
@@ -108,39 +186,36 @@ array(
 
 	'DNI erroneo, la letra del NIF no se corresponde' => 'DNI erroneo, la letra del NIF no se corresponde',
 
-	'Inicio' => 'Inicio',
+	
 
 	'Fallo al conectar a MYSQL:' => 'Fallo al conectar a MYSQL:',
 
-	'Reserva una pista de hoy en adelante' => 'Reserva una pista de hoy en adelante',
-	'El número máximo de reservas es 5' => 'El número máximo de reservas es 5',
-	'La reservas solo pueden ser canceladas 12 horas antes' => 'La reservas solo pueden ser canceladas 12 horas antes',
-	'Solo se puede reservar con 7 días de antelación' => 'Solo se puede reservar con 7 días de antelación',
+	
+	
+	
+	
 
 	'No se ha podido conectar con la base de datos' => 'No se ha podido conectar con la base de datos',
 	'Error en la inserción' => 'Error en la inserción',
 	'Inserción realizada con éxito' => 'Inserción realizada con éxito',
 	'Ya existe en la base de datos' => 'Ya existe en la base de datos',
 	'Introduzca un valor' => 'Introduzca un valor',
-	'Partido completo, reserva realizada' => 'Partido completo, reserva realizada',
-	'El partido ya esta completo' => 'El partido ya esta completo',
-	'Ya participas en este partido' => 'Ya participas en este partido',
+	
+	
+	
 	'Borrado correctamente' => 'Borrado correctamente',
 	'Error al cancelar' => 'Error al cancelar',
 	'Error de borrado' => 'Error de borrado',
-	'Todas las pistas llenas, no se puede crear promocion' => 'Todas las pistas llenas, no se puede crear promocion',
+	
 
 
 
 
-'SI' => 'SI',
-'NO' => 'NO',
 
 
 
 	'Bienvenido' => 'Bienvenido',
-	'Ver loteria' => 'Ver la loteria',
-	'Busqueda' => 'Búsqueda por parámetros'
+	
 
 
 

@@ -50,10 +50,10 @@ class Alquila_SHOWALL {
 
                 <table class="showall-tab">
                     <tr>
-                        <th>Login socio</th>
-						<th>Id Tarifa</th>
-						<th>Id Juego</th>
-						<th>Fecha alquiler</th>
+                        <th><?php echo $strings['Login socio']; ?></th>
+						<th><?php echo $strings['ID Tarifa']; ?></th>
+						<th><?php echo $strings['ID Juego']; ?></th>
+						<th><?php echo $strings['Fecha alquiler']; ?></th>
 
                         <th>
                         </th>
@@ -91,7 +91,7 @@ class Alquila_SHOWALL {
             </div>
 			
             <footer>
-				<h6>GAMERENTING - 2018</h6>
+				<h6>GameRentig 2019</h6>
             </footer>
         </section>
 

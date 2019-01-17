@@ -43,43 +43,43 @@
                 <?php
 
                 ?>
-                <h3>Añadir vendedor</h3>
+                <h3><?php echo $strings['Añadir vendedor'];?></h3>
                 <?php
 
                 ?>
                 <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/VENDEDOR_Controller.php">
                     <div class="form-group">
-                        <label class="form-label" for="login_vendedor">Login</label>
+                        <label class="form-label" for="login_vendedor"><?php echo $strings['Login vendedor'];?></label>
                         <input type="text" class="form-control" maxlength="15" size="15" id="login_vendedor" name="login_vendedor">
                     </div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="pass_vendedor">Password</label>
+                        <label class="form-label" for="pass_vendedor"><?php echo $strings['Password'];?></label>
                         <input type="text" class="form-control" maxlength="20" size="20" id="pass_vendedor" name="pass_vendedor">
                     </div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="dni_vendedor">DNI</label>
+                        <label class="form-label" for="dni_vendedor"><?php echo $strings['DNI'];?></label>
                         <input type="text" class="form-control" maxlength="9" size="9" id="dni_vendedor" name="dni_vendedor" onblur="comprobarVacio(this);comprobarDNI(this)">
                     </div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="nombre_vendedor">Nombre</label>
+                        <label class="form-label" for="nombre_vendedor"><?php echo $strings['Nombre'];?></label>
                         <input type="text" class="form-control" maxlength="25" size="25" id="nombre_vendedor" name="nombre_vendedor" onblur="comprobarVacio(this);comprobarTexto(this,25);comprobarAlfabetico(this,25)">
                     </div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="apellidos_vendedor">Apellidos</label>
+                        <label class="form-label" for="apellidos_vendedor"><?php echo $strings['Apellidos'];?></label>
                         <input type="text" class="form-control" maxlength="50" size="50" id="apellidos_vendedor" name="apellidos_vendedor" onblur="comprobarVacio(this);comprobarTexto(this,50);comprobarAlfabetico(this,50)">
                     </div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="email_vendedor">Email</label>
+                        <label class="form-label" for="email_vendedor"><?php echo $strings['Email'];?></label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="email_vendedor" name="email_vendedor" onblur="comprobarVacio(this);comprobarTexto(this,60);comprobarCorreo(this)">
                     </div>
 					
 					 <div class="form-group">
-                        <label class="form-label" for="telefono_vendedor">Teléfono</label>
+                        <label class="form-label" for="telefono_vendedor"><?php echo $strings['Telefono'];?></label>
                         <input type="text" class="form-control" maxlength="12" size="12" id="telefono_vendedor" name="telefono_vendedor" onblur="comprobarVacio(this);comprobarTelefono(this)">
                     </div>
 					

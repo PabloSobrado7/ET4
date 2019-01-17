@@ -61,15 +61,15 @@ $(document).ready(function() {
 				
                 <table id="games" class="showall-tab">
                     <tr>
-                        <th>#Juego</th>
-						<th>Nombre</th>
-						<th>Plataforma</th>
-						<th>Genero</th>
-						<th>Precio Compra</th>
-						<th>Categoria</th>
-						<th>Novedad</th>
-                        <th>Compra</th>
-                        <th>Venta</th>
+                        <th><?php echo $strings['ID Juego']; ?></th>
+						<th><?php echo $strings['Nombre juego']; ?></th>
+						<th><?php echo $strings['Plataforma']; ?></th>
+						<th><?php echo $strings['Genero']; ?></th>
+						<th><?php echo $strings['Precio compra']; ?></th>
+						<th><?php echo $strings['Categoria']; ?></th>
+						<th><?php echo $strings['Novedad']; ?></th>
+                        <th><?php echo $strings['Compra']; ?></th>
+                        <th><?php echo $strings['Alquiler']; ?></th>
                     </tr>
                     <?php
 
@@ -115,7 +115,7 @@ $(document).ready(function() {
 			
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Juego Showall</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
 

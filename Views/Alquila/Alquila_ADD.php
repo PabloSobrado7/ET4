@@ -43,13 +43,13 @@
                 <?php
 
                 ?>
-                <h3>Realizar alquiler</h3>
+                <h3><?php echo $strings['Realizar alquiler'];?></h3>
                 <?php
 
                 ?>
                 <form class="form-basic" enctype="multipart/form-data" id="form"  method="post" action="../Controllers/ALQUILA_Controller.php">
 					 <div class="form-group">
-                        <label class="form-label" for="login_socio">Socio</label>
+                        <label class="form-label" for="login_socio"><?php echo $strings['Socio']; ?></label>
                         
 					<td>
 								<select name="login_socio">
@@ -66,7 +66,7 @@
 					</div>
 	
 						 <div class="form-group">
-                        <label class="form-label" for="id_tarifa">Tarifa</label>
+                        <label class="form-label" for="id_tarifa"><?php echo $strings['Tarifa']; ?></label>
                         
 					<td>
 								<select name="id_tarifa">
@@ -85,7 +85,7 @@
 
 	
 					 <div class="form-group">
-                        <label class="form-label" for="id_juego">Juego</label>
+                        <label class="form-label" for="id_juego"><?php echo $strings['Juego']; ?></label>
                         
 					<td>
 								<select name="id_juego">
@@ -117,7 +117,7 @@
 
             </div>
             <footer>
-				<h6>GAMERENTING - 2018</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
         <!--<script src="../Views/js/md5.js"></script>

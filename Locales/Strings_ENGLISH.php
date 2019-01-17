@@ -10,7 +10,84 @@ array(
 	'Usuario no autenticado' => 'User not logged',
 	'Login' => 'Login', 
 	'Password' => 'Password',
-	'Language' => 'Language',
+	'Lenguaje' => 'Language',
+	'Vendedor'=> 'Seller',
+	'Socio' => 'Partner',
+	'DNI' => 'DNI',
+	'Nombre' => 'Name',
+	'Apellidos' => 'Surnames',
+	'NSS' => 'Social Security Number',
+	'Email' => 'Email',
+	'Telefono' => 'Telephone',
+	'Delete' => 'Delete',
+	'Login socio' => 'Login partner',
+	'Eliminarsocio' => 'Remove partner',
+	'Añadir socio' => 'Add partner',
+	'Socio bloqueado' => 'Blocked partner',
+	'Editar socio' => 'Edit partner',
+	'Desbloquear usuario' => 'Unlock user',
+	'Busqueda' => 'Search',
+	'Eliminar vendedor' => 'Remove seller',
+	'Inicio' => 'Entry',
+	'Añadir vendedor' => 'Add seller',	
+	'Login vendedor' => 'Login seller',
+	'Editar vendedor' => 'Edit seller',
+	'Nombre juego' => 'Name game',
+	'Añadir juego' => 'Add game',
+	'Id juego' => 'Id game',
+	'Juego' => 'Game',
+	'Plataforma' => 'Platform',
+	'Genero' => 'Genre',
+	'Precio' => 'Price',
+	'Precio compra' => 'Purchase price',
+	'Categoria' => 'Category',
+	'Novedad' => 'Novelty',
+	'Compra' => 'Purchase',
+	'Venta' => 'Sale',
+	'Alquiler' => 'Renting',
+	'Realizar alquiler' => 'Make rent',
+	'Eliminar alquiler' => 'Remove rent',
+	'Tarifa' => 'Rate',
+	'ID Tarifa' => 'ID Rate',
+	'ID Juego' => 'ID Game',
+	'Fecha alquiler' => 'Date rent',
+	'Fecha fin alquiler' => 'End date rent',
+	'Accion' => 'Action',
+	'Estrategia' => 'Estrategy',
+	'Deporte' => 'Sport',
+	'Si' => 'Yes',
+	'No' => 'Not',
+	'Eliminar' => 'Remove',
+	'Eliminar compra' => 'Delete purchase',
+	'Fecha compra' => 'Purchase date',	
+	'Administrar vendedores' => 'Manage sellers',
+	'Gestionar juegos' => 'Manage games',
+	'Gestionar socios' => 'Manage partners',
+	'Gestionar compra' => 'Manage partners',
+	'Gestionar alquiler' => 'Gestionar rent',
+	'Socios más activos' => 'Most active partners',
+	'Consultar catálogo' => 'Check catalog',
+	'Consultar novedades' => 'Check news',
+	'Productos mas comprados/alquilados' => 'More products purchased/rented',
+	'Mis compras/alquileres' => 'My purchases rentals',
+	'Sign up' => 'Sign up',
+	'Fecha nacimiento' => 'Birth date',
+	'Foto personal' => 'Personal picture',
+	'Sexo' => 'Sex',
+	'Hombre' => 'Boy',
+	'Mujer' => 'Girl',
+	'TOP 5 SOCIOS MÁS ACTIVOS (ALQUILER)' => 'TOP 5 MOST ACTIVE PARTNERS (RENT)',
+	'TOP 5 SOCIOS MÁS ACTIVOS (COMPRA)' => 'TOP 5 TOP 5 MOST ACTIVE PARTNERS (PURCHASE)',
+
+
+
+	'Prueba formulario DELETE Juego' => 'Test form DELETE game',
+	'Prueba formulario EDIT' => 'Test form EDIT',
+	'Prueba formulario SEARCH Juego' => 'Test form SEARCH game',
+	'Juego SHOWALL' => 'Game SHOWALL',
+	'Prueba formulario SEARCH Catalogo' => 'Test form SEARCH catalogue',
+
+
 	'User' => 'User',
 	'ENGLISH' => 'ENGLISH',
 	'SPANISH' => 'SPANISH',
@@ -18,8 +95,7 @@ array(
 	'Back' => 'Back',
 	'Incorrect password for this login' => 'Incorrect password for this login',
 	'Register' => 'Register',
-	'Telefono' => 'Telephone',
-	'Fecha' => 'Date',
+
 	'User Interface Management' => 'User Interface Management',
 	'Fotopersonal' => 'Personal picture',
 	'Sexo' => 'Sex',
@@ -31,19 +107,21 @@ array(
 	'Editarsocio' => 'Edit socio',
 	'Eliminarvendedor' => 'Remove seller',
 	
-	'Name' => 'Name',
+	
+	
+	
 	'Surname' => 'Surname',
 	'Adress' => 'Address',
 	'ASIGNACION DE GRUPO' => 'GROUP ASSIGNMENT',
 	'Success delete' => 'Success delete',
-	'DNI' => 'DNI',
+	
 	'¿Have not you account? Sign up' => '¿Have not you account? Sign up',
 	'Add' => 'Add',
 	'Sign up' => 'Sign up',
-	'Email' => 'Email',
+	
 	'hombre' => 'Men',
 	'mujer' => 'Women',
-	'Delete' => 'Delete',
+	
 	'Edit' => 'Edit',
 	'Search' => 'Search',
 	'ShowCurrent' => 'ShowCurrent',
@@ -106,7 +184,7 @@ array(
 
     'login' => 'login',
  
-	'Inicio' => 'Entry',
+	
 	
 	'Fallo al conectar a MYSQL:' => 'MYSQL Error Connection :',
 
@@ -114,22 +192,11 @@ array(
 
 	
 'Bienvenido' => 'Welcome',
-'Ver loteria' => 'Show lottery',
-
-'SI' => 'YES',
-'NO' => 'NO',
 
 
 
-'Participacion' => 'Participation (€)',
-'Resguardo' => 'Guard',
-'Ingresado' => 'Deposited?',
-'Premiopersonal' => 'Prize (€)',
-'Pagado' => 'Paid out?',
-'Anadirparticipante' => 'Add new participant',
-'Eliminarpart' => 'You will delete this participant',
-'Editarpart' => 'Edit participation',
-'Busqueda' => 'Search for parameters'
+
+
 
 
 

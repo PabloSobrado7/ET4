@@ -49,7 +49,7 @@ class Juego_SEARCH {
  
 				<form  action="<?php echo $message; ?>" method="post">	
 					<div class="form-group">
-                        <label class="form-label" for="id_juego">#Juego</label>
+                        <label class="form-label" for="id_juego"><?php echo $strings['ID Juego']; ?></label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="id_juego" name="id_juego" >
                     </div>
 					
@@ -59,7 +59,7 @@ class Juego_SEARCH {
 				</form>
                 <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="nombre_juego">Nombre</label>
+                        <label class="form-label" for="nombre_juego"><?php echo $strings['Nombre juego']; ?></label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="nombre_juego" name="nombre_juego" >
                     </div>
                
@@ -69,7 +69,7 @@ class Juego_SEARCH {
 				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="plataforma">Plataforma</label>
+                        <label class="form-label" for="plataforma"><?php echo $strings['Plataforma']; ?></label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="plataforma" name="plataforma" >
                     </div>
       
@@ -79,7 +79,7 @@ class Juego_SEARCH {
 				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="genero">Genero</label>
+                        <label class="form-label" for="genero"><?php echo $strings['Genero']; ?></label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="genero" name="genero" >
                     </div>
                    
@@ -89,7 +89,7 @@ class Juego_SEARCH {
 				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="precio_compra">Precio Compra</label>
+                        <label class="form-label" for="precio_compra"><?php echo $strings['Precio compra']; ?></label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="precio_compra" name="precio_compra" >
                     </div>
                    
@@ -99,7 +99,7 @@ class Juego_SEARCH {
 				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="categoria">Categoria</label>
+                        <label class="form-label" for="categoria"><?php echo $strings['Categoria']; ?></label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="categoria" name="categoria" >
                     </div>
                  
@@ -109,7 +109,7 @@ class Juego_SEARCH {
 				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="novedad">¿Novedad?</label>
+                        <label class="form-label" for="novedad"><?php echo $strings['Novedad']; ?></label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="novedad" name="novedad" >
                     </div>
                <div class="showall">
@@ -118,7 +118,7 @@ class Juego_SEARCH {
 				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="compra">¿Compra?</label>
+                        <label class="form-label" for="compra"><?php echo $strings['Compra']; ?></label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="compra" name="compra" >
                     </div>
                 <div class="showall">
@@ -127,7 +127,7 @@ class Juego_SEARCH {
 				 </form> 
 				<form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="venta">¿Alquiler?</label>
+                        <label class="form-label" for="venta"><?php echo $strings['Alquiler']; ?></label>
                         <input type="text" class="form-control" maxlength="60" size="60" id="venta" name="venta" >
                     </div>
                <div class="showall">
@@ -139,7 +139,7 @@ class Juego_SEARCH {
 
             <footer>
 				<span><img style="height:60px; width:50px;" src="../Views/imgs/logolot.png"></span>
-				<h6>Formulario de prueba SEARCH juego</h6>
+				<h6>GameRenting 2019</h6>
             </footer>
         </section>
         <!--<script src="../Views/js/md5.js"></script>

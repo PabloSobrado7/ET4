@@ -52,13 +52,13 @@ class Vendedor_SHOWALL {
 				
                 <table class="showall-tab">
                     <tr>
-                        <th>Login</th>
-						<th>Password</th>
-						<th>DNI</th>
-                        <th>Nombre</th>
-						<th>Apellidos</th>
-						<th>Email</th>
-						<th>Teléfono</th>
+                        <th><?php echo $strings['Login']; ?></th>
+						<th><?php echo $strings['Password']; ?></th>
+						<th><?php echo $strings['DNI']; ?></th>
+                        <th><?php echo $strings['Nombre']; ?></th>
+						<th><?php echo $strings['Apellidos']; ?></th>
+						<th><?php echo $strings['Email']; ?></th>
+						<th><?php echo $strings['Telefono']; ?></th>
                         <th>
                         </th>
                     </tr>
