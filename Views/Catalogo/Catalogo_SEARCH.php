@@ -60,13 +60,13 @@ class Catalogo_SEARCH {
                  <form  action="<?php echo $message; ?>" method="post"> 
 				<label class="form-label" for="plataforma"><?php echo $strings['Plataforma'];?></label>
 					 
-<select name="plataforma">
-  <option value="PS4">PS4</option>
-  <option value="Xbox 360">Xbox 360</option>
-  <option value="PC">PC</option>
-  <option value="Nintendo Switch">Nintendo Switch</option>
-</select>
-      
+        <select name="plataforma">
+          <option value="PS4">PS4</option>
+          <option value="Xbox 360">Xbox 360</option>
+          <option value="PC">PC</option>
+          <option value="Nintendo Switch">Nintendo Switch</option>
+        </select>
+              
                <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
@@ -75,21 +75,21 @@ class Catalogo_SEARCH {
                     
 					<label class="form-label" for="genero"><?php echo $strings['Genero'];?></label>
 				
-     <select name="genero">
-  <option value="PS4"><?php echo $strings['Accion'];?></option>
-  <option value="Xbox 360"><?php echo $strings['Estrategia'];?></option>
-  <option value="PC"><?php echo $strings['Deporte'];?></option>
-  <option value="Nintendo Switch"><?php echo $strings['Plataforma'];?></option>
-</select>
-              
+        <select name="genero">
+          <option value="PS4"><?php echo $strings['Accion'];?></option>
+          <option value="Xbox 360"><?php echo $strings['Estrategia'];?></option>
+          <option value="PC"><?php echo $strings['Deporte'];?></option>
+          <option value="Nintendo Switch"><?php echo $strings['Plataforma'];?></option>
+        </select>
+                    
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
 				</form> 
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
-                        <label class="form-label" for="precio_compra"><?php echo $strings['Precio compra (max)'];?></label>
-                         <input type="range" name="precio_compra" min="5" max="70" step="5" value="35">
+                        <label class="form-label" for="precio_compra"><?php echo $strings['Precio compra'];?></label>
+                        <input type="text" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra" onblur=" comprobarVacio(this); comprobarEntero(this,2,0,200)">
 						 </div>
                    
                <div class="showall">

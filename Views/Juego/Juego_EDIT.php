@@ -76,22 +76,23 @@
                         <label class="form-label" for="categoria"><?php echo $strings['Categoria']; ?></label>
                         <input type="text" class="form-control" maxlength="15" size="15" id="categoria" name="categoria" value="<?php echo $categoria; ?>" onblur=" comprobarVacio(this); comprobarTexto(this, 15); comprobarAlfabetico(this,15)">
                     </div>
-                    <div class="form-group">
-                        <label class="form-label" for="novedad"><?php echo $strings['Novedad']; ?></label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="novedad" name="novedad" value="<?php echo $novedad; ?>" onblur="comprobarVacio(this)">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="compra"><?php echo $strings['Compra']; ?></label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="compra" name="compra" value="<?php echo $compra; ?>" onblur="comprobarVacio(this)">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="venta"><?php echo $strings['Venta']; ?></label>
-                        <input type="text" class="form-control" maxlength="15" size="15" id="venta" name="venta" value="<?php echo $venta; ?>" onblur="comprobarVacio(this)">
-                    </div>
-						                
-					   
+                    <div>
+                    <label class="form-label" for="novedad"><?php echo $strings['Novedad'];?></label>
+              		  	<input type="checkbox" name="novedad" value="1"><?php echo $strings['Si'];?><br>
+						<input type="checkbox" name="novedad" value="0"><?php echo $strings['NO'];?><br>
+					</div>
+					<div>
+                    <label class="form-label" for="compra"><?php echo $strings['Compra'];?></label>
+              		  	<input type="checkbox" name="compra" value="1"><?php echo $strings['Si'];?><br>
+						<input type="checkbox" name="compra" value="0"><?php echo $strings['NO'];?><br>
+					</div>
+					<div>
+                    <label class="form-label" for="venta"><?php echo $strings['Alquiler'];?></label>
+              		  	<input type="checkbox" name="venta" value="1"><?php echo $strings['Si'];?><br>
+						<input type="checkbox" name="venta" value="0"><?php echo $strings['NO'];?><br>
+					</div>  
                     
-                    <button name="action" value="EDIT" type="submit" class="boton-env">
+	                <button name="action" value="EDIT" type="submit" class="boton-env">
                         <img src="../Views/imgs/send.png" alt="">
                     </button>
                 </form>
