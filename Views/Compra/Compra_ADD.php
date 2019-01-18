@@ -45,7 +45,7 @@
                 <?php
 
                 ?>
-                <h3><? php echo $strings['Realizar compra'];?></h3>
+                <h3><?php echo $strings['Realizar compra'];?></h3>
                 <?php
 
                 ?>

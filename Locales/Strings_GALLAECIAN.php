@@ -62,6 +62,7 @@ array(
 	'Estrategia' => 'Estratexia',
 	'Deporte' => 'Deporte',
 	'Precio compra' => 'Prezo compra',
+	'Realizar compra' => 'Realizar compra',
 	'Si' => 'Si',
 	'No' => 'Non',
 	'Eliminar' => 'Eliminar',

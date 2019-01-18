@@ -47,6 +47,7 @@ array(
 	'Venta' => 'Venta',
 	'Alquiler' => 'Alquiler',
 	'Realizar alquiler' => 'Realizar alquiler',
+	'Realizar compra' => 'Realizar compra',
 	'Eliminar alquiler' => 'Eliminar alquiler',
 	'Tarifa' => 'Tarifa',
 	'ID Tarifa' => 'ID Tarifa',

@@ -92,6 +92,7 @@ array(
 	'Socio' => 'Partner',
 	
 	
+	'Realizar compra' => 'Do a purchase',
 	'Prueba formulario DELETE Juego' => 'Test form DELETE game',
 	'Prueba formulario EDIT' => 'Test form EDIT',
 	'Prueba formulario SEARCH Juego' => 'Test form SEARCH game',
