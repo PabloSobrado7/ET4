@@ -50,7 +50,7 @@ class Juego_SEARCH {
 				<form  action="<?php echo $message; ?>" method="post">	
 					<div class="form-group">
                         <label class="form-label" for="id_juego"><?php echo $strings['ID Juego']; ?></label>
-                        <input type="text" class="form-control" maxlength="15" size="50" id="id_juego" name="id_juego" readonly>
+                        <input type="text" class="form-control" maxlength="15" size="50" id="id_juego" name="id_juego">
                     </div>
 					
 				<div class="showall">
