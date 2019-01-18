@@ -93,10 +93,10 @@ $(document).ready(function() {
 								<td><?php echo $row['plataforma']; ?></td>
 								<td><?php echo $row['genero']; ?></td>
 								<td><?php echo $row['precio_compra']; ?>€</td>
-					<?php if ($row['novedad']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
-					<?php if ($row['compra']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
-                    <?php if ($row['venta']=='1'){ ?> <td>SI</td> <?php }else{?><td>NO</td><?php } ?>
-                     
+					<?php if ($row['novedad']=='1'){ ?> <td><?php echo $strings['Si'];?></td> <?php }else{?><td><?php echo $strings['No'];?></td><?php } ?>
+					<?php if ($row['compra']=='1'){ ?> <td><?php echo $strings['Si'];?></td> <?php }else{?><td><?php echo $strings['No'];?></td><?php } ?>					
+					<?php if ($row['venta']=='1'){ ?> <td><?php echo $strings['Si'];?></td> <?php }else{?><td><?php echo $strings['No'];?></td><?php } ?>
+										
 					           <td>
 									</td>
                             

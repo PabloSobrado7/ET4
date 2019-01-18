@@ -70,7 +70,7 @@ array(
 	'Gestionar juegos' => 'Manage games',
 	'Gestionar socios' => 'Manage partners',
 	'Gestionar compra' => 'Manage partners',
-	'Gestionar alquiler' => 'Manage rent',
+	'Gestionar alquiler' => 'Gestionar rent',
 	'Socios más activos' => 'Most active partners',
 	'Consultar catálogo' => 'Check catalog',
 	'Consultar novedades' => 'Check news',
@@ -92,7 +92,6 @@ array(
 	'Socio' => 'Partner',
 	
 	
-	'Realizar compra' => 'Do a purchase',
 	'Prueba formulario DELETE Juego' => 'Test form DELETE game',
 	'Prueba formulario EDIT' => 'Test form EDIT',
 	'Prueba formulario SEARCH Juego' => 'Test form SEARCH game',

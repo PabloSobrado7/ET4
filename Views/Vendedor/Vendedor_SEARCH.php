@@ -50,7 +50,7 @@ class Vendedor_SEARCH {
 				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">	
 					<div class="form-group">
                         <label class="form-label" for="login_vendedor"><?php echo $strings['Login']; ?></label>
-                        <input type="text" class="form-control" maxlength="60" size="50" id="login_vendedor" name="login_vendedor" >
+                        <input type="text" class="form-control" maxlength="60" size="60" id="login_vendedor" name="login_vendedor" >
                     </div>
 					
 				<div class="showall">
@@ -61,7 +61,7 @@ class Vendedor_SEARCH {
 				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">
 					<div class="form-group">
                         <label class="form-label" for="pass_vendedor"><?php echo $strings['Password']; ?></label>
-                        <input type="text" class="form-control" maxlength="30" size="50" id="pass_vendedor" name="pass_vendedor">
+                        <input type="text" class="form-control" maxlength="30" size="30" id="pass_vendedor" name="pass_vendedor">
                     </div>
 					
 				<div class="showall">
@@ -72,7 +72,7 @@ class Vendedor_SEARCH {
 				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">
                     <div class="form-group">
                         <label class="form-label" for="dni_vendedor"><?php echo $strings['DNI']; ?></label>
-                        <input type="text" class="form-control" maxlength="30" size="50" id="dni_vendedor" name="dni_vendedor">
+                        <input type="text" class="form-control" maxlength="30" size="30" id="dni_vendedor" name="dni_vendedor">
                     </div>
                     
                 <div class="showall">
@@ -83,7 +83,7 @@ class Vendedor_SEARCH {
 				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">
                     <div class="form-group">
                         <label class="form-label" for="nombre_vendedor"><?php echo $strings['Nombre']; ?></label>
-                        <input type="text" class="form-control" maxlength="30" size="50" id="nombre_vendedor" name="nombre_vendedor">
+                        <input type="text" class="form-control" maxlength="30" size="30" id="nombre_vendedor" name="nombre_vendedor">
                     </div>
                     
                 <div class="showall">
@@ -94,7 +94,7 @@ class Vendedor_SEARCH {
 				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">
                     <div class="form-group">
                         <label class="form-label" for="apellidos_vendedor"><?php echo $strings['Apellidos']; ?></label>
-                        <input type="text" class="form-control" maxlength="30" size="50" id="apellidos_vendedor" name="apellidos_vendedor">
+                        <input type="text" class="form-control" maxlength="30" size="30" id="apellidos_vendedor" name="apellidos_vendedor">
                     </div>
                     
                 <div class="showall">
@@ -105,7 +105,7 @@ class Vendedor_SEARCH {
 				<form  action="../Controllers/VENDEDOR_Controller.php" method="post">
                     <div class="form-group">
                         <label class="form-label" for="email_vendedor"><?php echo $strings['Email']; ?></label>
-                        <input type="text" class="form-control" maxlength="30" size="50" id="email_vendedor" name="email_vendedor">
+                        <input type="text" class="form-control" maxlength="30" size="30" id="email_vendedor" name="email_vendedor">
                     </div>
                     
                 <div class="showall">
@@ -116,7 +116,7 @@ class Vendedor_SEARCH {
                 <form  action="../Controllers/VENDEDOR_Controller.php" method="post">
                     <div class="form-group">
                         <label class="form-label" for="telefono_vendedor"><?php echo $strings['Telefono']; ?></label>
-                        <input type="text" class="form-control" maxlength="30" size="50" id="telefono_vendedor" name="telefono_vendedor">
+                        <input type="text" class="form-control" maxlength="30" size="30" id="telefono_vendedor" name="telefono_vendedor">
                     </div>
                     
                 <div class="showall">

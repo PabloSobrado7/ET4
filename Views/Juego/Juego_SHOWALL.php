@@ -97,10 +97,10 @@ $(document).ready(function() {
 								<td><?php echo $row['genero']; ?></td>
 								<td><?php echo $row['precio_compra']; ?></td>
 								<td><?php echo $row['categoria']; ?></td>
-								<td><?php echo $row['novedad']; ?></td>
-                                <td><?php echo $row['compra']; ?></td>
-                                <td><?php echo $row['venta']; ?></td>
-                                <td>
+								<?php if ($row['novedad']=='1'){ ?> <td><?php echo $strings['Si'];?></td> <?php }else{?><td><?php echo $strings['No'];?></td><?php } ?>
+					<?php if ($row['compra']=='1'){ ?> <td><?php echo $strings['Si'];?></td> <?php }else{?><td><?php echo $strings['No'];?></td><?php } ?>					
+					<?php if ($row['venta']=='1'){ ?> <td><?php echo $strings['Si'];?></td> <?php }else{?><td><?php echo $strings['No'];?></td><?php } ?>
+					<td>
 									<button class="showall-action" name="action" value="EDIT" type="submit"><img src="../Views/imgs/edit.png" alt="" srcset=""></button>
                                     <button class="showall-action" name="action" value="DELETE" type="submit"><img src="../Views/imgs/delete.png" alt="" srcset=""></button>
                                 </td>

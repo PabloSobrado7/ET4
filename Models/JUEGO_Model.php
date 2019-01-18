@@ -130,16 +130,14 @@ class JUEGO_Model
 
         // construimos el sql para buscar esa clave en la tabla
         
-		$sql = "SELECT * FROM 'JUEGO' WHERE id_juego LIKE '%".$this->id_juego."%'
-        AND nombre_juego LIKE '%".$this->nombre_juego."%'
-        AND plataforma LIKE '%".$this->plataforma."%' 
-        AND genero LIKE '%".$this->genero."%' 
-        AND precio_compra LIKE '%".$this->precio_compra."%' 
-        AND categoria LIKE '%".$this->categoria."%'
-        AND novedad LIKE '%".$this->novedad."%'
-        AND compra LIKE '%".$this->compra."%'
-        AND venta LIKE '%".$this->venta."%'";   
-		
+		$sql = "SELECT * FROM `JUEGO` WHERE (
+		`id_juego` = '$this->id_juego' 
+		OR `nombre_juego` = '$this->nombre_juego'
+		OR `plataforma` = '$this->plataforma' 
+		OR `genero` = '$this->genero' 
+		OR `precio_compra` = '$this->precio_compra' 
+		OR `categoria` = '$this->categoria'
+		)";
 		
         if (!($resultado = $this->mysqli->query($sql))) {//Si la busqueda no da resultados, se devuelve el mensaje de que no existe
             return 'It does not exist in DB';

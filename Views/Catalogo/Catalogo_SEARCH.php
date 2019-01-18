@@ -50,7 +50,7 @@ class Catalogo_SEARCH {
                 <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="nombre_juego"><?php echo $strings['Nombre juego'];?></label>
-                        <input type="text" class="form-control" maxlength="20" size="50" id="nombre_juego" name="nombre_juego" >
+                        <input type="text" class="form-control" maxlength="60" size="60" id="nombre_juego" name="nombre_juego" >
                     </div>
                
                <div class="showall">
@@ -89,7 +89,7 @@ class Catalogo_SEARCH {
                  <form  action="<?php echo $message; ?>" method="post">  
                     <div class="form-group">
                         <label class="form-label" for="precio_compra"><?php echo $strings['Precio compra'];?></label>
-                        <input type="text" class="form-control" maxlength="15" size="50" id="precio_compra" name="precio_compra">
+                        <input type="text" class="form-control" maxlength="15" size="15" id="precio_compra" name="precio_compra" onblur=" comprobarVacio(this); comprobarEntero(this,2,0,200)">
 						 </div>
                    
                <div class="showall">
@@ -100,11 +100,9 @@ class Catalogo_SEARCH {
                  <form  action="<?php echo $message; ?>" method="post"> 
 				 
                     <label class="form-label" for="novedad"><?php echo $strings['Novedad'];?></label>
-                                     
-                        <select name="novedad">
-                          <option value="1"><?php echo $strings['Si'];?></option>
-                          <option value="0"><?php echo $strings['No'];?></option>
-                        </select>
+                <input type="checkbox" name="novedad" value="1"><?php echo $strings['Si'];?><br>
+				<input type="checkbox" name="novedad" value="0"><?php echo $strings['No'];?><br>
+					
                <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
@@ -112,12 +110,10 @@ class Catalogo_SEARCH {
 				
                  <form  action="<?php echo $message; ?>" method="post"> 
 				 
-                 <label class="form-label" for="compra"><?php echo $strings['Compra'];?></label>
-                                     
-                        <select name="compra">
-                          <option value="1"><?php echo $strings['Si'];?></option>
-                          <option value="0"><?php echo $strings['No'];?></option>
-                        </select>
+                    <label class="form-label" for="compra"><?php echo $strings['Compra'];?></label>
+                <input type="checkbox" name="compra" value="1"><?php echo $strings['Si'];?><br>
+				<input type="checkbox" name="compra" value="0"><?php echo $strings['No'];?><br>
+				
                 <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
                 </div>
@@ -125,12 +121,9 @@ class Catalogo_SEARCH {
 				 
 				<form  action="<?php echo $message; ?>" method="post"> 
 				
-			     <label class="form-label" for="venta"><?php echo $strings['Venta'];?></label>
-                                     
-                        <select name="venta">
-                          <option value="1"><?php echo $strings['Si'];?></option>
-                          <option value="0"><?php echo $strings['No'];?></option>
-                        </select>
+			 <label class="form-label" for="venta"><?php echo $strings['Venta'];?></label>
+                <input type="checkbox" name="venta" value="1"><?php echo $strings['Si'];?><br>
+				<input type="checkbox" name="venta" value="0"><?php echo $strings['No'];?><br>
 				
                <div class="showall">
                     <button class="showall-action" name="action" value="SEARCH" type="submit"><img src="../Views/imgs/search.png" alt="" srcset=""></button>
